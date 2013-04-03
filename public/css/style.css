@@ -90,16 +90,16 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 
 .tab{ float:left; width:278px; height:209px; border:#2b2b2c 1px solid; border-top:none;  background:#101010;}
 
-#TabCon1{width:278px;/*height:209px; border:#2b2b2c 1px solid; border-top:none;*/}
-#TabCon2{width:278px;/*height:209px; border:#2b2b2c 1px solid; border-top:none;*/}
-#TabCon3{width:278px;/*height:209px; border:#2b2b2c 1px solid; border-top:none;*/}
+#TabCon1{width:278px;/*height:145px; border:#2b2b2c 1px solid; border-top:none;*/ }
+#TabCon2{width:278px;/*height:145px; border:#2b2b2c 1px solid; border-top:none;*/}
+#TabCon3{width:278px;/*height:145px; border:#2b2b2c 1px solid; border-top:none;*/}
 
 
 .xz_pro{ overflow:hidden; height:125px; padding:10px 0px 20px 15px;}
 
 .select1{ height:35px; width:240px;   line-height:22px; vertical-align:middle;  margin:0px 0px 10px 0px; /*background:url(../images/home_pic7.gif) no-repeat;*/ border:none; }
 
-.btn_pro{ overflow:hidden; margin-left:15px;}
+.btn_pro{ overflow:hidden; margin-left:20px; padding-top:10px;}
 .btn_pro span{ display:block; float:left;}
 .btn_pro  span.scb_btn{ width:130px;}
 .searchbtn{ width:130px; height:40px; line-height:34px; background:url(../images/sc_btn.jpg) no-repeat 0px 0px; cursor:pointer; border:0px; vertical-align:middle; color:White; font-weight:bold; font-size:0px; }
@@ -108,12 +108,7 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .btn_pro  span.scb_text a:hover{ font-size:14px; color:#175391; text-decoration:underline;}
 
 
-.bq_title{ border-left:1px solid #28292b; border-right:1px solid #28292b;
-	
-	position:absolute;
-	right:0px;
-	bottom: 0px;
-}
+.bq_title{ border-left:1px solid #28292b; border-right:1px solid #28292b;		position:absolute;	right:0px;	bottom: 0px;}
 .xixi1{width:278px;height:40px;line-height:29px;background-image:url(../images/news_bghover1.gif);cursor:pointer; }
 .xixi2{width:278px;height:40px;line-height:29px;background-image:url(../images/news_bghover2.gif);cursor:pointer;}
 .xixi3{width:278px;height:40px;line-height:29px;background-image:url(../images/news_bghover3.gif);cursor:pointer;}
@@ -123,6 +118,14 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .tab2{width:82px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer;color:#fff;}
 
 .tab3{width:98px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer; color:#FFF;}
+
+
+.tc_list{ padding-top:10px; height:135px;margin-left:15px;}
+
+
+.styled-select select {   background: transparent;   width: 260px;   padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 35px;   -webkit-appearance: none;   color:#fff;   }
+   
+.styled-select {   width: 240px;   height: 35px;   overflow: hidden;  background: url(../images/home_pic11.gif) no-repeat right #2c2f37;   margin-bottom:10px;   }
 
 
 .home_con2{ height:184px; background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden; padding-left:20px; padding-top:18px;}
@@ -230,21 +233,36 @@ ul.cl_list li{ display:block; border-bottom:1px dashed #ddd; line-height:24px; p
 
 
 /*查找轮胎*/
-.bq_title2{ border-left:1px solid #28292b; border-right:1px solid #28292b;}
-.xixi4{width:278px;height:40px;line-height:29px;background-image:url(../images/news_bghover1.gif);cursor:pointer; }
-.xixi5{width:278px;height:40px;line-height:29px;background-image:url(../images/news_bghover2.gif);cursor:pointer;}
-.xixi6{width:278px;height:40px;line-height:29px;background-image:url(../images/news_bghover3.gif);cursor:pointer;}
+.ft_con{ height:300px; margin-left:38px;}
+.bq_title2{ border-left:1px solid #eaeaea; border-right:1px solid #28292b;}
+.xixi4{width:583px;height:40px;line-height:29px;background-image:url(../images/ft_pic2.gif);cursor:pointer; }
+.xixi5{width:583px;height:40px;line-height:29px;background-image:url(../images/ft_pic3.gif);cursor:pointer;}
+.xixi6{width:583px;height:40px;line-height:29px;background-image:url(../images/ft_pic4.gif);cursor:pointer;}
 
 
-.tab4{width:98px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer; color:#FFF;}
-.tab5{width:82px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer;color:#fff;}
+.tab4{width:192px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer; color:#FFF; font-size:14px;}
+.tab5{width:198px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer;color:#444;  font-size:14px;}
 
-.tab6{width:98px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer; color:#FFF;}
+.tab6{width:192px;height:40px;line-height:40px;float:left;text-align:center;cursor:pointer; color:#444;  font-size:14px;}
+
+.tab_con2{ float:left; width:581px; height:260px; border:#eaeaea 1px solid; border-top:none;  background:#fff;}
+
+
+.styled-select2 select {   background: transparent;   width: 168px;  padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 30px;   -webkit-appearance: none;   color:#444;   }   
+.styled-select2 {	   float:left; margin-right:28px;  width: 148px;   height: 30px;   overflow: hidden;  background: url(../images/ft_pic5.gif) no-repeat right #eaeaea;   margin-bottom:10px;  border:1px solid #ddd;   }
+
+.tc_list2{ padding-top:50px; height:100px;margin-left:35px;}
+.btn_pro2{ text-align:center;}
+.tc_list3{ padding-top:50px; height:100px;margin-left:95px;}
+.styled-select3 select {   background: transparent;   width: 218px;  padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 30px;   -webkit-appearance: none;   color:#444;   }   
+.styled-select3 {	   float:left; margin-right:28px;  width: 198px;   height: 30px;   overflow: hidden;  background: url(../images/ft_pic5.gif) no-repeat right #eaeaea;   margin-bottom:10px;  border:1px solid #ddd;   }
 
 
 
 
-
+.tc_list4{ padding-top:50px; height:100px;margin-left:165px;}
+.styled-select4 select {   background: transparent;   width: 268px;  padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 30px;   -webkit-appearance: none;   color:#444;   }   
+.styled-select4 {	   float:left; margin-right:28px;  width: 248px;   height: 30px;   overflow: hidden;  background: url(../images/ft_pic5.gif) no-repeat right #eaeaea;   margin-bottom:10px;  border:1px solid #ddd;   }
 
 
 
@@ -263,11 +281,6 @@ dl.sim_list1 dt{ display:block; font-size:14px; color:#0a4188; font-weight:bold;
 dl.sim_list2{ display:block; float:left; width:115px; height:220px; border-right:1px dashed #ddd; padding-left:45px; padding-top:40px; }
 dl.sim_list2 dt{ display:block; font-size:14px; color:#0a4188; font-weight:bold; margin-bottom:15px;}
 dl.sim_list2 dd{ display:block; line-height:28px; margin:0px;}
-
-
-
-
-
 
 
 /*产品详细页*/
@@ -318,14 +331,6 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 
 
-
-
-
-
-
-
-
-
 /*轮胎使用常识*/
 
 #products_tips{ padding:0px 15px 80px 0px;}
@@ -340,6 +345,9 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 #products_tips dd p{ line-height:24px;}
 #products_tips dd ul{ padding:10px 20px 0px 15px;}
 ul.tips li { list-style: disc; line-height:24px;}
+
+
+
 
 
 
