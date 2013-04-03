@@ -63,3 +63,5 @@ gem 'capistrano'
 gem 'rvm-capistrano'
 
 gem "mini_magick"
+
+gem 'refinerycms-tires', :path => 'vendor/extensions'

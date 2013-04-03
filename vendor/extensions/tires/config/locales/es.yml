@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      tires:
+        title: Tires
+#        article: masculino/femenino
+    tires:
+      admin:
+        tires:
+          actions:
+            create_new: Crear nuevo tire
+            reorder: Reordenar tires
+            reorder_done: Reordenación de tires completada
+          records:
+            title: Tires
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay tires todavía. Pulsa en "Crear nuevo Tire" para crear tu primer tire.
+          tire:
+            view_live_html: Ver este tire como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este tire
+            delete: Borrar este tire para siempre
+      tires:
+        show:
+          other: Otros tires
+  activerecord:
+    attributes:
+      'refinery/tires/tire':
+        category: Category
+        decorative: Decorative
+        content: Content

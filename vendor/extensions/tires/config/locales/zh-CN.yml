@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      tires:
+        title: Tires
+    tires:
+      admin:
+        tires:
+          actions:
+            create_new: 建立新的 Tire
+            reorder: 对 Tires 重新排序
+            reorder_done: 对 Tires 的重新排序结束
+          records:
+            title: Tires
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Tires yet. Click "Add New Tire" to add your first tire.
+            no_items_yet: 目前没有 Tires . 点击 "Add New Tire" 创建一个tire.
+          tire:
+            view_live_html: 查看 tire 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 tire
+            delete: 永久删除 tire
+      tires:
+        show:
+          other: 其他 Tires
+  activerecord:
+    attributes:
+      'refinery/tires/tire':
+        category: Category
+        decorative: Decorative
+        content: Content
