@@ -9,13 +9,30 @@
     <%= f.text_field :category, :class => 'larger widest'  -%>
 
   </div>
-  
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title  -%>
+  </div>
+
   <div class='field'>
     <%= f.label :decorative -%>
     <%= f.text_field :decorative  -%>
-
   </div>
-  
+
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_area :description, :size => "100x5"  -%>
+  </div>
+
+  <div class="field">
+    <%= f.label :tire_image %>
+    <%= render :partial => "/refinery/admin/image_picker", :locals => { :f => f,
+                                                                        :field => :tire_image_id,
+                                                                        :image => f.object.tire_image,
+                                                                        :toggle_image_display => false  }  %>
+  </div>
+
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>

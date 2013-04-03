@@ -1,5 +1,12 @@
 Starfire::Application.routes.draw do
 
+  root :to => 'statics#index'
+
+  statics = %w(about_us contact_us copyright sitemap index story knowledge)
+  statics.each do |i|
+    match "/#{i}", :to => "statics##{i}"
+  end
+
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
   # If you would like to change where this extension is mounted, simply change the :at option to something different.

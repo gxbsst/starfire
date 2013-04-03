@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title><%= yield_for(:title, "starfiretires.com") %></title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="top_bg">
+  <div class="top">
+    <div class="top_left"><%= image_tag "top_pic1.gif", :size => '160x30' %></div>
+    <div class="top_right"><%= image_tag "top_pic2.gif", :size => '198x30' %></div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="w960">
+    <div class="lm_con">
+      <div class="tb_img"><%= image_tag "top_pic3.png", :size => '169x16' %></div>
+      <div class="logo2"><%= image_tag "logo.png", :size => '249x50' %></div>
+      <%= render 'layouts/menu' %>
+    </div>
+    <div class="zy_con">
+      <div class="coc_title">
+        <div class="ct_left">
+          <%=  yield :title_image %>
+        </div>
+        <div class="ct_right">
+          <span>当前位置:</span>
+          <span><a href="/">首页</a> > </span><span class="red_dq"><%= @title %></span>
+        </div>
+      </div>
+      <div class="coc_bottom">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render :partial => 'layouts/footer' %>
+  </div>
+</div>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="/js/global.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+</body>
+</html>
