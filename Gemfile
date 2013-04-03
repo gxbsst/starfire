@@ -5,7 +5,11 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'mysql2'
+gem 'passenger'
+
 group :development, :test do
+  gem 'pry'  # "binding.pry" in action
   gem 'sqlite3'
 end
 
@@ -48,3 +52,14 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
+
+gem 'gmaps4rails'
+gem 'geocoder', :git => 'git://github.com/alexreisner/geocoder.git'
+gem 'fastthread', :git => 'git://github.com/zoltankiss/fastthread.git'
+
+gem 'backbone-on-rails'
+
+gem 'capistrano'
+gem 'rvm-capistrano'
+
+gem "mini_magick"
