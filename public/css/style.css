@@ -18,6 +18,72 @@ img{ border:none;}
 .banner_bg{ background:url(../images/banner_bg.jpg) repeat-x; height:455px; }
 .bo_con{ width:960px; margin:0px auto; height:455px; position:relative;}
 .banner{ height:450px; }
+
+
+
+
+
+
+
+
+#bannercontent{/* left:-30px;*/position:relative; height:450px; width:960px; }
+#bannercontent .prev{
+	width:32px;
+	height:38px;
+	background:url(../pic/prev.png) no-repeat 0px 0px;
+	cursor:pointer;
+	position:absolute;
+	left:35px;
+	top:234px;
+	_background-image:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/prev.png',sizingMethod='image');}
+#bannercontent .next{
+	width:32px;
+	height:38px;
+	background:url(../pic/next.png) no-repeat 0px 0px;
+	cursor:pointer;
+	position:absolute;
+	right:29px;
+	top:245px;
+	_background-image:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/next.png',sizingMethod='image');}
+#bannerlist{ height:450px;  position:relative; width:960px;overflow:hidden;}
+#bannerlist img{ width:960px; height:450px;}
+#bannerlist ul{
+	width:3920px;
+	position:absolute;
+	left:2px;
+	top:3px;
+}
+#bannerlist li{ width:960px; float:left; height:450px; overflow:hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tb_img{
 	position:absolute;
 	left: 114px;
@@ -34,8 +100,8 @@ img{ border:none;}
 ul.ul{ height:57px;  width:530px; background:url(../images/menu_pic2.png) no-repeat;  }
 ul.ul .li{ z-index:500; text-align:center;float:left; position:relative;   height:57px; line-height:57px;}
 /*#nav .li.line2{display:block; background:url(../images/menu_line2.gif) no-repeat right; width:2px; height:34px;}*/
-ul.ul .li .a{ display:block;  font-size:0px; text-indent:-10000px;  }
-ul.ul .li .a:hover{ color:#fff; text-decoration:none; }
+ul.ul li.li a.a{ display:block;  font-size:0px; text-indent:-10000px;  height:50px;  }
+ul.ul .li a.a:hover{ color:#fff; text-decoration:none; }
 ul.ul .li .current{ color:#fff; text-decoration:none; }
 ul.ul .home .a{ display:inline-block;  }
 ul.ul .li .none1{  text-align:left; left:-1px; top:46px; border:solid 1px #23262c;  border-bottom:none;  width:100%; position:absolute; z-index:500; display:none; }
@@ -123,8 +189,8 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .tc_list{ padding-top:10px; height:135px;margin-left:15px;}
 
 
-.styled-select select {   background: transparent;   width: 260px;   padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 35px;   -webkit-appearance: none;   color:#fff;   }
-   
+.styled-select select {   background: transparent;   width: 263px;   padding: 5px;      padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 35px;   -webkit-appearance: none;   color:#777;   }
+.styled-select select option{ height:35px; background:#000px;}
 .styled-select {   width: 240px;   height: 35px;   overflow: hidden;  background: url(../images/home_pic11.gif) no-repeat right #2c2f37;   margin-bottom:10px;   }
 
 
@@ -285,6 +351,7 @@ dl.sim_list2 dd{ display:block; line-height:28px; margin:0px;}
 
 /*产品详细页*/
 
+/*3.0*/
 .pro_cs{ height:220px; background:#eff3f7; overflow:hidden;  padding:22px 25px 0px 25px; margin-bottom:30px;}
 .prc_img{ float:left; margin-right:30px;}
 .prc_text{ float:left; width:400px; margin-top:30px;}
@@ -292,7 +359,7 @@ dl.sim_list2 dd{ display:block; line-height:28px; margin:0px;}
 .pct_icon{ margin-bottom:10px;}
 
 
-.pro_td{ margin-bottom:30px;}
+.pro_td{ margin-bottom:40px;}
 .prt_title{ height:28px; border-bottom:1px solid #ddd; font-size:14px; font-weight:bold; padding-left:8px; margin-bottom:35px;}
 .prt_con{ overflow:hidden;}
 .ptc_left{ float:left; margin-right:40px; width:280px; margin-left:15px; padding-top:15px;}
@@ -330,6 +397,35 @@ ul.pc3_list li span.py_10{ width:135px; }
 ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 
+/*1.0*/
+.rs1_con1{ overflow:hidden; padding-bottom:30px; border-bottom:1px dashed #ddd;}
+.rsc_left{ float:left; width:275px; margin-right:40px; padding-left:10px;}
+.rsc_left span{ display:block;}
+.rsc_left span.rl_1{font-size:14px;color:#0a4188; margin-top:60px; }
+.rsc_left span.rl_2{ line-height:20px; padding-left:13px;}
+.rsc_left span.rl_3{ line-height:20px; padding-left:13px;color:#0a4188; margin-top:70px;}
+.rsc_left span.rl_4{font-size:14px;color:#0a4188; margin-top:40px; }
+.rsc_left span.rl_5{font-size:14px;color:#0a4188; margin-top:30px; }
+.rsc_right{ float:left;}
+.rsc_right span{ display:block; }
+.rsc_right span.rsr_1{ margin-top:20px;}
+.rs1_con2{ overflow:hidden; padding-bottom:30px; padding-top:30px; border-bottom:1px dashed #ddd;}
+.rs1_con3{ overflow:hidden; padding-bottom:30px; padding-top:30px;}
+
+/*2.0*/
+.rsc2_con1{ overflow:hidden; border-bottom:1px dashed #ddd; padding-bottom:30px; }
+.rcc_left{ float:left; margin-right:100px; padding-left:10px;}
+.rcl_text{font-size:14px;color:#0a4188; margin-bottom:25px;}
+.rcl_text2{font-size:14px;color:#0a4188; margin-bottom:13px;}
+.rcl_text3{ margin-bottom:20px; padding-left:13px; width:240px;}
+.rcl_img{ margin-left:13px; overflow:hidden;}
+.rcc_right{ float:left;}
+
+.rsc2_con2{  padding-top:30px; padding-left:10px; padding-bottom:20px; }
+.rcl_img span{ display:block; float:left; margin-right:30px;}
+li.dsm{ border-bottom:none; background:url(../images/rsc2_pic7.jpg) no-repeat 12px 11px; padding-left:25px; line-height:30px;}
+
+
 
 /*轮胎使用常识*/
 
@@ -345,30 +441,3 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 #products_tips dd p{ line-height:24px;}
 #products_tips dd ul{ padding:10px 20px 0px 15px;}
 ul.tips li { list-style: disc; line-height:24px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
