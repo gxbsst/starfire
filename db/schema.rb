@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407054602) do
+ActiveRecord::Schema.define(:version => 20130407082920) do
+
+  create_table "brands", :force => true do |t|
+    t.string   "brand_name_zh"
+    t.string   "brand_name_en"
+    t.string   "car_type_zh"
+    t.string   "car_type_en"
+    t.integer  "tire_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "brands", ["brand_name_en"], :name => "index_brands_on_brand_name_en"
+  add_index "brands", ["brand_name_zh"], :name => "index_brands_on_brand_name_zh"
+  add_index "brands", ["car_type_en"], :name => "index_brands_on_car_type_en"
+  add_index "brands", ["car_type_zh"], :name => "index_brands_on_car_type_zh"
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"

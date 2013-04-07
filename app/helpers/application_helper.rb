@@ -43,4 +43,8 @@ module ApplicationHelper
 
     end
   end
+
+  def brand_collection
+    Brand.brand_collection
+  end
 end

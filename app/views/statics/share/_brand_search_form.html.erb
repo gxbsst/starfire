@@ -1,7 +1,11 @@
- <span id="brand">
- 	<%= select_tag 'brand',options_for_select(Brand.brand_collection),  :prompt => "选择厂商/品牌", :class => "select", :style => "width:105px" %>
+<div class="styled-select">
+<span id="brand">
+ 	<%= select_tag 'brand',options_for_select(brand_collection),  :prompt => "选择厂商/品牌", :class => "select" %>
  </span>
+</div>
+<div class="styled-select">
  <span id="car_type" >
- 	<%= select_tag 'car_type', options_for_select([]), :prompt => "车型", :class => "select", :style => "width:120px" %>
+ 	<%= select_tag 'car_type', options_for_select([]), :prompt => "车型", :class => "select" %>
  </span>
+</div>
 

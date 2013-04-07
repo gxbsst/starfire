@@ -108,17 +108,17 @@
 
 
         <div id="TabCon2" style="display:none">
+        <%= form_tag "/searchs?type=brand" do  -%>
 
           <div class="xz_pro">
-            <select class="select1"><option>选择厂商/品牌&nbsp;</option></select>
-            <select class="select1"><option>车型&nbsp;</option></select>
+            <%= render "statics/share/brand_search_form" %>
           </div>
 
           <div class="btn_pro">
             <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
             <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
           </div>
-
+         <% end %>
         </div>
 
 

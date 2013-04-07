@@ -7,7 +7,7 @@ class SearchsController < ApplicationController
     else
       @products ||= find_products
     end
-    @tires = @products.collect(&:tire).uniq.compact! if @products
+    @tires = @products.collect(&:tire).uniq.compact if @products
   end
   
   private 
@@ -35,15 +35,9 @@ class SearchsController < ApplicationController
   def find_brands
     brand = params[:brand]
     car_type = params[:car_type]
-    name = params[:name]
-    @products = Brand.order(:name).group(:name)
-    p @products
-    @products = @products.where(brand_name_zh: brand).group(:name) if brand.present?
-    p @products
-    @products = @products.where(car_type_zh: car_type).group(:name) if car_type.present?
-    p 3333333
-    @products = @products.where(name: name).group(:name) if name.present?
-    p 4444444
+    @products = Brand.order(:tire_id).group(:tire_id)
+    @products = @products.where(brand_name_zh: brand).group(:tire_id) if brand.present?
+    @products = @products.where(car_type_zh: car_type).group(:tire_id) if car_type.present?
     @products
   end
 

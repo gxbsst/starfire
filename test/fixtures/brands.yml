@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  brand_name_zh: MyString
+  brand_name_en: MyString
+  car_type_zh: MyString
+  car_type_en: MyString
+  tire_id: 1
+
+two:
+  brand_name_zh: MyString
+  brand_name_en: MyString
+  car_type_zh: MyString
+  car_type_en: MyString
+  tire_id: 1
