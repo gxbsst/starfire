@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407082920) do
+ActiveRecord::Schema.define(:version => 20130407093317) do
 
   create_table "brands", :force => true do |t|
     t.string   "brand_name_zh"
@@ -129,11 +129,12 @@ ActiveRecord::Schema.define(:version => 20130407082920) do
     t.string   "decorative"
     t.text     "content"
     t.integer  "position"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.text     "description"
     t.string   "title"
     t.integer  "tire_image_id"
+    t.integer  "background_image_id"
   end
 
   add_index "refinery_tires", ["category"], :name => "index_refinery_tires_on_category"

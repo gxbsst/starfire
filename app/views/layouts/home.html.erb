@@ -153,26 +153,25 @@
 
 
     <div class="home_con2">
+     <% @tires.each do |tire| %>
       <div class="hcp_con1">
         <div class="hcc_title">
-          <span class="ht_left">SF-510   公路越野轮胎</span>
-          <span class="ht_more"><a href="#">更多 >></a></span>
+          <span class="ht_left"><%= tire.title %></span>
+          <span class="ht_more"><%= link_to "更多 >>", refinery.tires_tire_path(tire) %></span>
         </div>
         <div class="hcc_bottom">
           <div class="hb_img">
-           <%= image_tag "home_pic10.png", :width => "107x148" %> 
+            <%= image_fu(tire.background_image, "107x148") %>
          </div>
-          <div class="hb_text">我们不能改变前方路况，但可
-            以用完美品质应对严苛考验。
-            来自美国的斯达飞SUV轮胎
-            SF 501，集全天候、全路
-            况于一身⋯⋯</div>
+          <div class="hb_text"><%= truncate tire.description, :length => 67 %></div>
         </div>
 
       </div>
+        <% end %>
 
 
       <div class="hcp_con1">
+
         <div class="hcc_title">
           <span class="ht_left2">SF-510   公路越野轮胎</span>
           <span class="ht_more"><a href="#">更多 >></a></span>

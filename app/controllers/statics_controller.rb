@@ -3,6 +3,7 @@ class StaticsController < ApplicationController
 
   def index
     @title = "首页"
+    @tires = Refinery::Tires::Tire.order(:decorative).limit(3)
     render :layout => 'home'
   end
 

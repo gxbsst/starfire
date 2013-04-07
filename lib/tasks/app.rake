@@ -40,15 +40,16 @@ namespace :app do
       end
     end
 
+  end
+
+  task :update_tire_id => :environment do
     # 更新tire_id
     TireItem.all.each do |i|
       tires = Refinery::Tires::Tire.where(["decorative like ?", "%#{i.decorative.strip}%"])
       i.update_attribute('tire_id', tires.first.id) unless tires.blank?
     end
-
   end
-
-  ## 更新描述和图片
+    ## 更新描述和图片
   task :init_stores => :environment do
     file_name = "store.csv"
     csv = CSV.read(Rails.root.join('lib', 'tasks', file_name))

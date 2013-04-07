@@ -18,6 +18,7 @@ module Refinery
 
         @tire = Tire.find(params[:id])
         @category = @tire.category
+        @tires = Tire.where(:category => @category.upcase)
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @tire in the line below:
         present(@page)
