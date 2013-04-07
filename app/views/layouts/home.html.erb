@@ -92,16 +92,17 @@
       <div class="tab">
 
         <div id="TabCon1">
-          <div class="xz_pro">
-            <select class="select1"><option>轮毂直径&nbsp;</option></select>
-            <select class="select1"><option>扁平比&nbsp;</option></select>
-            <select class="select1"><option>胎宽&nbsp;</option></select></div>
+          <%= form_tag "/searchs" do  -%>
+            <div class="xz_pro">
+              <%= render "statics/share/product_search_form" %>
+            </div>
 
-          <div class="btn_pro">
-            <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-            <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
-          </div>
+            <div class="btn_pro">
+              <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
+              <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
+            </div>
 
+          <% end %>
 
         </div>
 
@@ -122,18 +123,30 @@
 
 
         <div id="TabCon3" style="display:none">
+          <%= form_tag "/searchs" do  -%>
+            <div class="xz_pro">
+              <%= render "statics/share/name_search_form" %>
+            </div>
 
-          <div class="xz_pro">
-            <select class="select1"><option>选择花纹&nbsp;</option></select>
-          </div>
-
-          <div class="btn_pro">
-            <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-            <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
-          </div>
-
+            <div class="btn_pro">
+              <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
+              <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
+            </div>
+          <% end %>
 
         </div>
+
+
+        <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("form .scb_btn > .searchbtn").click(function(){
+              debugger;
+               $(this).closest('form').submit();
+            });
+          });
+        </script>
+
       </div>
 
     </div>

@@ -1,14 +1,14 @@
 <div class="mk">
   <div id="nav">
     <ul class="ul">
-      <li class="li li1"><a class="a current" href="index.html">首页</a></li>
+      <li class="li li1"><a class="a current" href="/">首页</a></li>
       <li class="li line2"></li>
       <li class="li li2"><a class="a" href="/about_us">关于斯达飞</a>
         <div class="none1">
           <ul class="menu1">
             <li><a href="/story">品牌故事</a></li>
             <li><a href="#">行销全球</a></li>
-            <li><a href="contact_us">联系我们</a></li>
+            <li><a href="/contact_us">联系我们</a></li>
           </ul>
         </div>
       </li>
@@ -19,7 +19,7 @@
             <li><%= link_to 'SUV产品', refinery.tires_tires_path(:cat => 'suv') %></li>
             <li><%= link_to '轻卡产品', refinery.tires_tires_path(:cat => 'lighttruck') %></li>
             <li><%= link_to '冬季轮胎产品', refinery.tires_tires_path(:cat => 'winter') %></li>
-            <li><a href="findtires.html">查找轮胎</a></li>
+            <li><a href="/tires/search">查找轮胎</a></li>
             <li><a href="/knowledge">轮胎使用常识</a></li>
           </ul>
         </div>
@@ -38,7 +38,7 @@
         <div class="none1">
           <ul class="menu1">
             <li><a href="#">斯达飞零售店</a></li>
-            <li><a href="#">查找店铺</a></li>
+            <li><a href="/stores/search">查找店铺</a></li>
           </ul>
         </div>
       </li>

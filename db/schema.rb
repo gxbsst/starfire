@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130403064850) do
+ActiveRecord::Schema.define(:version => 20130407054602) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -163,5 +163,45 @@ ActiveRecord::Schema.define(:version => 20130403064850) do
 
   add_index "seo_meta", ["id"], :name => "index_seo_meta_on_id"
   add_index "seo_meta", ["seo_meta_id", "seo_meta_type"], :name => "index_seo_meta_on_seo_meta_id_and_seo_meta_type"
+
+  create_table "stores", :force => true do |t|
+    t.string   "provice"
+    t.string   "city"
+    t.string   "dist"
+    t.string   "shop_name"
+    t.string   "shop_type"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.string   "address"
+    t.string   "full_address"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "stores", ["address"], :name => "index_stores_on_address"
+  add_index "stores", ["city"], :name => "index_stores_on_city"
+  add_index "stores", ["dist"], :name => "index_stores_on_dist"
+  add_index "stores", ["full_address"], :name => "index_stores_on_full_address"
+  add_index "stores", ["latitude"], :name => "index_stores_on_latitude"
+  add_index "stores", ["longitude"], :name => "index_stores_on_longitude"
+  add_index "stores", ["provice"], :name => "index_stores_on_provice"
+  add_index "stores", ["shop_name"], :name => "index_stores_on_shop_name"
+  add_index "stores", ["shop_type"], :name => "index_stores_on_shop_type"
+
+  create_table "tire_items", :force => true do |t|
+    t.string   "decorative"
+    t.string   "tyre"
+    t.string   "aspect_ratio"
+    t.string   "diameter"
+    t.integer  "tire_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "tire_items", ["aspect_ratio"], :name => "index_tire_items_on_aspect_ratio"
+  add_index "tire_items", ["decorative"], :name => "index_tire_items_on_decorative"
+  add_index "tire_items", ["diameter"], :name => "index_tire_items_on_diameter"
+  add_index "tire_items", ["tire_id"], :name => "index_tire_items_on_tire_id"
+  add_index "tire_items", ["tyre"], :name => "index_tire_items_on_tyre"
 
 end

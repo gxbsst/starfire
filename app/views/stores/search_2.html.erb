@@ -1,0 +1,50 @@
+<%= render "share/store_sidebar" %>
+<%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "region_china"%>
+<%#= javascript_include_tag "application"%>
+
+<div id="rightcontent">
+ <div id="site"><a href="/shop_cpc.htm">营销网络</a><span>&gt;</span>查找店铺</div>
+ <div id="shopsearch">
+   <div class="tabs">
+     <ul>
+      <li><a  href="/stores/search">精确查找</a></li>
+       <li><a class="current" href="/stores/search_2">模糊查找</a></li>
+     </ul>
+   </div>
+   <div class="body">
+
+     <div class="map">
+	 	<%= render "map", :tudes => @tudes, :center => @center, :zoom => @zoom %>
+     </div>
+     <div class="search">
+		<%= form_tag "/stores/search" do  -%>
+	<strong>请输入关键字</strong>
+	<input type="text" name = "region[full_address]" value=""  class="searchtxt" />
+	<input type="submit" class="searchbtn" value="查询" />
+	<% end -%>
+	
+	<% if request.post? %>
+	<% unless  @stores_2.blank? %>
+	<%= render  @stores_2 %>
+  <% else %>
+      <br />
+  	  <h2 class='error'>没有找到相应的店铺。</h2>
+  	  <br />
+  <% end %>
+	
+	<!--
+	<% if flash[:error] -%>
+	  <br />
+	  <h2 class='error'><%=h flash[:error] %>.</h2>
+	  <br />
+	<% end -%>
+	-->
+	<% end %>
+	</div>
+
+   </div>
+ </div>
+ <div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+
+<div class="clear"></div>

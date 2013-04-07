@@ -10,6 +10,9 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :tire_image, :class_name => '::Refinery::Image'
+
+      has_many :tire_items, :class_name => '::TireItem'
+
     end
   end
 end

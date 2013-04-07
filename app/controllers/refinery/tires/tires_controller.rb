@@ -8,21 +8,26 @@ module Refinery
 
       def index
         en_to_zh = {'pcr' => 'PCR', 'suv' => 'SUV', 'winter' => '冬季轮胎', 'lighttruck' => '轻卡产品'}
-        category = params[:cat] || 'PCR'
-        @title = en_to_zh[category]
-        @tires = Tire.where(:category => category.upcase!)
+        @category = params[:cat] || 'PCR'
+        @title = en_to_zh[@category]
+        @tires = Tire.where(:category => @category.upcase)
         present(@page)
       end
 
       def show
-        @tire = Tire.find(params[:id])
 
+        @tire = Tire.find(params[:id])
+        @category = @tire.category
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @tire in the line below:
         present(@page)
       end
 
-    protected
+      def search
+        @title = "查找轮胎"
+      end
+
+      protected
 
       def find_all_tires
         @tires = Tire.order('position ASC')

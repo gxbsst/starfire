@@ -14,6 +14,10 @@ class StaticsController < ApplicationController
     @title = "网站地图"
   end
 
+  def about_us
+    @title = "关于我们"
+  end
+
   def copyright
     @title = "版权声明"
   end

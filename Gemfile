@@ -9,8 +9,9 @@ gem 'mysql2'
 gem 'passenger'
 
 group :development, :test do
+  gem "better_errors", '0.2.0'
+  gem "binding_of_caller", '0.6.8'
   gem 'pry'  # "binding.pry" in action
-  gem 'sqlite3'
 end
 
 
