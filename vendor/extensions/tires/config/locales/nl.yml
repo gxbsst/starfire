@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      tires:
+        title: Tires
+    tires:
+      admin:
+        tires:
+          actions:
+            create_new: Maak een nieuwe Tire
+            reorder: Wijzig de volgorde van de Tires
+            reorder_done: Klaar met het wijzingen van de volgorde van de Tires
+          records:
+            title: Tires
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Tires. Druk op 'Maak een nieuwe Tire' om de eerste aan te maken.
+          tire:
+            view_live_html: Bekijk deze tire op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze tire
+            delete: Verwijder deze tire voor eeuwig
+      tires:
+        show:
+          other: Andere Tires
+  activerecord:
+    attributes:
+      'refinery/tires/tire':
+        category: Category
+        decorative: Decorative
+        content: Content

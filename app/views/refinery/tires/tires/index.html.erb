@@ -1,0 +1,29 @@
+<% content_for :title, @title%>
+<% content_for :title_image do %>
+  <% images = {'lighttruck' => 'lt_pic1.gif', 'suv' => 'suv_pic1.gif', 'winter' => 'wt_pic1.gif', 'pcr' => 'pro_pic1.gif' } %>
+  <%= image_tag images[@category.downcase], :size => '110x55'  %>
+<% end %>
+<div class="cb_left">
+  <div class="pcr_list">
+    <% @tires.each do |tire| %>
+      <div class="rs_r1">
+        <div class="pr_img">
+          <%= image_fu(tire.tire_image, "155x155") %>
+        </div>
+        <div class="pr_text">
+          <div class="pt_title"><%= raw tire.title %></div>
+          <div class="pt_con">
+            <%= raw tire.description %>
+          </div>
+          <div class="pt_btn">
+            <%= link_to refinery.tires_tire_path(tire) do %>
+              <%= image_tag "pcr_pic4.jpg", :size => "100x26" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render "sidebar" %>

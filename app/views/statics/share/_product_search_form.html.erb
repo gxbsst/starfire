@@ -1,0 +1,15 @@
+<div class="styled-select">
+<span id="tyre">
+		<%= select_tag 'tyre',options_for_select(tire_collection, :disabled => "disable" ), :prompt => "断面宽", :class => "select" %>
+	</span>
+</div>
+<div class="styled-select">
+	<span id="aspect_ratio" >
+		<%= select_tag 'aspect_ratio', options_for_select([]), :prompt => "扁平比", :class => "select" %>
+	</span>
+</div>
+<div class="styled-select">
+	<span id="diameter">
+	<%= select_tag 'diameter', options_for_select([]), :prompt => "轮辋直径", :class => "select" %>
+	</span>
+</div>

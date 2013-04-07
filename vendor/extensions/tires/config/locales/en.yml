@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      tires:
+        title: Tires
+    tires:
+      admin:
+        tires:
+          actions:
+            create_new: Add New Tire
+            reorder: Reorder Tires
+            reorder_done: Done Reordering Tires
+          records:
+            title: Tires
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Tires yet. Click "Add New Tire" to add your first tire.
+          tire:
+            view_live_html: View this tire live <br/><em>(opens in a new window)</em>
+            edit: Edit this tire
+            delete: Remove this tire forever
+      tires:
+        show:
+          other: Other Tires
+  activerecord:
+    attributes:
+      'refinery/tires/tire':
+        category: Category
+        decorative: Decorative
+        content: Content

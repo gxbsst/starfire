@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      tires:
+        title: Tires
+    tires:
+      admin:
+        tires:
+          actions:
+            create_new: Lag en ny Tire
+            reorder: Endre rekkefølgen på Tires
+            reorder_done: Ferdig å endre rekkefølgen Tires
+          records:
+            title: Tires
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Tires enda. Klikk på "Lag en ny Tire" for å legge til din første tire.
+          tire:
+            view_live_html: Vis hvordan denne tire ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne tire
+            delete: Fjern denne tire permanent
+      tires:
+        show:
+          other: Andre Tires
+  activerecord:
+    attributes:
+      'refinery/tires/tire':
+        category: Category
+        decorative: Decorative
+        content: Content

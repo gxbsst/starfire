@@ -1,0 +1,115 @@
+<% content_for :title, @title%>
+<% content_for :title_image do %>
+  <%= image_tag "ft_pic1.gif", :size => '110x55'  %>
+<% end %>
+
+<div class="cb_left">
+
+  <script type="text/javascript">
+    function setTab03Syn ( i )
+    {
+      selectTab03Syn(i);
+    }
+
+    function selectTab03Syn ( i )
+    {
+      switch(i){
+        case 1:
+          document.getElementById("TabCon4").style.display="block";
+          document.getElementById("TabCon5").style.display="none";
+          document.getElementById("TabCon6").style.display="none";
+          document.getElementById("font4").style.color="#ffffff";
+          document.getElementById("font5").style.color="#444444";
+          document.getElementById("font6").style.color="#444444";
+          break;
+        case 2:
+          document.getElementById("TabCon4").style.display="none";
+          document.getElementById("TabCon5").style.display="block";
+          document.getElementById("TabCon6").style.display="none";
+          document.getElementById("font4").style.color="#444444";
+          document.getElementById("font5").style.color="#ffffff";
+          document.getElementById("font6").style.color="#444444";
+          break;
+        case 3:
+          document.getElementById("TabCon4").style.display="none";
+          document.getElementById("TabCon5").style.display="none";
+          document.getElementById("TabCon6").style.display="block";
+          document.getElementById("font4").style.color="#444444";
+          document.getElementById("font5").style.color="#444444";
+          document.getElementById("font6").style.color="#ffffff";
+          break;
+      }
+    }
+
+  </script>
+  <div class="ft_con">
+    <div class="xixi4" id="bg">
+      <div id="font4" class="tab4" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi4'">按尺寸查找</div>
+      <div id="font5" class="tab5" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi5'">按车辆查找</div>
+      <div id="font6" class="tab6" onMouseOver="setTab03Syn(3);document.getElementById('bg').className='xixi6'">按花纹查找</div>
+    </div>
+    <div class="tab_con2">
+      <%= form_tag "/searchs" do  -%>
+
+        <div id="TabCon4">
+          <div class="tc_list2">
+            <%= render "statics/share/product_search_form_ex" %>
+          </div>
+          <div class="btn_pro2">  <input type="submit" class="searchbtn" value="查询轮胎" />    </div>
+
+        </div>
+      <% end %>
+
+
+
+      <div id="TabCon5" style="display:none">
+        <%= form_tag "/searchs?type=brand" do  -%>
+
+          <div class="tc_list3">
+            <%= render "statics/share/brand_search_form_ex" %>
+          </div>
+          <div class="btn_pro2">
+            <input type="submit" class="searchbtn" value="查询轮胎" />
+          </div>
+        <% end %>
+      </div>
+
+
+      <div id="TabCon6" style="display:none">
+        <%= form_tag "/searchs" do  -%>
+          <div class="tc_list4">
+            <div class="styled-select4">
+              <span id="name">
+ 	              <%= select_tag 'decorative',options_for_select(decorative_collection, :disabled => "disable"),  :prompt => "选择花纹", :class => "select" %>
+ </span>            </div>
+          </div>
+
+          <div class="btn_pro2">
+            <input type="submit" class="searchbtn" value="查询轮胎" />
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+  <div class="kk"></div>
+
+
+
+
+
+
+
+</div>
+
+<%= render "sidebar" %>
+
+<%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>

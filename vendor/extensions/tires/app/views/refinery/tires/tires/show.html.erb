@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @tire.category %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Category</h1>
+    <p>
+      <%=raw @tire.category %>
+    </p>
+  </section>
+  <section>
+    <h1>Decorative</h1>
+    <p>
+      <%=raw @tire.decorative %>
+    </p>
+  </section>
+  <section>
+    <h1>Content</h1>
+    <p>
+      <%=raw @tire.content %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="tires">
+      <% @tires.each do |tire| %>
+        <li>
+          <%= link_to tire.category, refinery.tires_tire_path(tire) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

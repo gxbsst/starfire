@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130403022122) do
+ActiveRecord::Schema.define(:version => 20130407082920) do
+
+  create_table "brands", :force => true do |t|
+    t.string   "brand_name_zh"
+    t.string   "brand_name_en"
+    t.string   "car_type_zh"
+    t.string   "car_type_en"
+    t.integer  "tire_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "brands", ["brand_name_en"], :name => "index_brands_on_brand_name_en"
+  add_index "brands", ["brand_name_zh"], :name => "index_brands_on_brand_name_zh"
+  add_index "brands", ["car_type_en"], :name => "index_brands_on_car_type_en"
+  add_index "brands", ["car_type_zh"], :name => "index_brands_on_car_type_zh"
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -109,6 +124,21 @@ ActiveRecord::Schema.define(:version => 20130403022122) do
   add_index "refinery_roles_users", ["role_id", "user_id"], :name => "index_refinery_roles_users_on_role_id_and_user_id"
   add_index "refinery_roles_users", ["user_id", "role_id"], :name => "index_refinery_roles_users_on_user_id_and_role_id"
 
+  create_table "refinery_tires", :force => true do |t|
+    t.string   "category"
+    t.string   "decorative"
+    t.text     "content"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.text     "description"
+    t.string   "title"
+    t.integer  "tire_image_id"
+  end
+
+  add_index "refinery_tires", ["category"], :name => "index_refinery_tires_on_category"
+  add_index "refinery_tires", ["decorative"], :name => "index_refinery_tires_on_decorative"
+
   create_table "refinery_user_plugins", :force => true do |t|
     t.integer "user_id"
     t.string  "name"
@@ -148,5 +178,45 @@ ActiveRecord::Schema.define(:version => 20130403022122) do
 
   add_index "seo_meta", ["id"], :name => "index_seo_meta_on_id"
   add_index "seo_meta", ["seo_meta_id", "seo_meta_type"], :name => "index_seo_meta_on_seo_meta_id_and_seo_meta_type"
+
+  create_table "stores", :force => true do |t|
+    t.string   "provice"
+    t.string   "city"
+    t.string   "dist"
+    t.string   "shop_name"
+    t.string   "shop_type"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.string   "address"
+    t.string   "full_address"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "stores", ["address"], :name => "index_stores_on_address"
+  add_index "stores", ["city"], :name => "index_stores_on_city"
+  add_index "stores", ["dist"], :name => "index_stores_on_dist"
+  add_index "stores", ["full_address"], :name => "index_stores_on_full_address"
+  add_index "stores", ["latitude"], :name => "index_stores_on_latitude"
+  add_index "stores", ["longitude"], :name => "index_stores_on_longitude"
+  add_index "stores", ["provice"], :name => "index_stores_on_provice"
+  add_index "stores", ["shop_name"], :name => "index_stores_on_shop_name"
+  add_index "stores", ["shop_type"], :name => "index_stores_on_shop_type"
+
+  create_table "tire_items", :force => true do |t|
+    t.string   "decorative"
+    t.string   "tyre"
+    t.string   "aspect_ratio"
+    t.string   "diameter"
+    t.integer  "tire_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "tire_items", ["aspect_ratio"], :name => "index_tire_items_on_aspect_ratio"
+  add_index "tire_items", ["decorative"], :name => "index_tire_items_on_decorative"
+  add_index "tire_items", ["diameter"], :name => "index_tire_items_on_diameter"
+  add_index "tire_items", ["tire_id"], :name => "index_tire_items_on_tire_id"
+  add_index "tire_items", ["tyre"], :name => "index_tire_items_on_tyre"
 
 end

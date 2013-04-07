@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Tires::Admin::TiresController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.tires_admin_tires_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_tires_admin_tire_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Tires::Admin::TiresController.sortable? && ::Refinery::Tires::Tire.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Tires"),
+                 refinery.tires_admin_tires_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Tires"),
+                 refinery.tires_admin_tires_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

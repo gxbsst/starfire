@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  decorative: MyString
+  tyre: MyString
+  aspect_ratio: MyString
+  diameter: MyString
+  tire: 
+
+two:
+  decorative: MyString
+  tyre: MyString
+  aspect_ratio: MyString
+  diameter: MyString
+  tire: 
