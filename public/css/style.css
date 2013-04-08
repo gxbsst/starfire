@@ -291,6 +291,7 @@ ul.cl_list li{ display:block; border-bottom:1px dashed #ddd; line-height:24px; p
 .rs_r1{ overflow:hidden; padding-bottom:35px; border-bottom:1px dashed #ddd; margin-bottom:25px;}
 .pr_img{ float:left; margin:0px 35px;}
 .pr_text{ float:left; width:410px;}
+.pr_text2{ float:left; width:380px;}
 .pt_title{ overflow:hidden; margin-bottom:14px; margin-top:15px;}
 .pt_title span{ display:block; float:left; line-height:18px;}
 .pt_title span.ptt_1{ font-size:15px; font-weight:bold; margin-right:20px;}
