@@ -8,9 +8,15 @@ module Refinery
 
       def index
         en_to_zh = {'pcr' => 'PCR', 'suv' => 'SUV', 'winter' => '冬季轮胎', 'lighttruck' => '轻卡产品'}
-        @category = params[:cat] || 'PCR'
-        @title = en_to_zh[@category]
-        @tires = Tire.where(:category => @category.upcase)
+        @category = params[:cat]
+
+        if @category
+          @title = en_to_zh[@category]
+          @tires = Tire.where(:category => @category.upcase)
+        else
+          @tires = Tire.order(:position)
+        end
+
         present(@page)
       end
 
