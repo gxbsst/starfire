@@ -8,6 +8,7 @@ class SearchsController < ApplicationController
       @products ||= find_products
     end
     @tires = @products.collect(&:tire).uniq.compact if @products
+    @tires = ::Refinery::Tires::Tire.where(:decorative => params[:decorative].upcase) if params[:type] == 'decorative'
   end
   
   private 
