@@ -12,7 +12,7 @@ module Refinery
 
         if @category
           @title = en_to_zh[@category]
-          @tires = Tire.where(:category => @category.upcase)
+          @tires = Tire.where(:category => @category.upcase).order(:position)
         else
           @tires = Tire.order(:position)
         end
@@ -24,7 +24,7 @@ module Refinery
 
         @tire = Tire.find(params[:id])
         @category = @tire.category
-        @tires = Tire.where(:category => @category.upcase)
+        @tires = Tire.where(:category => @category.upcase).order(:position)
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @tire in the line below:
         present(@page)
