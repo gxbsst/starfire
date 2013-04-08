@@ -1,6 +1,10 @@
 # encoding: utf-8
 class StoresController < ApplicationController
 
+  def index
+    @title = '零售店'
+  end
+
   def search
     # @json = Store.first.to_gmaps4rails
     @center =[31.2059, 121.399703] #上海cooper 地址

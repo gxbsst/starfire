@@ -3,18 +3,9 @@
   <div class="zyl_title">关于斯达飞</div>
 
   <div id="leftcontent">
-    <dl>
-      <dt><a href="aboutmc.html">品牌故事</a></dt>
-    </dl>
-
-    <dl>
-      <dt><a href="contact.html">销全球行</a></dt>
-    </dl>
-
-    <dl class="current">
-      <dt><a href="contact.html">联系我们</a></dt>
-    </dl>
-
+    <%= link_to_statics '品牌故事', action_name, 'story' %>
+    <%= link_to_statics '销全球行', action_name, 'sold_worldwide' %>
+    <%= link_to_statics '联系我们', action_name, 'contact_us' %>
   </div>
 
 </div>

@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.12'
 
@@ -49,6 +50,7 @@ gem 'refinerycms', '~> 2.0.0', :git => 'git://github.com/refinery/refinerycms.gi
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
+gem "refinerycms-news", '~> 2.0.0'
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
