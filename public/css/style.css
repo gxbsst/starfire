@@ -419,12 +419,54 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 .rcl_text2{font-size:14px;color:#0a4188; margin-bottom:13px;}
 .rcl_text3{ margin-bottom:20px; padding-left:13px; width:240px;}
 .rcl_img{ margin-left:13px; overflow:hidden;}
+
 .rcc_right{ float:left;}
 
 .rsc2_con2{  padding-top:30px; padding-left:10px; padding-bottom:20px; }
 .rcl_img span{ display:block; float:left; margin-right:30px;}
 li.dsm{ border-bottom:none; background:url(../images/rsc2_pic7.jpg) no-repeat 12px 11px; padding-left:25px; line-height:30px;}
+li.dsm3{ border-bottom:none; padding-left:10px; line-height:30px;}
 
+/*510*/
+
+.prc_text2{ float:left; width:330px; margin-top:30px;}
+
+.rcc_left2{ float:left; margin-right:70px; padding-left:10px;}
+
+span.pt5_2{ width:150px;text-align:left; padding-left:25px; }
+span.pt_12{ width:90px;}
+span.pt_8{ width:90px;}
+span.pt_9{ width:100px;}
+span.pt_10{ width:90px;}
+span.pt_11{ width:90px; border-right:none;}
+
+
+ul.pc3_list li span.py_12{width:150px; text-align:left; padding-left:25px;  }
+ul.pc3_list li span.py_17{ width:90px;line-height:32px;  }
+ul.pc3_list li span.py_13{ width:90px;line-height:32px;  }
+ul.pc3_list li span.py_14{ width:100px;line-height:32px;}
+ul.pc3_list li span.py_15{ width:90px; }
+ul.pc3_list li span.py_16{width:88px; border-right:none; }
+.rcl_img span{ display:block; float:left; margin-right:30px;}
+li.dsm2{ overflow:hidden;}
+li.dsm2 span{ display:block;margin-right:20px;}
+li.dsm2 span.dc1{ float:right;  background:url(../images/sf_pic9.jpg) no-repeat 5px 10px; padding-left:20px; border-right:none;}
+li.dsm2 span.dc2{ float:right;  background:url(../images/sf_pic8.jpg) no-repeat 5px 10px; padding-left:20px;border-right:none;}
+
+
+/*v66*/
+.rcl_img2{ margin-left:13px; overflow:hidden; width:270px;}
+span.pt6_1{ width:150px;text-align:left; padding-left:10px; }
+span.pt6_2{ width:80px;}
+span.pt6_3{ width:80px;}
+span.pt6_4{ width:110px;}
+span.pt6_5{ width:105px; border-right:none; line-height:17px;}
+
+ul.pc3_list li span.py6_1{width:150px; text-align:left; padding-left:10px;  }
+ul.pc3_list li span.py6_2{ width:80px;line-height:32px;  }
+ul.pc3_list li span.py6_3{ width:80px;line-height:32px;  }
+ul.pc3_list li span.py6_4{ width:110px;line-height:32px;  }
+ul.pc3_list li span.py6_5{width:103px; border-right:none; }
 
 
 /*轮胎使用常识*/
