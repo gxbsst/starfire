@@ -315,7 +315,7 @@ ul.cl_list li{ display:block; border-bottom:1px dashed #ddd; line-height:24px; p
 .tab_con2{ float:left; width:581px; height:260px; border:#eaeaea 1px solid; border-top:none;  background:#fff;}
 
 
-.styled-select2 select {   background: transparent;   width: 168px;  padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 30px;   -webkit-appearance: none;   color:#444;   }   
+.styled-select2 select {   background: transparent;   width: 173px;  padding: 5px;   padding-left:15px;    padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 30px;   -webkit-appearance: none;   color:#444;   }   
 .styled-select2 {	   float:left; margin-right:28px;  width: 148px;   height: 30px;   overflow: hidden;  background: url(../images/ft_pic5.gif) no-repeat right #eaeaea;   margin-bottom:10px;  border:1px solid #ddd;   }
 
 .tc_list2{ padding-top:50px; height:100px;margin-left:35px;}
@@ -386,7 +386,7 @@ span.pt_7{ width:120px; border-right:none;}
 
 ul.pc3_list{ display:block; border-left:1px solid #ddd; border-right:1px solid #ddd; margin-left:8px; margin-bottom:50px; width:638px;}
 ul.pc3_list li{ display:block; height:32px;  border-bottom:1px solid #ddd; }
-ul.pc3_list li.pl_sz{ display:block; background:#eaeaea; line-height:34px; height:34px; font-size:14px; font-weight:bold; padding-left:25px; color:#0a4188; overflow:hidden; }
+ul.pc3_list li.pl_sz{ display:block; background:#eaeaea; line-height:34px; height:34px; font-size:12px; font-weight:bold; padding-left:25px; color:#0a4188; overflow:hidden; }
 
 
 ul.pc3_list li span{display:block; float:left; line-height:32px;  font-size:12px; text-align:center; border-right:1px solid #ddd;}
@@ -425,8 +425,8 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 .rsc2_con2{  padding-top:30px; padding-left:10px; padding-bottom:20px; }
 .rcl_img span{ display:block; float:left; margin-right:30px;}
-li.dsm{ border-bottom:none; background:url(../images/rsc2_pic7.jpg) no-repeat 12px 11px; padding-left:25px; line-height:30px;}
-li.dsm3{ border-bottom:none; padding-left:10px; line-height:30px;}
+li.dsm{ border-bottom:none; background:url(../images/rsc2_pic7.jpg) no-repeat 12px 11px; padding-left:25px; line-height:30px; color:#999;}
+li.dsm3{ border-bottom:none; padding-left:10px; line-height:30px; color:#999;}
 
 /*510*/
 
@@ -451,8 +451,8 @@ ul.pc3_list li span.py_16{width:88px; border-right:none; }
 .rcl_img span{ display:block; float:left; margin-right:30px;}
 li.dsm2{ overflow:hidden;}
 li.dsm2 span{ display:block;margin-right:20px;}
-li.dsm2 span.dc1{ float:right;  background:url(../images/sf_pic9.jpg) no-repeat 5px 10px; padding-left:20px; border-right:none;}
-li.dsm2 span.dc2{ float:right;  background:url(../images/sf_pic8.jpg) no-repeat 5px 10px; padding-left:20px;border-right:none;}
+li.dsm2 span.dc1{ float:right;  background:url(../images/sf_pic9.jpg) no-repeat 5px 10px; padding-left:20px; border-right:none; color:#999;}
+li.dsm2 span.dc2{ float:right;  background:url(../images/sf_pic8.jpg) no-repeat 5px 10px; padding-left:20px;border-right:none; color:#999;}
 
 
 /*v66*/
@@ -530,18 +530,6 @@ ul.pc3_list li span.span_icon_2 {
 
 
 .is_con{ margin-bottom:50px;}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
