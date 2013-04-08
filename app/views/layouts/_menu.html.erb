@@ -1,4 +1,8 @@
-<div class="mk">
+<% if controller_name == 'statics' && action_name == 'index' %>
+  <div class="mk">
+<% else %>
+<div class="mk2">
+  <% end %>
   <div id="nav">
     <ul class="ul">
       <li class="li li1"><a class="a current" href="/">首页</a></li>
