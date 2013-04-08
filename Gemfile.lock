@@ -212,6 +212,12 @@ GEM
     refinerycms-i18n (2.0.2)
       refinerycms-core (~> 2.0.0)
       routing-filter (>= 0.2.3)
+    refinerycms-news (2.0.1)
+      friendly_id (~> 4.0.1)
+      refinerycms-core (~> 2.0.1)
+      refinerycms-settings (~> 2.0.0)
+    refinerycms-settings (2.0.2)
+      refinerycms-core (~> 2.0.1)
     routing-filter (0.3.1)
       actionpack
     rvm-capistrano (1.2.7)
@@ -264,6 +270,7 @@ DEPENDENCIES
   rails (= 3.2.12)
   refinerycms (~> 2.0.0)!
   refinerycms-i18n (~> 2.0.0)
+  refinerycms-news (~> 2.0.0)
   refinerycms-tires!
   rvm-capistrano
   sass-rails (~> 3.2.3)

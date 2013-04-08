@@ -47,4 +47,13 @@ module ApplicationHelper
   def brand_collection
     Brand.brand_collection
   end
+
+  def link_to_statics(text, action_name, action, options = {})
+    class_name = :current if action_name == action || options[:action_name] == action_name
+    content_tag :dl, :class => class_name do
+      content_tag :dt do
+        link_to text, action
+      end
+    end
+  end
 end

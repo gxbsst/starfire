@@ -3,16 +3,30 @@
     <ul class="ul">
       <li class="li li1"><a class="a current" href="/">首页</a></li>
       <li class="li line2"></li>
-      <li class="li li2"><a class="a" href="/about_us">关于斯达飞</a>
+      <li class="li li2">
+
+        <% if controller_name == 'statics' && (action_name == 'contact_us' ||  action_name == 'story' || action_name == 'sold_worldwide') %>
+          <a class="a current" href="/about_us">关于斯达飞</a>
+        <% else  %>
+          <a class="a" href="/about_us">关于斯达飞</a>
+        <% end %>
+
         <div class="none1">
           <ul class="menu1">
             <li><a href="/story">品牌故事</a></li>
-            <li><a href="#">行销全球</a></li>
+            <li><a href="/sold_worldwide">行销全球</a></li>
             <li><a href="/contact_us">联系我们</a></li>
           </ul>
         </div>
       </li>
-      <li class="li li3"><a class="a" href="javascript:void(0)">产品与服务</a>
+      <li class="li li3">
+
+        <% if controller_name == 'tires' || action_name == 'knowledge' %>
+          <a class="a current" href="javascript:void(0)">产品与服务</a>
+        <% else %>
+          <a class="a" href="javascript:void(0)">产品与服务</a>
+        <% end %>
+
         <div class="none1">
           <ul class="menu1">
             <li><%= link_to 'PCR产品', refinery.tires_tires_path(:cat => 'pcr') %></li>
@@ -25,19 +39,31 @@
         </div>
       </li>
 
-      <li class="li li4"><a class="a" href="#">媒体新闻</a>
-        <div class="none1">
+      <li class="li li4">
+        <% if controller_name == 'items' %>
+        <a class="a current" href="javascript:void(0)">媒体新闻</a>
+         <% else %>
+          <a class="a" href="javascript:void(0)">媒体新闻</a>
+         <% end %>
+          <div class="none1">
           <ul class="menu1">
-            <li><a href="#">新闻中心</a></li>
-            <li><a href="#">媒体中心</a></li>
+            <li><%= link_to '新闻中心', refinery.news_items_path %></li>
+            <li><%= link_to '媒体中心', refinery.news_items_path %></li>
           </ul>
         </div>
       </li>
 
-      <li class="li li5"><a class="a" href="#">营销网络</a>
+      <li class="li li5">
+
+        <% if controller_name == 'stores' %>
+          <a class="a current" href="javascript:void(0)">营销网络</a>
+        <% else %>
+          <a class="a" href="#">营销网络</a>
+        <% end %>
+
         <div class="none1">
           <ul class="menu1">
-            <li><a href="#">斯达飞零售店</a></li>
+            <li><a href="/stores/">斯达飞零售店</a></li>
             <li><a href="/stores/search">查找店铺</a></li>
           </ul>
         </div>

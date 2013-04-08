@@ -24,7 +24,11 @@ class StaticsController < ApplicationController
   end
 
   def story
+    @title = '品牌故事'
+  end
 
+  def sold_worldwide
+    @title = '行销全球'
   end
 
   def knowledge

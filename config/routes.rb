@@ -2,7 +2,7 @@ Starfire::Application.routes.draw do
 
   root :to => 'statics#index'
 
-  statics = %w(about_us contact_us copyright sitemap index story knowledge)
+  statics = %w(about_us contact_us copyright sitemap index story knowledge sold_worldwide)
   statics.each do |i|
     match "/#{i}", :to => "statics##{i}"
   end
@@ -14,6 +14,7 @@ Starfire::Application.routes.draw do
   match "products/search", :to => "products#search"
   match "stores/search", :to => "stores#search"
   match "stores/search_2", :to => "stores#search_2"
+  resources :stores
   match ':controller(/:action(/:id))', :controller => /api\/[^\/]+/
 
   # This line mounts Refinery's routes at the root of your application.
