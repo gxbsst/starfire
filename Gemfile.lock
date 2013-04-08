@@ -62,7 +62,7 @@ PATH
       refinerycms-core (~> 2.0.10)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://ruby.taobao.org/
   specs:
     actionmailer (3.2.12)
       actionpack (= 3.2.12)
