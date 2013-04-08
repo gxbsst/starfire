@@ -2,6 +2,7 @@
 class SearchsController < ApplicationController
 
   def index
+    @title = '查找轮胎'
     if params[:type] == "brand"
       @products ||= find_brands
     else

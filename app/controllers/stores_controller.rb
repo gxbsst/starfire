@@ -10,6 +10,7 @@ class StoresController < ApplicationController
   end
 
   def search
+    @title = '查找店铺'
     # @json = Store.first.to_gmaps4rails
     @center =[31.2059, 121.399703] #上海cooper 地址
     @zoom = 10
@@ -46,6 +47,7 @@ class StoresController < ApplicationController
   end
 
   def search_2
+    @title = '查找店铺'
     # @json = Store.first.to_gmaps4rails
     @center =[31.2059, 121.399703] #上海cooper 地址
     @zoom = 10
