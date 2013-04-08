@@ -5,6 +5,10 @@ class StoresController < ApplicationController
     @title = '零售店'
   end
 
+  def show
+
+  end
+
   def search
     # @json = Store.first.to_gmaps4rails
     @center =[31.2059, 121.399703] #上海cooper 地址

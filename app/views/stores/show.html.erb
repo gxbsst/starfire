@@ -1,0 +1,29 @@
+<% if params[:id] == "1" # 形象店 %>
+<% content_for :title, @title%>
+<% content_for :title_image do %>
+  <%= image_tag "is_pic1.jpg", :size => '150x55' %>
+<% end %>
+
+<div class="cb_left">
+  <div class="is_con">
+      <span><%=  image_tag "is_pic2.jpg", :size => '589x398' %></span>
+      <span><%=  image_tag "is_pic3.jpg", :size => '637x497' %></span>
+      <span><%=  image_tag "is_pic4.jpg", :size => '638x482' %></span>
+  </div>
+</div>
+
+<% elsif params[:id] == "2" # 招牌%>
+  <% content_for :title, @title%>
+  <% content_for :title_image do %>
+    <%= image_tag "sst_pic1.jpg", :size => '150x55' %>
+  <% end %>
+  <div class="cb_left">
+    <div class="is_con">
+      <span><%=  image_tag "sst_pic2.jpg", :size => '586x388' %></span>
+      <span><%=  image_tag "sst_pic3.jpg", :size => '638x482' %></span>
+    </div>
+  </div>
+<% end %>
+
+<%= render "share/store_sidebar" %>
+

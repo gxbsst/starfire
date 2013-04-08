@@ -1,10 +1,44 @@
 
+
 <div class="cb_right">
-
+  <div class="zyl_title">营销网络</div>
   <div id="leftcontent">
+    <% if params[:id] == '1' %>
 
-  <%= link_to_statics '固铂形象店', action_name,  stores_path, :action_name => 'index' %>
-  <%= link_to_statics '查找店铺', action_name, stores_search_path, :action_name => 'search' %>
+  <dl class="current">
+      <dt><a href="／stores/1">斯达飞零售店</a></dt>
+      <dd>
+        <ul>
+          <li><a class="hover" href="/stores/1">• &nbsp;斯达飞形象店</a></li>
+          <li><a href="/stores/2">• &nbsp;斯达飞招牌店</a></li>
+        </ul>
+      </dd>
+    </dl>
 
+   <% elsif params[:id] == '2' %>
+      <dl class="current">
+        <dt><a href="/stores/1">斯达飞零售店</a></dt>
+        <dd>
+          <ul>
+            <li><a href="/stores/1">• &nbsp;斯达飞形象店</a></li>
+            <li><a href="/stores/2" class="hover">• &nbsp;斯达飞招牌店</a></li>
+          </ul>
+        </dd>
+      </dl>
+    <% else %>
+      <dl>
+        <dt><a href="/stores/1">斯达飞零售店</a></dt>
+    </dl>
+   <% end %>
+
+    <% if action_name == 'search' || action_name == 'search_2' %>
+    <dl class="current">
+      <dt><a href="/stores/search">查找店铺</a></dt>
+    </dl>
+    <% else %>
+      <dl>
+        <dt><a href="/stores/search">查找店铺</a></dt>
+      </dl>
+    <% end %>
   </div>
 </div>
