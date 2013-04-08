@@ -25,37 +25,52 @@ img{ border:none;}
 
 
 
-
 #bannercontent{/* left:-30px;*/position:relative; height:450px; width:960px; }
+
+#bannerlist{ height:450px;  position:relative; width:960px;overflow:hidden;}
+#bannerlist img{ width:960px; height:450px;}
+#bannerlist ul{ padding:0px; margin:0px;
+	width:2880px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#bannerlist li{ width:960px; float:left; height:450px; overflow:hidden;  padding:0px; margin:0px;}
+
+
+
+
+
+
+
+
+
+
+
+
 #bannercontent .prev{
-	width:32px;
-	height:38px;
+	width:93px;
+	height:25px;
 	background:url(../pic/prev.png) no-repeat 0px 0px;
 	cursor:pointer;
 	position:absolute;
-	left:35px;
-	top:234px;
+	left:20px;
+	top:406px;
 	_background-image:none;
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/prev.png',sizingMethod='image');}
+	background:url(../images/prev.png) no-repeat;
+/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/prev.png',sizingMethod='image');*/}
 #bannercontent .next{
-	width:32px;
-	height:38px;
+	width:53px;
+	height:25px;
 	background:url(../pic/next.png) no-repeat 0px 0px;
 	cursor:pointer;
 	position:absolute;
-	right:29px;
-	top:245px;
+	right:809px;
+	top:406px;
 	_background-image:none;
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/next.png',sizingMethod='image');}
-#bannerlist{ height:450px;  position:relative; width:960px;overflow:hidden;}
-#bannerlist img{ width:960px; height:450px;}
-#bannerlist ul{
-	width:3920px;
-	position:absolute;
-	left:2px;
-	top:3px;
-}
-#bannerlist li{ width:960px; float:left; height:450px; overflow:hidden;}
+	background:url(../images/next.png) no-repeat;
+/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/next.png',sizingMethod='image');*/}
+
 
 
 
@@ -204,6 +219,8 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .hcc_bottom{ overflow:hidden;}
 .hb_img{ float:left; margin-right:13px;}
 .hb_text{ float:left; width:155px; color:#94bfe0; line-height:22px; padding-top:6px;}
+
+.hb_text2{ float:left; width:110px; color:#94bfe0; line-height:22px; padding-top:6px;}
 .hcp_con3{ float:left; width:290px; margin-right:42px;}
 .hcp_con2{ float:left; width:290px; margin-right:0px;}
 .hcc_title span.ht_left2{ float:left; font-size:14px; font-weight:bold; color:#fff; padding-left:10px;}
@@ -535,6 +552,17 @@ ul.pc3_list li span.span_icon_2 {
 
 
 
+.examples_body {
+	width: 900px;
+	/*margin: 30px auto;*/
+	clear: both;
+	position: relative;
+}
+.bx_wrap {
+
+}
+
+ul#example2 li{ float:left;}
 
 
 
