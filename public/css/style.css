@@ -483,3 +483,6 @@ ul.pc3_list li span.py6_5{width:103px; border-right:none; }
 #products_tips dd p{ line-height:24px;}
 #products_tips dd ul{ padding:10px 20px 0px 15px;}
 ul.tips li { list-style: disc; line-height:24px;}
+ul.pc3_list li span.have_disc {
+    background:url(../images/rsc2_pic7.jpg) no-repeat 12px 12px;
+}
