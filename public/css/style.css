@@ -194,17 +194,17 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .styled-select {   width: 240px;   height: 35px;   overflow: hidden;  background: url(../images/home_pic11.gif) no-repeat right #2c2f37;   margin-bottom:10px;   }
 
 
-.home_con2{ height:184px; background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden; padding-left:20px; padding-top:18px;}
-.hcp_con1{ float:left; width:290px; margin-right:30px;}
+.home_con2{ height:187px; background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden; padding-left:20px; padding-top:18px;}
+.hcp_con1{ float:left; width:290px; margin-right:20px;}
 .hcc_title{ overflow:hidden; margin-bottom:20px;}
 .hcc_title span{ display:block;}
 .hcc_title span.ht_left{ float:left; font-size:14px; font-weight:bold; color:#fff;}
 .hcc_title span.ht_more{ float:right; background:url(../images/home_pic9.png) no-repeat; width:56px; height:19px; padding-left:8px; line-height:19px;}
 .hcc_title span.ht_more a{ color:#8b8d8d;}
 .hcc_bottom{ overflow:hidden;}
-.hb_img{ float:left; margin-right:18px;}
+.hb_img{ float:left; margin-right:13px;}
 .hb_text{ float:left; width:155px; color:#94bfe0; line-height:22px; padding-top:6px;}
-
+.hcp_con3{ float:left; width:290px; margin-right:42px;}
 .hcp_con2{ float:left; width:290px; margin-right:0px;}
 .hcc_title span.ht_left2{ float:left; font-size:14px; font-weight:bold; color:#fff; padding-left:10px;}
 
