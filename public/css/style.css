@@ -483,3 +483,59 @@ ul.pc3_list li span.py6_5{width:103px; border-right:none; }
 #products_tips dd p{ line-height:24px;}
 #products_tips dd ul{ padding:10px 20px 0px 15px;}
 ul.tips li { list-style: disc; line-height:24px;}
+
+
+
+
+
+/*查找店铺*/
+#shopsearch{ padding:20px 0px;}
+#shopsearch .tabs{ height:35px; background:url(../images/fs_pic2.jpg) repeat-x;}
+#shopsearch .tabs li{ height:35px;  width:158px; float:left; padding:0px 7px 0px 0px; line-height:35px;}
+#shopsearch .tabs a{ color:#444; font-size:14px; float:left; display:block; width:158px; height:35px; text-align:center; background:url(../images/fs_pic4.jpg) no-repeat;}
+#shopsearch .tabs .current,#shopsearch .tabs a:hover{ color:#0a4188;  text-decoration:none; background-position:right 0px;background:url(../images/fs_pic3.jpg) no-repeat;}
+#shopsearch .body{ padding:20px 0px 0px 0px;}
+#shopsearch .search{ padding:30px 0px;}
+#shopsearch .searchtxt{ color:#656565; margin:0px 8px; height:24px; line-height:24px; padding:0px 5px; background:url(../pic/text_bg.jpg) repeat-x 0px 0px; vertical-align:middle; border:solid 1px #B9B9B9; width:300px;}
+#shopsearch .searchbtn{  width:110px; height:38px; line-height:31px; border:0px; cursor:pointer; background:url(../images/fs_pic5.jpg) no-repeat; color:White;  font-weight:bold; vertical-align:middle;}
+#shopsearch .list{ padding:10px 0px 0px 0px; /*border-top:solid 2px #CBCBCB;*/ }
+#shopsearch .list li{  *display:inline-block; background:url(../images/fs_pic6.jpg) no-repeat 7px 9px; padding:0px 0px 20px 20px; position:relative;}
+#shopsearch .list dt{ line-height:22px; height:22px; overflow:hidden; color:#0a4188; font-weight:bold;}
+#shopsearch .list dd{ line-height:20px;  margin:0px;}
+#shopsearch .list p{ color:#656565;}
+#shopsearch .list .tip{ height:20px; left:300px; top:20px; background:url(../pic/tip.jpg) no-repeat 0px 0px; position:absolute; padding:0px 0px 0px 10px;}
+#shopsearch .list .tip strong{ line-height:20px;color:#ffffff; background:url(../pic/tip.jpg) no-repeat right 0px;  display:inline-block; height:20px; padding:0px 10px 0px 0px;}
+#shopsearch .searchtable{ padding:30px 0px;}
+#shopsearch .searchtable td{ padding:5px;}
+#shopsearch .searchtable .td{ text-align:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
