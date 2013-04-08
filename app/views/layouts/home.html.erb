@@ -99,7 +99,7 @@
 
             <div class="btn_pro">
               <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-              <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
+              <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
             </div>
 
           <% end %>
@@ -116,7 +116,7 @@
 
           <div class="btn_pro">
             <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-            <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
+            <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
           </div>
          <% end %>
         </div>
@@ -130,7 +130,7 @@
 
             <div class="btn_pro">
               <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-              <span class="scb_text"><a href="#">查看所有轮胎 >></a></span>
+              <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
             </div>
           <% end %>
 
@@ -153,10 +153,14 @@
 
 
     <div class="home_con2">
-     <% @tires.each do |tire| %>
-      <div class="hcp_con1">
+     <% @tires.each_with_index do |tire, index| %>
+        <% if index == 2 %>
+          <div class="hcp_con2">
+        <% else %>
+          <div class="hcp_con1">
+        <% end %>
         <div class="hcc_title">
-          <span class="ht_left"><%= tire.title %></span>
+          <span class="ht_left"><%= tire.decorative %></span>
           <span class="ht_more"><%= link_to "更多 >>", refinery.tires_tire_path(tire) %></span>
         </div>
         <div class="hcc_bottom">
