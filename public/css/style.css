@@ -417,7 +417,9 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 /*1.0*/
 .rs1_con1{ overflow:hidden; padding-bottom:30px; border-bottom:1px dashed #ddd;}
-.rsc_left{ float:left; width:275px; margin-right:40px; padding-left:10px;}
+.rcc_left3{ float:left; margin-right:50px; padding-left:10px; width:271px;}
+.rcc_right3{ float:left; width:297px;}
+/*.rsc_left{ float:left; width:275px; margin-right:40px; padding-left:10px;}
 .rsc_left span{ display:block;}
 .rsc_left span.rl_1{font-size:14px;color:#0a4188; margin-top:60px; }
 .rsc_left span.rl_2{ line-height:20px; padding-left:13px;}
@@ -428,7 +430,7 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 .rsc_right span{ display:block; }
 .rsc_right span.rsr_1{ margin-top:20px;}
 .rs1_con2{ overflow:hidden; padding-bottom:30px; padding-top:30px; border-bottom:1px dashed #ddd;}
-.rs1_con3{ overflow:hidden; padding-bottom:30px; padding-top:30px;}
+.rs1_con3{ overflow:hidden; padding-bottom:30px; padding-top:30px;}*/
 
 /*2.0*/
 .rsc2_con1{ overflow:hidden; border-bottom:1px dashed #ddd; padding-bottom:30px; }
@@ -440,7 +442,7 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 .rcc_right{ float:left;}
 
-.rsc2_con2{  padding-top:30px; padding-left:10px; padding-bottom:20px; }
+.rsc2_con2{  padding-top:30px; padding-left:10px; padding-bottom:20px; overflow:hidden; }
 .rcl_img span{ display:block; float:left; margin-right:30px;}
 li.dsm{ border-bottom:none; background:url(../images/rsc2_pic7.jpg) no-repeat 12px 11px; padding-left:25px; line-height:30px; color:#999;}
 li.dsm3{ border-bottom:none; padding-left:10px; line-height:30px; color:#999;}
