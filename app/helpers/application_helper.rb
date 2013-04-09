@@ -31,10 +31,8 @@ module ApplicationHelper
         dd =  content_tag :dd do
           content_tag :ul do
             tires.collect do |tire|
-              concat %Q[<li>#{link_to "•  #{tire.decorative}", refinery.tires_tire_path(tire)}</li>].html_safe
-              #content_tag :li do
-              #  link_to "•  #{tire.title}", refinery.tires_tire_path(tire)
-              #end
+              class_name = request.params[:id].to_i == tire.id ? :hover : ''
+              concat %Q[<li>#{link_to "•  #{tire.decorative}", refinery.tires_tire_path(tire), :class => class_name}</li>].html_safe
             end
           end
         end

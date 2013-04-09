@@ -7,7 +7,7 @@ module Refinery
       before_filter :find_page
 
       def index
-        en_to_zh = {'pcr' => 'PCR', 'suv' => 'SUV', 'winter' => '冬季轮胎', 'lighttruck' => '轻卡产品'}
+        en_to_zh = {'pcr' => 'PCR产品', 'suv' => 'SUV产品', 'winter' => '冬季轮胎', 'lighttruck' => '轻卡产品'}
         @category = params[:cat]
 
         if @category
@@ -22,9 +22,10 @@ module Refinery
       end
 
       def show
-
+        en_to_zh = {'pcr' => 'PCR产品', 'suv' => 'SUV产品', 'winter' => '冬季轮胎', 'lighttruck' => '轻卡产品'}
         @tire = Tire.find(params[:id])
         @category = @tire.category
+        @title = en_to_zh[@category.downcase]
         @tires = Tire.where(:category => @category.upcase).order(:position)
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @tire in the line below:
