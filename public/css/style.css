@@ -209,7 +209,7 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .styled-select {   width: 240px;   height: 35px;   overflow: hidden;  background: url(../images/home_pic11.gif) no-repeat right #2c2f37;   margin-bottom:10px;   }
 
 
-.home_con2{ height:187px; background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden; padding-left:20px; padding-top:18px;}
+.home_con2{ height:187px; background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden; padding-left:20px; padding-top:18px; position: relative;}
 .hcp_con1{ float:left; width:290px; margin-right:20px;}
 .hcc_title{ overflow:hidden; margin-bottom:20px;}
 .hcc_title span{ display:block;}

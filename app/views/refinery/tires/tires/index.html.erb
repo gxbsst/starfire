@@ -2,7 +2,7 @@
 <% content_for :title_image do %>
   <% if @category.present? %>
     <% images = {'lighttruck' => 'lt_pic1.gif', 'suv' => 'suv_pic1.gif', 'winter' => 'wt_pic1.gif', 'pcr' => 'pro_pic1.gif' } %>
-    <%= image_tag images[@category.downcase], :size => '110x55'  %>
+    <%= image_tag images[@category.downcase]  %>
   <% end %>
 <% end %>
 <div class="cb_left">
