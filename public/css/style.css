@@ -206,9 +206,9 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 
 /* 首页底部滚动2 */
 
-.home_con3{ height:200px; /*background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden;*/background:url(../images/hp_bg3.jpg) repeat-x;   }
+.home_con3{ height:210px; /*background:url(../images/home_pic8.jpg) no-repeat; overflow:hidden;*/background:url(../images/hp_bg3.jpg) repeat-x; position:relative;   }
 
-.hcp_con4{ float:left; width:305px; background:url(../images/hp_bg2.jpg) no-repeat; padding-top:20px; padding-left:15px;}
+.hcp_con4{ float:left; width:290px; background:url(../images/hp_bg2.jpg) no-repeat; padding-top:20px; padding-left:15px; padding-right:15px;}
 .hcc_title2{ overflow:hidden; margin-bottom:20px;}
 .hcc_title2 span{ display:block;}
 .hcc_title2 span.ht_left{ float:left; font-size:14px; font-weight:bold; color:#fff;}
@@ -221,7 +221,7 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 
 
  .img-scroll { width:960px; position:relative; margin:0px auto; }
- .img-scroll .prev,.img-scroll .next {
+.home_con3 .next {
 	position:absolute;
 	display:block;
 	width:33px;
@@ -231,20 +231,54 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 	text-align:center;
 	line-height:100px;
 	cursor:pointer;
+		right:-54px;
 }
- .img-scroll .prev {
+
+.home_con3 .prev {
+	position:absolute;
+	display:block;
+	width:33px;
+	height:37px;
+	top:80px;
+	color:#FFF;
+	text-align:center;
+	line-height:100px;
+	cursor:pointer;
 	left:-54px;
 }
- .img-scroll .next {
-	right:-54px;
-	
-}
- .img-list { position:relative; width:960px; height:200px;  overflow:hidden; }
+
+ .img-list { position:relative; width:960px; height:210px;  overflow:hidden; }
  .img-list ul { }
  .img-list li { float:left; display:inline; }
 
 
 
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	z-index: 0;
+}
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.als-wrapper {
+	position: relative;
+	list-style: none;
+}
+
+.als-item {
+	height:210px;
+	position: relative;
+	display: block;
+
+	cursor: pointer;
+	float: left;
+}
 
 
 
@@ -627,3 +661,8 @@ ul#example2 li{ float:left;}
 
 
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
+
+
+
+
+
