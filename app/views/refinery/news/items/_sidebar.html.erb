@@ -1,10 +1,26 @@
+
 <div class="cb_right">
-
-  <div class="zyl_title">媒体中心</div>
-
+<div class="zyl_title">媒体中心</div>
   <div id="leftcontent">
-    <%= link_to_statics '新闻中心', action_name, refinery.news_items_path, :action_name => 'index' %>
-    <%= link_to_statics '媒体中心', action_name, refinery.news_items_path %>
-  </div>
+  	<% if params[:type] == 'media' %>
+ 	<dl>
+      <dt><%= link_to '新闻中心', refinery.news_items_path %>
+      </dt>
+    </dl>   
+    
+    <dl class="current">
+      <dt>  <%= link_to '媒体中心', refinery.news_items_path(:type => :media) %></dt>
+    </dl> 
 
+    <% else %>
+    	<dl class="current">
+         <dt><%= link_to '新闻中心', refinery.news_items_path %>
+         </dt>
+       </dl>  
+       <dl >
+         <dt>  <%= link_to '媒体中心', refinery.news_items_path(:type => :media) %></dt>
+       </dl> 
+
+    <% end %>
+  </div>
 </div>

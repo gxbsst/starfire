@@ -7,8 +7,12 @@ module Refinery
       before_filter :find_news_item, :find_latest_news_items, :only => [:show]
 
       def index
-        @title = '新闻中心'
-        #render 'index'
+        if params[:type]
+         @title = '新闻中心'
+         render 'media'
+        else
+         @title = '新闻中心'
+       end
       end
 
       def show
