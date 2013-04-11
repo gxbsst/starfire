@@ -221,30 +221,36 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 
 
  .img-scroll { width:960px; position:relative; margin:0px auto; }
-.home_con3 .next {
+
+.bx_container {
+    /*border:red 1px solid;*/
+}
+.bx_container .next {
 	position:absolute;
 	display:block;
 	width:33px;
 	height:37px;
-	top:80px;
+	top:60px;
 	color:#FFF;
 	text-align:center;
 	line-height:100px;
 	cursor:pointer;
-		right:-54px;
+    left: -12px;
+    z-index: 10000;
 }
 
-.home_con3 .prev {
+.bx_container .prev {
 	position:absolute;
 	display:block;
 	width:33px;
 	height:37px;
-	top:80px;
+	top:60px;
 	color:#FFF;
 	text-align:center;
 	line-height:100px;
 	cursor:pointer;
-	left:-54px;
+	right:-30px;
+    z-index: 10000;
 }
 
  .img-list { position:relative; width:960px; height:210px;  overflow:hidden; }
