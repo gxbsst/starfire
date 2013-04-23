@@ -24,7 +24,7 @@ class StaticsController < ApplicationController
   end
 
   def story
-    @title = '品牌故事'
+    @title = 'DTT科技'
   end
 
   def sold_worldwide

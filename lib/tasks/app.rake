@@ -74,5 +74,32 @@ namespace :app do
     end
   end
 
+  ## 更新车型配对
+
+  task :update_car => :environment do
+
+    car_tires = {
+        'RS-C 2.0' => 'RS-C2.0-Table 1.csv',
+        'RS-R 1.0' => 'RS-R1.0-Table 1.csv',
+        'RS-W 3.0' => 'RS-W3.0-Table 1.csv',
+        'RS-T 4.0' => 'RS-T4.0-Table 1.csv',
+        'RS-L 909' => 'RS-L909-Table 2.csv',
+        'RS-V 66' => 'RS-V66-Table 1.csv',
+        'SF-510' => 'SF510-Table 1.csv'
+    }
+
+    car_tires.each do |decorative, filename|
+      filename =  Rails.root.join('lib', 'tasks', 'car', filename )
+      csv = CSV.open(filename, :headers => true)
+      temp = []
+      csv.each do |item|
+        tire_id = Refinery::Tires::Tire.find_by_decorative(decorative).try(:id)
+        temp << item[1] if item[1].present?
+        Brand.find_or_create_by_brand_name_zh_and_car_type_zh_and_tire_id(temp.last, item[2], tire_id, :brand_name_en => temp.last, :car_type_en => item[2])
+      end
+
+    end
+  end
+
 
 end
