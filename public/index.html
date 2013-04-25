@@ -59,8 +59,20 @@
   
   <div class="banner_bg">
   <div class="bo_con">
+  <div id="banner">
+   <ul>
+      <li class="nob">1</li>
+      <li class="nob">2</li>
+      <li class="nob">3</li>
+    </ul>
+    <div id="banner_list">
+      <a href="rs_r1.html" target="_self"><img src="images/banner2.jpg"   /></a>
+      <a href="rs_c2.html" target="_self"><img src="images/banner.jpg"   /></a>
+      <a href="sf_510.html" target="_self"><img src="images/banner3.jpg"   /></a>
+    </div>
   
-  <div id="bannercontent">
+  </div>
+  <!--<div id="bannercontent">
     <div id="bannerlist">
       <ul>
         <li><a href="#"><img src="images/banner.jpg" width="960" height="450" /></a></li>
@@ -70,7 +82,7 @@
     </div>
     <div class="prev" id="prevbtn"></div>
     <div class="next" id="nextbtn"></div>
-   </div>
+   </div>-->
   
   
   
@@ -652,7 +664,50 @@ RS-C2.0专为各种大众化轿车量身打造。它可以最大程度地给车�
   
   
   
-  
+ 	<script type="text/javascript">
+	   function showAuto() {
+            n = n >= (count - 1) ? 0 : ++n;
+            $("#banner li.nob").eq(n).trigger('click');
+        }
+
+        var t = n = 0,
+                count;
+        count = $("#banner_list a").length;
+        $("#banner_list a:not(:first-child)").hide();
+        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+
+        $(document).ready(function(){
+			$("#banner_info").click(function() {
+			    window.open($("#banner_list a:first-child").attr('href'), "_blank")
+			});
+			$("#banner li.nob").click(function() {
+			    var i = $(this).text() - 1; //获取Li元素内的值，即1，2，3，4
+			    n = i;
+			    if (i >= count) return;
+			    $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+			    $("#banner_info").unbind().click(function() {
+			        window.open($("#banner_list a").eq(i).attr('href'), "_blank")
+			    });
+			    $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			    $(this).css({
+			        "background": "#fff",
+			        'color': '#000'
+			    }).siblings().css({
+			        "background": "#000",
+			        'color': '#fff'
+			    });
+			});
+
+			t = setInterval("showAuto()", 8000);
+			$("#banner").hover(function() {
+			    clearInterval(t)
+			}, function() {
+			    t = setInterval("showAuto()", 8000);
+			});
+
+	  });
+
+	</script> 
   
   
   

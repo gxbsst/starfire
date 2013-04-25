@@ -119,8 +119,48 @@
 </div>
 </div>
 
-<div class="pro_td">
-<div class="prt_title">[产品特点]</div>
+
+
+
+
+
+
+
+
+
+ <script> 
+	<!-- 	/*tab切换脚本*/ 
+	function setTab(name,cursel,n){ 
+	
+		for(i=1;i<=n;i++){ 
+			var menu=document.getElementById(name+i); 
+			var con=document.getElementById("tab_"+name+"_"+i); 
+			menu.className=i==cursel?"current":""; 
+			con.style.display=i==cursel?"block":"none"; 
+			} 
+	} 
+	//--> 
+	</script>
+
+<div id="tab2">
+    
+    <!--切换标题begin-->
+    <div class="tabTitle2">
+    
+      	<a href="#" id="one1" onmouseover="setTab('one',1,3)" class="current">产品特性</a>
+        <a href="#" id="one2" onmouseover="setTab('one',2,3)">上市规格</a>
+        <a href="#" id="one3" onmouseover="setTab('one',3,3)">适配车型</a>
+        <div class="clear"></div>
+
+    </div>
+    <!--切换标题end-->
+    <div class="contentBox2">
+      <!--第一个标签内容-->
+      <ul class="tabContentList2" id="tab_one_1">
+        <li>
+        
+        <div class="pro_td">
+<!--<div class="prt_title">[产品特点]</div>-->
 <div class="prt_con">
 <div class="rsc2_con1">
 <div class="rcc_left3">
@@ -161,16 +201,26 @@
 
 </div>
 </div>
+        
+        
+        
+         </li>
+      
+      </ul>
+      <!--第二个标签内容-->
+      <ul class="tabContentList" id="tab_one_2" style=" display:none;">
+        <li><div class="prc_con3">
+<!--<div class="pc2_title"> 上市规格</div>-->
 
 
 <div class="pro_cc">
-<div class="prt_title2">[规格尺寸]</div>
+<!--<div class="prt_title2">[规格尺寸]</div>-->
 <div class="prt_sm">规格尺寸范围为14－17英寸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;速度级别是T(最高时速190Km)，H(最高时速210Km)，V(最高时速240Km)</div>
 
 
 
 <div class="prc_con3">
-<!--<div class="pc2_title"> 上市规格</div>-->
+
 
 <div class="pc3_top">
 <span class="pt_2">尺寸规格</span>
@@ -497,6 +547,168 @@
 
 
 </div>
+</li>
+        
+      </ul>
+      <!--第三个标签内容-->
+      <ul class="tabContentList" id="tab_one_3">
+        <li>
+<table border="0" cellspacing="1" cellpadding="0" class="table_1">
+	<tr>
+		<th class="td_1">规 格</th>
+		<th class="td_2">适配车型</th>
+	
+	</tr>
+	<tr>
+		<td class="td_3">195/45R15</td>
+		<td class="td_4">吉利美人豹, 起亚凯恩斯</td>
+		
+	</tr>
+	<tr>
+   <td class="td_3">195/45R16</td>
+		<td class="td_4">名爵TF</td>
+	
+	</tr>
+	<tr>
+		<td class="td_3">195/50R15</td>
+		<td class="td_4">双环小贵族, 吉利美人豹, 大众捷达, 精灵</td>
+	
+	</tr>
+	<tr>
+		<td class="td_3">195/55R15</td>
+		<td class="td_4">三菱蓝瑟, 东南菱悦, 丰田卡瑞那, 别克凯越, 吉利中国龙, 哈飞赛豹, 哈飞赛马, 大众CROSS波罗, 大众波罗, 奇瑞A5/E5/旗云/旗云3/风云2, 斯柯达晶锐,本田思域, 本田雅阁, 标致206CC, 海马普力马/欢动/海福星/海马3/福美来, 现代美佳/雅绅特, 瑞麒G3, 起亚Rio, 铃木利亚纳, 长安悦翔, 雪佛兰乐风, 雪铁龙赛纳, 马自达323</td>
+	
+	</tr>
+	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+     <tr>
+    	<td class="td_3">205/50R15</td>
+		<td class="td_4">吉利中国龙, 大众GTI/VENTO, 现代酷贝</td>	
+	</tr>	
+    <tr>
+    	<td class="td_3">205/50R16</td>
+		<td class="td_4">三菱蓝瑟, 东风风神H30/风神H30 Cross/风神S30, 名爵3, 标致405, 海马欢动/海马3, 现代伊兰特, 莲花L5, 起亚赛拉图/赛拉图欧风, 马自达MX-5</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/50R17</td>
+		<td class="td_4">中华, 中华酷宝, 宝马120I, 日产骐达, 标致307CC, 沃尔沃C30</td>	
+	</tr>
+    
+    	<tr>
+    	<td class="td_3">205/55R15</td>
+		<td class="td_4">丰田赛利卡, 沃尔沃S70</td>	
+	</tr>
+    
+    	<tr>
+    	<td class="td_3">205/55R16</td>
+		<td class="td_4">一汽奔腾, 三菱日蚀/格兰, 东风景逸, 中华/中华H530/酷宝/骏捷/骏捷FRV/骏捷FSV/骏捷Wagon, 丰田ZELAS/卡罗拉/美佳, 五十铃TROOPER, 全球鹰GC7, 吉利远景, 大众GTI/宝来/帕萨特/捷达/新甲壳虫/朗逸/甲壳虫/迈腾/途安/速腾/领驭/高尔夫, 奇瑞A3/东方之子/东方之子Cross, 奔驰A160/C180, 帝豪EC718/EC7-RV, 广汽传祺, 斯巴鲁翼狮/翼豹, 斯柯达昊锐/明锐, 日产天际线/帅客, 本田思域/雅阁, 标致306/307/307CC/307SW/308, 欧宝赛飞利/雅特, 江淮和悦/和悦RS/宾悦, 沃尔沃C30/S40, 海马福美来, 现代i30/伊兰特悦动/酷派, 福特福克斯/蒙迪欧/蒙迪欧致胜, 英伦海景, 荣威350, </td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    	<tr>
+    	<td class="td_3">205/45R16</td>
+		<td class="td_4">大众CROSS波罗/波罗, 斯柯达晶锐, 标致206</td>	
+	</tr>
+    
+    
+    
+</table>        
+        
+        
+        
+        
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
