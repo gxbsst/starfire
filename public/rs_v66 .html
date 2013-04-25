@@ -118,9 +118,39 @@
 
 </div>
 </div>
+ <script> 
+	<!-- 	/*tab切换脚本*/ 
+	function setTab(name,cursel,n){ 
+	
+		for(i=1;i<=n;i++){ 
+			var menu=document.getElementById(name+i); 
+			var con=document.getElementById("tab_"+name+"_"+i); 
+			menu.className=i==cursel?"current":""; 
+			con.style.display=i==cursel?"block":"none"; 
+			} 
+	} 
+	//--> 
+	</script>
 
-<div class="pro_td">
-<div class="prt_title">[产品特点]</div>
+<div id="tab2">
+    
+    <!--切换标题begin-->
+    <div class="tabTitle2">
+    
+      	<a href="javascript:void(0)" id="one1" onmouseover="setTab('one',1,3)" class="current">产品特性</a>
+        <a href="javascript:void(0)" id="one2" onmouseover="setTab('one',2,3)">上市规格</a>
+        <a href="javascript:void(0)" id="one3" onmouseover="setTab('one',3,3)">适配车型</a>
+        <div class="clear"></div>
+
+    </div>
+    <!--切换标题end-->
+    <div class="contentBox2">
+      <!--第一个标签内容-->
+      <ul class="tabContentList2" id="tab_one_1">
+        <li>
+        
+        <div class="pro_td">
+
 <div class="prt_con">
 <div class="rsc2_con1">
 <div class="rcc_left2">
@@ -155,9 +185,15 @@
 
 </div>
 </div>
-
-
-<div class="pro_cc">
+        
+        
+        
+         </li>
+      
+      </ul>
+      <!--第二个标签内容-->
+      <ul class="tabContentList" id="tab_one_2" style=" display:none;">
+        <li><div class="pro_cc">
 <div class="prt_title2">[规格尺寸]</div>
 <div class="prt_sm">规格尺寸范围为14－17英寸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;速度级别是T(最高时速190Km)，H(最高时速210Km)，V(最高时速240Km)</div>
 
@@ -259,7 +295,54 @@
 
 </div>
 
-
+</li>
+        
+      </ul>
+      <!--第三个标签内容-->
+      <ul class="tabContentList" id="tab_one_3" style="display:none;">
+        <li>
+<table border="0" cellspacing="1" cellpadding="0" class="table_1">
+	<tr>
+		<th class="td_1">规 格</th>
+		<th class="td_2">适配车型</th>
+	
+	</tr>
+	<tr>
+		<td class="td_3">185R14</td>
+		<td class="td_4">一汽自由风, 三菱富利卡, 美亚, 金杯阁瑞斯</td>
+		
+	</tr>
+	<tr>
+   <td class="td_3">195R14</td>
+		<td class="td_4">江淮瑞风, 中顺微面, 中誉微面</td>	
+	</tr>
+	
+    	<tr>
+   <td class="td_3">195/70R15</td>
+		<td class="td_4">一汽自由风, 东风风行, 福田蒙派克, 金杯阁瑞斯</td>	
+	</tr>
+	
+    	<tr>
+   <td class="td_3">195/75R16</td>
+		<td class="td_4">大宇伊斯坦纳</td>	
+	</tr>
+	
+    	<tr>
+   <td class="td_3">215/70R15</td>
+		<td class="td_4">水星侯爵, 江淮瑞风, 江铃宝威, 福特稳达, 起亚嘉华</td>	
+	</tr>
+	
+    
+</table>        
+        
+        
+        
+        
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 
 
 
