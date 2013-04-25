@@ -1,3 +1,15 @@
+<script type="text/javascript" charset="utf-8">
+   	<!-- 	/*tab切换脚本*/ 
+   	function setTab(name,cursel,n){ 
+   		for(i=1;i<=n;i++){ 
+   			var menu=document.getElementById(name+i); 
+   			var con=document.getElementById("tab_"+name+"_"+i); 
+   			menu.className=i==cursel?"current":""; 
+   			con.style.display=i==cursel?"block":"none"; 
+   			} 
+   	} 
+</script>
+
 <% content_for :title, @title %>
 <% content_for :title_image do %>
   <% if @category.present? %>
@@ -7,3 +19,4 @@
 <% end %>
 <%=raw @tire.content %>
 <%= render 'sidebar' %>
+

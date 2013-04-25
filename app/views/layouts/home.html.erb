@@ -44,17 +44,20 @@
 <div class="banner_bg">
   <div class="bo_con">
 
-    <div id="bannercontent">
-      <div id="bannerlist">
-        <ul>
-          <li><a href="#"><%= image_tag "banner.jpg", :width => "960x450" %></a></li>
-          <li><a href="#"><%= image_tag "banner2.jpg", :width => "960x450" %></a></li>
-          <!-- <li><a href="#"><img src="images/banner3.jpg" width="960" height="450" /></a></li>-->
-        </ul>
-      </div>
-      <div class="prev" id="prevbtn"></div>
-      <div class="next" id="nextbtn"></div>
-    </div>
+	 <div id="banner">
+		  <ul>
+			  <li class="nob">1</li>
+			  <li class="nob">2</li>
+			  <li class="nob">3</li>
+		  </ul>
+		  <div id="banner_list">
+			  <a href="/tires/2" target="_self"><img src="images/banner2.jpg"   /></a>
+			  <a href="/tires/1" target="_self"><img src="images/banner.jpg"   /></a>
+			  <a href="/tires/7" target="_self"><img src="images/banner3.jpg"   /></a>
+		  </div>
+  
+	  </div>
+	  
     <div class="tb_img"><img src="images/top_pic3.png" width="169" height="16" /></div>
 
     <div class="logo"><%= image_tag "logo.png", :width => "249x50" %></div>
@@ -87,7 +90,7 @@
   <div class="home_news">
     <div class="video_title">
       <div class="vt_left">新闻动态</div>
-      <div class="vt_right"><a href="#">更多动态 >></a></div>
+      <div class="vt_right"><a href="/news">更多动态 >></a></div>
 
     </div>
     <div class="hn_con"></div>
@@ -193,12 +196,55 @@
 
     <%= javascript_include_tag "underscore", "backbone", "products", "brands"%>
     <script type="text/javascript">
+	// KV SLIDE SHOW
+	   function showAuto() {
+	         n = n >= (count - 1) ? 0 : ++n;
+	         $("#banner li.nob").eq(n).trigger('click');
+	     }
+
+	     var t = n = 0,
+	             count;
+	     count = $("#banner_list a").length;
+	     $("#banner_list a:not(:first-child)").hide();
+	     $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+	 
       $(document).ready(function(){
+		// KV SLIDE SHOW  
+		$("#banner_info").click(function() {
+		    window.open($("#banner_list a:first-child").attr('href'), "_blank")
+		});
+		$("#banner li.nob").click(function() {
+		    var i = $(this).text() - 1; //获取Li元素内的值，即1，2，3，4
+		    n = i;
+		    if (i >= count) return;
+		    $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+		    $("#banner_info").unbind().click(function() {
+		        window.open($("#banner_list a").eq(i).attr('href'), "_blank")
+		    });
+		    $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+		    $(this).css({
+		        "background": "#fff",
+		        'color': '#000'
+		    }).siblings().css({
+		        "background": "#000",
+		        'color': '#fff'
+		    });
+		});
+
+		t = setInterval("showAuto()", 8000);
+		$("#banner").hover(function() {
+		    clearInterval(t)
+		}, function() {
+		    t = setInterval("showAuto()", 8000);
+		});
+		// KV SLIDE SHOW END 
+		  
         $("form .scb_btn > .searchbtn").click(function(){
           debugger;
           $(this).closest('form').submit();
         });
       });
+	  
     </script>
 
   </div>
