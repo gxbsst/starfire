@@ -40,7 +40,7 @@ class TireItem < ActiveRecord::Base
 
     # 花纹
     def decorative_collection
-      ::Refinery::Tires::Tire.group(:decorative).collect{|p| [p.decorative, p.decorative] unless p.decorative.blank?  }.compact
+      ::Refinery::Tires::Tire.group(:decorative).order(:position).collect{|p| [p.decorative, p.decorative] unless p.decorative.blank?  }.compact
     end
 
 
