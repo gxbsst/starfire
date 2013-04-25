@@ -71,6 +71,13 @@ namespace :deploy do
   end
   after "deploy:finalize_update", "deploy:change_tmp"
 
+  task :mv_static_page do 
+    run("mv #{current_path}/public/index.html #{current_path}/public/index.html_bak")
+    run("mv #{current_path}/public/new.html #{current_path}/public/news.html_bak")
+  end
+  after "deploy:finalize_update", "deploy:mv_static_page"
+
+
 end
 
 
