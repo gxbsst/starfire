@@ -8,10 +8,12 @@ module Refinery
 
       def index
         if params[:type]
-         @title = '新闻中心'
-         render 'media'
+          @title = '媒体中心'
+
+          render 'media'
         else
-         @title = '媒体中心'
+          @title = '新闻中心'
+
        end
       end
 
