@@ -73,7 +73,7 @@ module ApplicationHelper
             'show' => '产品与服务',
             'search' => '产品与服务'
         },
-        'news' => {
+        'items' => {
             'index' =>'媒体中心',
             'media' => '媒体中心'
         },
@@ -100,7 +100,7 @@ module ApplicationHelper
      text = '首页'
       path = '/'
     end
-
+     binding.pry
     link_to text, path
      #if c_name == 'statics'
   end
