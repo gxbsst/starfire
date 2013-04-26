@@ -100,7 +100,6 @@ module ApplicationHelper
      text = '首页'
       path = '/'
     end
-     binding.pry
     link_to text, path
      #if c_name == 'statics'
   end
