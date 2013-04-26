@@ -28,7 +28,8 @@
         </div>
         <div class="ct_right">
           <span>当前位置:</span>
-          <span><a href="/">首页</a> > </span><span class="red_dq"><%= @title %></span>
+
+          <span><%= nav_path(controller_name, action_name) %> > </span><span class="red_dq"><%= @title %></span>
         </div>
       </div>
       <div class="coc_bottom">

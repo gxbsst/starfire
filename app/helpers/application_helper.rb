@@ -54,4 +54,54 @@ module ApplicationHelper
       end
     end
   end
+
+  def nav_path(c_name, a_name)
+
+    text_hash =  {
+        'statics' => {
+            'sold_worldwide' => '关于斯达飞',
+            'story' => '关于斯达飞',
+            'contact_us' => '关于斯达飞',
+            'knowledge' =>  '产品与服务',
+            'sitemap' => '首页',
+            'copyright' => '首页',
+            'about_us' => '首页'
+
+        },
+        'tires' => {
+            'index' => '产品与服务',
+            'show' => '产品与服务',
+            'search' => '产品与服务'
+        },
+        'news' => {
+            'index' =>'媒体中心',
+            'media' => '媒体中心'
+        },
+        'stores' => {
+            'show' => '营销网络',
+            'search' => '营销网络'
+        }
+    }
+
+    url_hash = {
+       '关于斯达飞' => '/sold_worldwide',
+       '首页' => '/',
+       '产品与服务' => '/tires',
+       '媒体中心' => '/news',
+       '营销网络' => '/stores/1'
+    }
+
+
+
+    begin
+      text = text_hash[c_name][a_name]
+      path = url_hash[text]
+    rescue
+     text = '首页'
+      path = '/'
+    end
+
+    link_to text, path
+     #if c_name == 'statics'
+  end
 end
