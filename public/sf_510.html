@@ -119,8 +119,39 @@
 </div>
 </div>
 
-<div class="pro_td">
-<div class="prt_title">[产品特点]</div>
+ <script> 
+	<!-- 	/*tab切换脚本*/ 
+	function setTab(name,cursel,n){ 
+	
+		for(i=1;i<=n;i++){ 
+			var menu=document.getElementById(name+i); 
+			var con=document.getElementById("tab_"+name+"_"+i); 
+			menu.className=i==cursel?"current":""; 
+			con.style.display=i==cursel?"block":"none"; 
+			} 
+	} 
+	//--> 
+	</script>
+
+<div id="tab2">
+    
+    <!--切换标题begin-->
+    <div class="tabTitle2">
+    
+      	<a href="javascript:void(0)" id="one1" onmouseover="setTab('one',1,3)" class="current">产品特性</a>
+        <a href="javascript:void(0)" id="one2" onmouseover="setTab('one',2,3)">上市规格</a>
+        <a href="javascript:void(0)" id="one3" onmouseover="setTab('one',3,3)">适配车型</a>
+        <div class="clear"></div>
+
+    </div>
+    <!--切换标题end-->
+    <div class="contentBox2">
+      <!--第一个标签内容-->
+      <ul class="tabContentList2" id="tab_one_1">
+        <li>
+        
+        <div class="pro_td">
+<!--<div class="prt_title">[产品特点]</div>-->
 <div class="prt_con">
 <div class="rsc2_con1">
 <div class="rcc_left2">
@@ -165,10 +196,15 @@
 
 </div>
 </div>
-
-
-<div class="pro_cc">
-<div class="prt_title2">[规格尺寸]</div>
+        
+        
+         </li>
+      
+      </ul>
+      <!--第二个标签内容-->
+      <ul class="tabContentList" id="tab_one_2" style=" display:none;">
+        <li><div class="pro_cc">
+<!--<div class="prt_title2">[规格尺寸]</div>-->
 <div class="prt_sm">规格尺寸范围为14－17英寸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;速度级别是T(最高时速190Km)，H(最高时速210Km)，V(最高时速240Km)</div>
 
 
@@ -303,13 +339,66 @@
 
 
 </div>
-
-
-
-
-
-
-
+</li>
+        
+      </ul>
+      <!--第三个标签内容-->
+      <ul class="tabContentList" id="tab_one_3" style="display:none;">
+        <li>
+<table border="0" cellspacing="1" cellpadding="0" class="table_1">
+	<tr>
+		<th class="td_1">规 格</th>
+		<th class="td_2">适配车型</th>
+	
+	</tr>
+	<tr>
+		<td class="td_3">215/70R16</td>
+		<td class="td_4">三菱欧蓝德 EX, 丰田RAV4, 奇瑞瑞虎, 本田元素, 海马骑士, 现代ix35/途胜, 起亚智跑, 雪佛兰科帕奇</td>
+		
+	</tr>
+	<tr>
+   <td class="td_3">225/70R16</td>
+		<td class="td_4">丰田汉兰达, 北京骑士, 华泰宝利格, 吉普切诺基, 江淮瑞鹰, 现代圣达菲/胜达, 起亚索兰托, 铃木维特拉</td>	
+	</tr>
+	
+    	<tr>
+   <td class="td_3">225/75R16</td>
+		<td class="td_4">北京域胜007/战旗, 双龙享御/爱腾, 北京吉普, 荣威W5</td>	
+	</tr>
+	
+    	<tr>
+   <td class="td_3">235/65R17</td>
+		<td class="td_4">中兴无限, 北京陆霸, 双环SCEO/来宝S-RV, 吉奥, 奥迪Q5, 宝马X5, 新凯, 江铃陆风X8, 沃尔沃XC60/XC90, 长城哈弗, 黄海</td>	
+	</tr>
+	
+    	<tr>
+   <td class="td_3">235/85R16</td>
+		<td class="td_4">日产途乐, 猎豹/猎豹黑金刚</td>	
+	</tr>
+    <tr>
+   <td class="td_3">245/75R16</td>
+		<td class="td_4">五十铃竞技者, 吉姆西商务之星, 江铃陆风X6/陆风X9, 金杯霸道</td>	
+	</tr>
+    <tr>
+   <td class="td_3">265/65R17</td>
+		<td class="td_4">三菱帕杰罗, 丰田FORTUNER/普拉多, 江铃驭胜, 猎豹/猎豹CS6</td>	
+	</tr>
+    <tr>
+   <td class="td_3">265/75R16</td>
+		<td class="td_4">丰田FJ酷路泽, 北京勇士/陆霸, 日产Frontier</td>	
+	</tr>
+	
+    
+</table>        
+        
+        
+        
+        
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 
 
 
