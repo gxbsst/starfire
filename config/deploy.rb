@@ -74,6 +74,7 @@ namespace :deploy do
   task :mv_static_page do 
     run("mv #{release_path}/public/index.html #{release_path}/public/index.html_bak")
     run("mv #{release_path}/public/news.html #{release_path}/public/news.html_bak")
+    run("mv #{release_path}/public/sitemap.html #{release_path}/public/sitemap.html_bak")
   end
   after "deploy:finalize_update", "deploy:mv_static_page"
 
