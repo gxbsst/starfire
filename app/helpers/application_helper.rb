@@ -106,8 +106,22 @@ module ApplicationHelper
   end
 
   def show_title(title)
+
+    url_hash = {
+        '关于斯达飞' => '/sold_worldwide',
+        '首页' => '/',
+        '产品与服务' => '/tires',
+        '媒体中心' => '/news',
+        '营销网络' => '/stores/1',
+        'PCR产品' => '/tires?cat=pcr',
+        'SUV产品' => '/tires?cat=suv',
+        '轻卡产品' => '/tires?cat=lighttruck',
+        '冬季轮胎产品' => '/tires?cat=winter'
+
+    }
+
     if title.is_a? Array
-      %Q[<span class='red_dp'>#{title.first} > </span>] + %Q[<span class='red_dp'>#{title.last}</span>]
+      %Q[<span class='red_dp'>#{link_to title.first, url_hash[title.first]} > </span>] + %Q[<span class='red_dp'>#{title.last}</span>]
     else
       %Q[<span class='red_dp'>#{title} </span>]
     end

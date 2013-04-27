@@ -6,7 +6,7 @@ class StoresController < ApplicationController
   end
 
   def show
-    @title = ['斯达飞零售店',params[:id] == '1' ? '斯达飞形象店' : '斯达飞招牌']
+    @title = ['斯达飞零售店',params[:id] == '1' ? '斯达飞形象店' : '斯达飞招牌店']
   end
 
   def search

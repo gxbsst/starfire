@@ -22,7 +22,7 @@ module Refinery
       end
 
       def show
-        en_to_zh = {'pcr' => 'PCR产品', 'suv' => 'SUV产品', 'winter' => '冬季轮胎', 'lighttruck' => '轻卡产品'}
+        en_to_zh = {'pcr' => 'PCR产品', 'suv' => 'SUV产品', 'winter' => '冬季轮胎产品', 'lighttruck' => '轻卡产品'}
         @tire = Tire.find(params[:id])
         @category = @tire.category.downcase
         @title = [en_to_zh[@category], @tire.decorative]
