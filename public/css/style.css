@@ -633,16 +633,18 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 	padding: 8px 10px;
 }
 .table_1 .td_1 {
+	 text-align:center;
 	width: 175px;
 	font-size:14px;
 }
 .table_1 .td_2 {
 	width: 460px;
 	font-size:14px;
+	 text-align:center;
 }
 
 .table_1 .td_3 {
- padding-left:50px;
+ padding-left:55px;
 }
 
 .table_1 .td_4 {
