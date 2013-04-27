@@ -114,7 +114,7 @@ module ApplicationHelper
   end
 
   def show_first_path(c_name, a_name, title)
-    if a_name == 'index' &&  !params[:cat].present?
+    if a_name == 'index' &&  !params[:cat].present?  && c_name != 'items'
       %Q[<span>#{nav_path(c_name, a_name)}  </span>]
     else
       %Q[<span>#{nav_path(c_name, a_name)} > </span>]
@@ -122,7 +122,7 @@ module ApplicationHelper
   end
 
   def show_nav_path(c_name, a_name, title)
-    if a_name == 'index' && !params[:cat].present?
+    if a_name == 'index' && !params[:cat].present? && c_name != 'items'
       show_first_path(c_name, a_name, title)
     else
       show_first_path(c_name, a_name, title) +  show_title(title)
