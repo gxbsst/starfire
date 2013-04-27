@@ -263,6 +263,10 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 .styled-select {   width: 250px;   height: 22px;   overflow: hidden;
     margin-bottom:10px;   }
 
+.styled-select select {   background: transparent;   width: 263px;   padding: 5px;      padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;   border-radius: 0;   height: 35px;   -webkit-appearance: none;   color:#777;   }
+.styled-select select option{ height:35px; background:#000;}
+.styled-select {   width: 240px;   height: 35px;   overflow: hidden;  background: url(../images/home_pic11.gif) no-repeat right #2c2f37;   margin-bottom:10px;   }
+
 .home_con2{ 
   height:250px;
   background:url(../images/home_pic8.jpg) no-repeat 35px top;
