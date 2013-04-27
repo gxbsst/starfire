@@ -79,7 +79,8 @@ module ApplicationHelper
         },
         'stores' => {
             'show' => '营销网络',
-            'search' => '营销网络'
+            'search' => '营销网络',
+            'search_2' => '营销网络'
         }
     }
 
