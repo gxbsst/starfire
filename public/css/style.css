@@ -633,16 +633,18 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 	padding: 8px 10px;
 }
 .table_1 .td_1 {
+	 text-align:center;
 	width: 175px;
 	font-size:14px;
 }
 .table_1 .td_2 {
 	width: 460px;
 	font-size:14px;
+	 text-align:center;
 }
 
 .table_1 .td_3 {
- padding-left:50px;
+ padding-left:55px;
 }
 
 .table_1 .td_4 {
@@ -787,12 +789,12 @@ ul.pc3_list li span.span_icon_2 {
 #shopsearch .searchtable .td{ text-align:right;}
 
 
+#leftcontent .current dt.cc{ color:#444; background:url(../images/contact_pic5.gif) no-repeat 10px 18px;}
+#leftcontent .current dt.cc a{ color:#444; background:url(../images/contact_pic5.gif) no-repeat 10px 18px;}
+
 
 
 .is_con{ margin-bottom:50px;}
-
-
-
 
 
 .examples_body {
@@ -809,9 +811,6 @@ ul.pc3_list li span.span_icon_2 {
 }
 
 ul#example2 li{ float:left;}
-
-
-
 
 
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
