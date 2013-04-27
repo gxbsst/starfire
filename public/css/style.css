@@ -231,7 +231,7 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 #TabCon3{width:278px;/*height:145px; border:#2b2b2c 1px solid; border-top:none;*/}
 
 
-.xz_pro{ overflow:hidden; margin-top: 10px; padding:10px 0px 10px 15px;}
+.xz_pro{ overflow:hidden; height:125px; padding:10px 0px 20px 15px;}
 
 .select1{ height:35px; width:240px;   line-height:22px; vertical-align:middle;  margin:0px 0px 10px 0px; /*background:url(../images/home_pic7.gif) no-repeat;*/ border:none; }
 
