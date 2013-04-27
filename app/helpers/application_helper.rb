@@ -103,4 +103,29 @@ module ApplicationHelper
     link_to text, path
      #if c_name == 'statics'
   end
+
+  def show_title(title)
+    if title.is_a? Array
+      %Q[<span class='red_dp'>#{title.first} > </span>] + %Q[<span class='red_dp'>#{title.last}</span>]
+    else
+      %Q[<span class='red_dp'>#{title} </span>]
+    end
+  end
+
+  def show_first_path(c_name, a_name, title)
+    if a_name == 'index' &&  !params[:cat].present?
+      %Q[<span>#{nav_path(c_name, a_name)}  </span>]
+    else
+      %Q[<span>#{nav_path(c_name, a_name)} > </span>]
+    end
+  end
+
+  def show_nav_path(c_name, a_name, title)
+    if a_name == 'index' && !params[:cat].present?
+      show_first_path(c_name, a_name, title)
+    else
+      show_first_path(c_name, a_name, title) +  show_title(title)
+    end
+  end
+
 end
