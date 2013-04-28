@@ -814,3 +814,8 @@ ul#example2 li{ float:left;}
 
 
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
+
+#banner ul li.nob.active{
+ background: #FFF;
+ color: #000;
+}
