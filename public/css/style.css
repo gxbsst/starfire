@@ -231,7 +231,7 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 #TabCon3{width:278px;/*height:145px; border:#2b2b2c 1px solid; border-top:none;*/}
 
 
-.xz_pro{ overflow:hidden; margin-top: 10px; padding:10px 0px 10px 15px;}
+.xz_pro{ overflow:hidden; height:125px; padding:10px 0px 20px 15px;}
 
 .select1{ height:35px; width:240px;   line-height:22px; vertical-align:middle;  margin:0px 0px 10px 0px; /*background:url(../images/home_pic7.gif) no-repeat;*/ border:none; }
 
@@ -258,17 +258,17 @@ ul.inc_con li span.cn_2{ display:block; float:right; line-height:18px;  }
 
 .tc_list{ padding-top:10px; height:135px;margin-left:15px;}
 
-
-.styled-select select {  width: 250px;   padding: 0px;      padding-top:0px;   font-size: 12px;   border: 0;   border-radius: 0;   height: 22px;   color:#777;   }
-.styled-select {   width: 250px;   height: 22px;   overflow: hidden;
-    margin-bottom:10px;   }
+.styled-select select {   background: transparent;   width: 263px;   padding: 5px;      padding-top:7px;   font-size: 12px;   line-height: 1;   border: 0;
+    border-radius: 0;   height: 35px;   -webkit-appearance: none;   color:#777;   }
+.styled-select select option{ height:35px; background:#000px;}
+.styled-select {   width: 240px;   height: 35px;   overflow: hidden;  background: url(../images/home_pic11.gif) no-repeat right #2c2f37;   margin-bottom:10px;   }
 
 .home_con2{ 
   height:250px;
   background:url(../images/home_pic8.jpg) no-repeat 35px top;
   overflow:hidden; 
   padding:0;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   width:1030px;
   position: relative;}
 .examples_body > .bx_wrap {
@@ -829,6 +829,7 @@ ul#example2 li{ float:left;}
 
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
 
+<<<<<<< HEAD
 
 
 /*20130730*/
@@ -847,3 +848,9 @@ ul#example2 li{ float:left;}
 
 
 
+=======
+#banner ul li.nob.active{
+ background: #FFF;
+ color: #000;
+}
+>>>>>>> f2da1844cec182ed8eefad2e72e876d04c6e98de

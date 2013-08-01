@@ -28,8 +28,8 @@
         </div>
         <div class="ct_right">
           <span>当前位置:</span>
+          <%= raw(show_nav_path(controller_name, action_name, @title)).html_safe %>
 
-          <span><%= nav_path(controller_name, action_name) %> > </span><span class="red_dq"><%= @title %></span>
         </div>
       </div>
       <div class="coc_bottom">

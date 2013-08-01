@@ -1,4 +1,9 @@
-<% content_for :title, @title%>
+<% if @title.is_a? Array %>
+    <% content_for :title, @title.reverse.join("-") %>
+<% else %>
+    <% content_for :title, @title %>
+<% end %>
+
 <% content_for :title_image do %>
   <%= image_tag "fs_pic1.jpg" %>
 <% end %>

@@ -3,33 +3,26 @@
 <div class="cb_right">
   <div class="zyl_title">营销网络</div>
   <div id="leftcontent">
-    <% if params[:id] == '1' %>
 
   <dl class="current">
       <dt><a href="／stores/1">斯达飞零售店</a></dt>
       <dd>
         <ul>
-          <li><a class="hover" href="/stores/1">• &nbsp;斯达飞形象店</a></li>
-          <li><a href="/stores/2">• &nbsp;斯达飞招牌店</a></li>
+          <% if params[:id] == '1' %>
+             <li><a class="hover" href="/stores/1">• &nbsp;斯达飞形象店</a></li>
+             <li><a href="/stores/2">• &nbsp;斯达飞招牌店</a></li>
+           <% elsif params[:id] == '2' %>
+              <li><a  href="/stores/1">• &nbsp;斯达飞形象店</a></li>
+              <li><a class="hover" href="/stores/2">• &nbsp;斯达飞招牌店</a></li>
+          <% else %>
+              <li><a  href="/stores/1">• &nbsp;斯达飞形象店</a></li>
+              <li><a  href="/stores/2">• &nbsp;斯达飞招牌店</a></li>
+          <% end %>
         </ul>
       </dd>
     </dl>
 
-   <% elsif params[:id] == '2' %>
-      <dl class="current">
-        <dt><a href="/stores/1">斯达飞零售店</a></dt>
-        <dd>
-          <ul>
-            <li><a href="/stores/1">• &nbsp;斯达飞形象店</a></li>
-            <li><a href="/stores/2" class="hover">• &nbsp;斯达飞招牌店</a></li>
-          </ul>
-        </dd>
-      </dl>
-    <% else %>
-      <dl>
-        <dt><a href="/stores/1">斯达飞零售店</a></dt>
-    </dl>
-   <% end %>
+
 
     <% if action_name == 'search' || action_name == 'search_2' %>
     <dl class="current">
