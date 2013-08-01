@@ -550,6 +550,7 @@ ul.cl_list li{ display:block; border-bottom:1px dashed #ddd; line-height:24px; p
 .sitemap{ padding:0px 75px; overflow:hidden;}
 dl.sim_list1{ display:block; float:left; width:160px; height:220px; border-right:1px dashed #ddd; border-left:1px dashed #ddd; text-align:center; padding-top:40px; }
 dl.sim_list1 dt{ display:block; font-size:14px; color:#0a4188; font-weight:bold;}
+dl.sim_list1 dt a{font-size:14px; color:#0a4188; font-weight:bold;}
 
 dl.sim_list2{ display:block; float:left; width:115px; height:220px; border-right:1px dashed #ddd; padding-left:45px; padding-top:40px; }
 dl.sim_list2 dt{ display:block; font-size:14px; color:#0a4188; font-weight:bold; margin-bottom:15px;}
@@ -561,7 +562,7 @@ dl.sim_list2 dd{ display:block; line-height:28px; margin:0px;}
 /*3.0*/
 .pro_cs{ height:220px; background:#eff3f7; overflow:hidden;  padding:22px 25px 0px 25px; margin-bottom:30px;}
 .prc_img{ float:left; margin-right:30px;}
-.prc_text{ float:left; width:400px; margin-top:30px;}
+.prc_text{ float:left; width:400px; margin-top:40px;}
 .pct_con{ line-height:22px; margin-top:20px; margin-bottom:10px;}
 .pct_icon{ margin-bottom:10px;}
 
@@ -569,7 +570,7 @@ dl.sim_list2 dd{ display:block; line-height:28px; margin:0px;}
 .pro_td{ margin-bottom:40px;}
 .prt_title{ height:28px; border-bottom:1px solid #ddd; font-size:14px; font-weight:bold; padding-left:8px; margin-bottom:35px;}
 .prt_con{ overflow:hidden;}
-.ptc_left{ float:left; margin-right:40px; width:280px; margin-left:15px; padding-top:15px;}
+.ptc_left{ float:left; margin-right:40px; width:280px; margin-left:15px; padding-top:25px;}
 .ptl_text{ margin-bottom:35px;}
 .ptl_text span{ display:block;}
 .ptl_text span.plt_1{ font-size:14px; color:#0a4188; margin-bottom:10px;}
@@ -661,7 +662,7 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 /*1.0*/
 .rs1_con1{ overflow:hidden; padding-bottom:30px; border-bottom:1px dashed #ddd;}
 .rcc_left3{ float:left; margin-right:50px; padding-left:10px; width:271px;}
-.rcc_right3{ float:left; width:297px;}
+.rcc_right3{ float:left; width:310px;}
 /*.rsc_left{ float:left; width:275px; margin-right:40px; padding-left:10px;}
 .rsc_left span{ display:block;}
 .rsc_left span.rl_1{font-size:14px;color:#0a4188; margin-top:60px; }
@@ -685,14 +686,14 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 .rcc_right{ float:left;}
 
-.rsc2_con2{  padding-top:30px; padding-left:10px; padding-bottom:20px; overflow:hidden; }
+.rsc2_con2{  padding-top:30px; /*padding-left:10px;*/ padding-bottom:20px; overflow:hidden; }
 .rcl_img span{ display:block; float:left; margin-right:30px;}
 li.dsm{ border-bottom:none; background:url(../images/rsc2_pic7.jpg) no-repeat 12px 11px; padding-left:25px; line-height:30px; color:#999;}
 li.dsm3{ border-bottom:none; padding-left:10px; line-height:30px; color:#999;}
 
 /*510*/
 
-.prc_text2{ float:left; width:330px; margin-top:30px;}
+.prc_text2{ float:left; width:330px; margin-top:40px;}
 
 .rcc_left2{ float:left; margin-right:70px; padding-left:10px;}
 
@@ -730,6 +731,19 @@ ul.pc3_list li span.py6_2{ width:80px;line-height:32px;  }
 ul.pc3_list li span.py6_3{ width:80px;line-height:32px;  }
 ul.pc3_list li span.py6_4{ width:110px;line-height:32px;  }
 ul.pc3_list li span.py6_5{width:103px; border-right:none; }
+
+
+
+/*20130730*/
+.rcc2_con{ padding-left:10px;}
+.rcc_left4{ float:left; margin-right:50px; padding-left:10px; width:290px;}
+.rcc_right4{ float:left; width:290px;}
+.prc_text3{ float:left; width:380px; margin-top:40px;}
+.rcc_left5{ float:left; margin-right:30px; padding-left:10px; width:290px;}
+.rcc_right5{ float:left; width:315px;}
+.prt_con2{ overflow:hidden; padding-left:28px;}
+.pr_img{ float:left; margin:0px 35px;}
+
 
 
 /*轮胎使用常识*/
@@ -815,7 +829,28 @@ ul#example2 li{ float:left;}
 
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
 
+<<<<<<< HEAD
+
+
+/*20130730*/
+.rcc2_con{ padding-left:10px;}
+.rcc_left4{ float:left; margin-right:50px; padding-left:10px; width:290px;}
+.rcc_right4{ float:left; width:290px;}
+.prc_text3{ float:left; width:380px; margin-top:40px;}
+.rcc_left5{ float:left; margin-right:30px; padding-left:10px; width:290px;}
+.rcc_right5{ float:left; width:315px;}
+.prt_con2{ overflow:hidden; padding-left:28px;}
+.pr_img2{ float:left; margin-left:35px; margin-right:20px;}
+
+.rcc_left6{ float:left; margin-right:40px; padding-left:10px; width:300px;}
+
+
+
+
+
+=======
 #banner ul li.nob.active{
  background: #FFF;
  color: #000;
 }
+>>>>>>> f2da1844cec182ed8eefad2e72e876d04c6e98de
