@@ -617,40 +617,102 @@ ul.pc3_list li span.py_7{width:119px; border-right:none; }
 
 
 
-.table_1 {
+
+
+/*	标题头样式*/
+
+.table_2 { margin-left:8px;
 	width: 640px;
-	background: #DDD;
+	background: #0e398b;
+	
 }
-.table_1 tr th {
+
+.table_2  td {
 	 height:35px;
 	background: #0e398b;
 	color: #FFF;
 	line-height:35px;
-/*	border-right: 2px solid red;*/
+	border-right: 1px solid #fff;
+		font-size:14px;
+		 text-align:center;
 }
+
+.table_2 .td_1 {	
+	width:91px;	
+	border-right: 1px solid #fff;
+}
+
+.table_2 .td_2 {
+	 text-align:center;
+	width: 171px;
+	}
+
+.table_2 .td_3 {	
+ border-right:none;
+	 text-align:center;
+}
+
+
+
+/*	内容样式*/
+
+.table_1 {
+	border:1px solid #ddd;
+	border-bottom:none;
+	border-top:none;
+	 margin-left:8px;
+	width: 640px;
+	background: #fff;
+}
+
+
+.table_1 .tr_1{ background:#f4f4f4; }
+
 .table_1  td { 
-	background: #FFF;
+ padding:5px 0px;
 
-	padding: 8px 10px;
-}
-.table_1 .td_1 {
-	 text-align:center;
-	width: 175px;
-	font-size:14px;
-}
-.table_1 .td_2 {
-	width: 460px;
-	font-size:14px;
-	 text-align:center;
+
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	line-height:24px;
+
+/*	padding: 8px 10px;*/
+ l
 }
 
-.table_1 .td_3 {
- padding-left:55px;
-}
 
 .table_1 .td_4 {
- padding-left:20px; padding-right:20px; line-height:20px;
+	 text-align:center;
+	width:90px;
+	background:#f4f4f4;
+	
 }
+
+.table_1 .td_8 {
+	 text-align:center;
+	width:90px;
+ background: #fff;
+	
+}
+
+
+.table_1 .td_5 {
+	width: 100px;
+	 text-align:center;
+}
+
+.table_1 .td_6 {
+width: 70px;
+	 text-align:center;
+}
+
+.table_1 .td_7 {
+ padding-left:20px; padding-right:20px; line-height:20px;
+ border-right:none;
+ border-bottom:1px solid #ddd;
+
+}
+
 
 
 
@@ -829,7 +891,7 @@ ul#example2 li{ float:left;}
 
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
 
-<<<<<<< HEAD
+
 
 
 /*20130730*/
@@ -848,9 +910,41 @@ ul#example2 li{ float:left;}
 
 
 
-=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #banner ul li.nob.active{
  background: #FFF;
  color: #000;
 }
->>>>>>> f2da1844cec182ed8eefad2e72e876d04c6e98de
+
