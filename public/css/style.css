@@ -471,7 +471,12 @@ ul.cl_list li{ display:block; border-bottom:1px dashed #ddd; line-height:24px; p
 #leftcontent .current dt{background:url(../images/contact_pic6.gif) no-repeat 10px 18px;}
 #leftcontent .current dt a{color:#0a4188;  background:url(../images/contact_pic6.gif) no-repeat 10px 18px;}
 #leftcontent .current dd{ display:block;}
-
+#leftcontent dd li.new {
+	background: url('../images/new.jpg') no-repeat 60px 5px;
+}
+#leftcontent dd li.tire_9.new {
+	background: url('../images/new.jpg') no-repeat 70px 5px;
+}
 
 .zy_footer{ height:50px; margin-bottom:20px;  padding:8px 20px 0px 20px; position:relative;}
 .copyright2{ float:right; line-height:38px; color:#505256; padding-left:25px; text-align:right;}
@@ -892,8 +897,6 @@ ul#example2 li{ float:left;}
 .page_sm{ font-size:14px; font-weight:bold; color:#0a4188}
 
 
-
-
 /*20130730*/
 .rcc2_con{ padding-left:10px;}
 .rcc_left4{ float:left; margin-right:50px; padding-left:10px; width:290px;}
@@ -905,43 +908,6 @@ ul#example2 li{ float:left;}
 .pr_img2{ float:left; margin-left:35px; margin-right:20px;}
 
 .rcc_left6{ float:left; margin-right:40px; padding-left:10px; width:300px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #banner ul li.nob.active{
  background: #FFF;

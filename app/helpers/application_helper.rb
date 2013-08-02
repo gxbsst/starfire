@@ -20,7 +20,8 @@ module ApplicationHelper
 
   def link_to_category(cat_name, params, tires)
     cat_map = {:pcr => 'PCR产品', :suv => 'SUV产品', :lighttruck => '轻卡产品', :winter => '冬季轮胎产品' }
-    class_name = cat_name.to_s == params ? :current : ''
+    class_name = cat_name.to_s == params ? "current" : ''
+
     content_tag :dl, :class => class_name do
       dt = content_tag :dt do
         link_to cat_map[cat_name], refinery.tires_tires_path(:cat => cat_name.to_s)
@@ -31,8 +32,13 @@ module ApplicationHelper
         dd =  content_tag :dd do
           content_tag :ul do
             tires.collect do |tire|
-              class_name = request.params[:id].to_i == tire.id ? :hover : ''
-              concat %Q[<li>#{link_to "•  #{tire.decorative}", refinery.tires_tire_path(tire), :class => class_name}</li>].html_safe
+              class_name = request.params[:id].to_i == tire.id ? "hover" : ''
+              li_class_name = if tire.decorative == 'RS-C88' || tire.decorative == 'RS-W 5.0'
+               "tire_#{tire.id} new"
+              else
+               "tire_#{tire.id}"
+              end
+              concat %Q[<li class="#{li_class_name}">#{link_to "•  #{tire.decorative}", refinery.tires_tire_path(tire), :class => class_name}</li>].html_safe
             end
           end
         end
