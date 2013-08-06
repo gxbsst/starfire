@@ -1,3 +1,4 @@
+# encoding: utf-8
 namespace :app do
   desc "TODO"
   task :init_tires => :environment do
@@ -51,7 +52,9 @@ namespace :app do
   end
     ## 更新描述和图片
   task :init_stores => :environment do
-    file_name = "store.csv"
+    ActiveRecord::Base.connection.execute("TRUNCATE TABLE stores")
+
+    file_name = "store2.csv"
     csv = CSV.read(Rails.root.join('lib', 'tasks', file_name))
     csv.each do |item|
 
@@ -78,14 +81,17 @@ namespace :app do
 
   task :update_car => :environment do
 
+    ActiveRecord::Base.connection.execute("TRUNCATE TABLE brands")
+
     car_tires = {
-        'RS-C 2.0' => 'RS-C2.0-Table 1.csv',
-        'RS-R 1.0' => 'RS-R1.0-Table 1.csv',
-        'RS-W 3.0' => 'RS-W3.0-Table 1.csv',
-        'RS-T 4.0' => 'RS-T4.0-Table 1.csv',
-        'RS-L 909' => 'RS-L909-Table 2.csv',
-        'RS-V 66' => 'RS-V66-Table 1.csv',
-        'SF-510' => 'SF510-Table 1.csv'
+        'RS-C 2.0' => 'RS-C2.0-表格 1.csv',
+        'RS-R 1.0' => 'RS-R1.0&909-表格 1.csv',
+        'RS-W 3.0' => 'RS-W3.0-表格 1.csv',
+        'RS-T 4.0' => 'RS-T4.0-表格 1.csv',
+        'RS-L 909' => 'RS-R1.0&909-表格 1.csv',
+        'RS-V 66' => 'RS-V66-表格 1.csv',
+        'SF-510' => 'SF510-表格 1.csv',
+        'RS-C88' => 'RS-C88-表格 1.csv'
     }
 
     car_tires.each do |decorative, filename|
