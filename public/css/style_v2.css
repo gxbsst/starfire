@@ -8,28 +8,12 @@
 	overflow: auto;
 }
 
-.red {
-	color: #a30003;
-}
 #header {
 	width: 960px;
 	margin: 0 auto;
 	height: 79px;
 	background: transparent url(../images/v2/header_bg.png) no-repeat left top;
 	position: relative;
-	/*overflow: auto;	*/
-	margin-top: -16px;
-}
-
-#header h1  a{
-	display: block;
-	left: 0;
-	top: 0;
-	width: 200px;
-	height: 70px;
-	position: absolute;
-	text-indent: -9000px;
-
 }
 
 #container {
@@ -38,8 +22,8 @@
 	overflow: hidden;
 }
 #footer {
-	/*overflow: hidden;*/
-	padding: 10px 30px;
+	overflow: auto;
+	padding:10px 30px;
 	width: 900px;
 	margin: 0 auto;
 	background: transparent url(../images/v2/footer_bg.png) repeat-x left top;
@@ -64,8 +48,6 @@ li {
   list-style-type: none;
 }
 a {
-  outline: none;
-  border: none; 
   color: #444;
   text-decoration: none;
 }
@@ -362,7 +344,7 @@ ul.ul .li .none1 {
   border-bottom: none;
   width: 100%;
   position: absolute;
-  z-index: 11500;
+  z-index: 500;
   display: none;
 }
 ul.ul .current .none1 {
@@ -377,7 +359,7 @@ ul.ul .li li {
 }
 ul.ul .li li a {
   color: #bababa;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 ul.ul .li li a:hover {
   color: #ff0000;
@@ -954,7 +936,7 @@ ul.inc_con li span.cn_2 {
   width: 24px;
   height: 53px;
   position: absolute;
-  left: 934px;
+  left: 958px;
   bottom: 167px;
 }
 
@@ -1072,7 +1054,6 @@ ul.inc_con li span.cn_2 {
   border: 1px solid #eaeaea;
   overflow: hidden;
   background: #f9f9f9;
-  background-color: rgba(230,230,230,0.5);
 }
 .coc_title {
   height: 55px;
@@ -1113,7 +1094,7 @@ span.red_dq {
 ul.cl_list {
   display: block;
   width: 500px;
-  /*padding-bottom: 260px;*/
+  padding-bottom: 260px;
 }
 ul.cl_list li {
   display: block;

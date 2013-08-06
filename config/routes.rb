@@ -2,7 +2,7 @@ Starfire::Application.routes.draw do
 
   root :to => 'statics#index'
 
-  statics = %w(about_us contact_us copyright sitemap index story knowledge sold_worldwide)
+  statics = %w(about_us contact_us copyright sitemap index brand knowledge company)
   statics.each do |i|
     match "/#{i}", :to => "statics##{i}"
   end

@@ -1,8 +1,5 @@
-<% if controller_name == 'statics' && action_name == 'index' %>
-  <div class="mk">
-<% else %>
-<div class="mk2">
-  <% end %>
+<h1><a href="/">斯达飞轮胎官方网站</a></h1>
+<div class="mk">
   <div id="nav">
     <ul class="ul">
       <li class="li li1"><a class="a current" href="/">首页</a></li>
@@ -17,8 +14,8 @@
 
         <div class="none1">
           <ul class="menu1">
-            <li><a href="/sold_worldwide">行销全球</a></li>
-            <li><a href="/story">DTT科技</a></li>
+            <li><a href="/company">企业介绍</a></li>
+            <li><a href="/brand">品牌介绍</a></li>
             <li><a href="/contact_us">联系我们</a></li>
           </ul>
         </div>
@@ -33,10 +30,9 @@
 
         <div class="none1">
           <ul class="menu1">
-            <li><%= link_to 'PCR产品', refinery.tires_tires_path(:cat => 'pcr') %></li>
-            <li><%= link_to 'SUV产品', refinery.tires_tires_path(:cat => 'suv') %></li>
-            <li><%= link_to '轻卡产品', refinery.tires_tires_path(:cat => 'lighttruck') %></li>
-            <li><%= link_to '冬季轮胎产品', refinery.tires_tires_path(:cat => 'winter') %></li>
+            <li><%= link_to '轿车轮胎产品', refinery.tires_tires_path(:cat => 'pcr') %></li>
+            <li><%= link_to 'SUV&4X4轮胎产品', refinery.tires_tires_path(:cat => 'suv') %></li>
+            <li><%= link_to '雪地胎产品', refinery.tires_tires_path(:cat => 'winter') %></li>
             <li><a href="/tires/search">查找轮胎</a></li>
             <li><a href="/knowledge">轮胎使用常识</a></li>
           </ul>
@@ -45,16 +41,11 @@
 
       <li class="li li4">
         <% if controller_name == 'items' %>
-        <a class="a current" href="javascript:void(0)">媒体新闻</a>
+        <a class="a current" href="javascript:void(0)">新闻中心</a>
+        <%= link_to '新闻中心', refinery.news_items_path, :class => 'a current' %>
          <% else %>
-          <a class="a" href="javascript:void(0)">媒体新闻</a>
+         <%= link_to '新闻中心', refinery.news_items_path, :class => 'a' %>
          <% end %>
-          <div class="none1">
-          <ul class="menu1">
-            <li><%= link_to '新闻中心', refinery.news_items_path %></li>
-            <li><%= link_to '媒体中心', refinery.news_items_path(:type => :media) %></li>
-          </ul>
-        </div>
       </li>
 
       <li class="li li5">
@@ -62,7 +53,7 @@
         <% if controller_name == 'stores' %>
           <a class="a current" href="javascript:void(0)">营销网络</a>
         <% else %>
-          <a class="a" href="#">营销网络</a>
+          <a class="a" href="javascript:void(0)">营销网络</a>
         <% end %>
 
         <div class="none1">

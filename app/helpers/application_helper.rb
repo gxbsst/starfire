@@ -19,7 +19,7 @@ module ApplicationHelper
   end
 
   def link_to_category(cat_name, params, tires)
-    cat_map = {:pcr => 'PCR产品', :suv => 'SUV产品', :lighttruck => '轻卡产品', :winter => '冬季轮胎产品' }
+    cat_map = {:pcr => '轿车轮胎产品', :suv => 'SUV&4X4轮胎产品', :lighttruck => '轻卡产品', :winter => '雪地胎产品' }
     class_name = cat_name.to_s == params ? "current" : ''
 
     content_tag :dl, :class => class_name do

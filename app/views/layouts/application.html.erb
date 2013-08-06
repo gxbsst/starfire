@@ -6,41 +6,59 @@
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-<div class="top_bg">
-  <div class="top" id="top">
-    <div class="top_left"><%= image_tag "top_pic1.gif", :size => '160x30' %></div>
-    <div class="top_right"><%= image_tag "top_pic2.gif", :size => '198x30' %></div>
-  </div>
-</div>
+<body class="normal_body">
 
-<div class="content">
-  <div class="w960">
-    <div class="lm_con">
-      <div class="tb_img"><%= image_tag "top_pic3.png", :size => '169x16' %></div>
-      <div class="logo2"><%= image_tag "logo.png", :size => '249x50' %></div>
+  <div id="wrapper">
+    <div id="header"> 
       <%= render 'layouts/menu' %>
+      <!-- header end -->
     </div>
-    <div class="zy_con">
-      <div class="coc_title">
-        <div class="ct_left">
-          <%=  yield :title_image %>
-        </div>
-        <div class="ct_right">
-          <span>当前位置:</span>
-          <%= raw(show_nav_path(controller_name, action_name, @title)).html_safe %>
 
+    <div id="container">
+      <div class="content">
+        <div class="w960">
+          <div class="zy_con color-block">
+            <div class="coc_title">
+              <div class="ct_left">
+                <%=  yield :title_image %>
+              </div>
+              <div class="ct_right">
+                <span>当前位置:</span>
+                <%= raw(show_nav_path(controller_name, action_name, @title)).html_safe %>
+              </div>
+            </div>
+            <div class="coc_bottom">
+              <%= yield %>
+            </div>
+          </div>
+          <!-- w960 end -->
         </div>
-      </div>
-      <div class="coc_bottom">
-        <%= yield %>
-      </div>
+        <!-- content end -->
+      </div>  
+      <!-- container end -->
     </div>
-    <%= render :partial => 'layouts/footer' %>
+    <div id="footer">
+      <%= render :partial => 'layouts/footer' %>
+      <!-- footer end -->
+    </div>
+    <!-- end wrapper -->
   </div>
-</div>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script language="javascript" type="text/javascript" src="/js/global.js"></script>
-<script language="javascript" type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/global.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+
+  <!--[if IE]>
+     
+     <style type="text/css">
+
+     .color-block { 
+         background:transparent;
+         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50e6e6e6,endColorstr=#50e6e6e6); 
+         zoom: 1;
+      } 
+
+      </style>
+
+  <![endif]-->
 </body>
 </html>

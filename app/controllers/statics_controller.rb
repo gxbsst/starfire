@@ -23,12 +23,12 @@ class StaticsController < ApplicationController
     @title = "版权声明"
   end
 
-  def story
-    @title = 'DTT科技'
+  def company
+    @title = '企业介绍'
   end
 
-  def sold_worldwide
-    @title = '行销全球'
+  def brand
+    @title = '品牌介绍'
   end
 
   def knowledge
