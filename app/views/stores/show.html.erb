@@ -5,7 +5,8 @@
         <% content_for :title, @title %>
 <% end %>
 <% content_for :title_image do %>
-  <%= image_tag "is_pic1.jpg" %>
+  <%#= image_tag "is_pic1.jpg" %>
+   <h2>斯达飞形象店</h2>
 <% end %>
 
 <div class="cb_left">
@@ -19,7 +20,8 @@
 <% elsif params[:id] == "2" # 招牌%>
   <% content_for :title, @title%>
   <% content_for :title_image do %>
-    <%= image_tag "sst_pic1.jpg", :size => '150x55' %>
+    <%#= image_tag "sst_pic1.jpg", :size => '150x55' %>
+    <h2>斯达飞招牌店</h2>
   <% end %>
   <div class="cb_left">
     <div class="is_con">

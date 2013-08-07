@@ -7,9 +7,9 @@
       <li class="li li2">
 
         <% if controller_name == 'statics' && (action_name == 'contact_us' ||  action_name == 'story' || action_name == 'sold_worldwide') %>
-          <a class="a current" href="/sold_worldwide">关于斯达飞</a>
+          <a class="a current" href="/company">关于斯达飞</a>
         <% else  %>
-          <a class="a" href="/sold_worldwide">关于斯达飞</a>
+          <a class="a" href="/company">关于斯达飞</a>
         <% end %>
 
         <div class="none1">
@@ -41,7 +41,6 @@
 
       <li class="li li4">
         <% if controller_name == 'items' %>
-        <a class="a current" href="javascript:void(0)">新闻中心</a>
         <%= link_to '新闻中心', refinery.news_items_path, :class => 'a current' %>
          <% else %>
          <%= link_to '新闻中心', refinery.news_items_path, :class => 'a' %>

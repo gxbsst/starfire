@@ -36,319 +36,191 @@ $(document).ready(function(){
 
 <body>
   <div id="wrapper">
-  <div id="header">    
-    <%= render 'layouts/menu' %>
-    <!-- header end -->
-  </div>
+    <div id="header">    
+      <%= render 'layouts/menu' %>
+      <!-- header end -->
+    </div>
 
-  <div id="container">
-    <div class="banner_bg">
-      <div class="bo_con">
+    <div id="container">
+      <div class="banner_bg">
+        <div class="bo_con">
 
-        <div id="banner">
-          <ul>
-           <li class="nob" style="background-color:#FFF;color:#000;">1</li>
-           <li class="nob">2</li>
-           <li class="nob">3</li>
-         </ul>
-         <div id="banner_list">
-           <a href="/tires/2" target="_self"><img src="images/v2/banner_1.png"   /></a>
-           <a href="/tires/1" target="_self"><img src="images/v2/banner_1.png"   /></a>
-           <a href="/tires/7" target="_self"><img src="images/v2/banner_1.png"   /></a>
+          <div id="banner">
+            <ul>
+             <li class="nob" style="background-color:#FFF;color:#000;">1</li>
+             <li class="nob">2</li>
+             <li class="nob">3</li>
+           </ul>
+           <div id="banner_list">
+             <a href="/tires/2" target="_self"><img src="images/v2/banner_1.png"   /></a>
+             <a href="/tires/1" target="_self"><img src="images/v2/banner_1.png"   /></a>
+             <a href="/tires/7" target="_self"><img src="images/v2/banner_1.png"   /></a>
+           </div>
          </div>
-       </div>
 
 
 
-       <div class="search_title"><%= image_tag "home_pic2.jpg", :width => "280x40" %></div>
-       <div class="bq_title">
-        <div class="xixi1" id="bg">
-          <div id="font1" class="tab1" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi1'">按尺寸查找</div>
-          <div id="font2" class="tab2" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi2'">按车辆查找</div>
-          <div id="font3" class="tab3" onMouseOver="setTab03Syn(3);document.getElementById('bg').className='xixi3'">按花纹查找</div>
+         <div class="search_title"><%= image_tag "home_pic2.jpg", :width => "280x40" %></div>
+         <div class="bq_title">
+          <div class="xixi1" id="bg">
+            <div id="font1" class="tab1" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi1'">按尺寸查找</div>
+            <div id="font2" class="tab2" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi2'">按车辆查找</div>
+            <div id="font3" class="tab3" onMouseOver="setTab03Syn(3);document.getElementById('bg').className='xixi3'">按花纹查找</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="hc_bg">
+      <div class="hc_con">
+        <div class="home_con">
+          <div class="video">
+            <div class="video_title">
+              <div class="vt_left">品牌宣传片</div>
+
+            </div>
+
+
+
+            <div class="video_con"><img src="images/video.jpg" width="330" height="165" /></div>
+
+          </div>
+          <div class="home_news">
+            <div class="video_title">
+              <div class="vt_left">明星产品</div>
+
+            </div>
+            <div class="hn_con"></div>
+            <img src="images/hn_pic1.jpg" width="330" height="165" />
+
+            <!--<ul class="inc_con">-->
+            <!--<li><span class="cn_1"><a href="#">固铂轮胎橡胶公司发布2012年第四季度财报及全年财报⋯⋯</a></span>-->
+            <!--<span class="cn_2">2013-03-04</span></li>-->
+            <!--<li><span class="cn_1"><a href="#">固铂轮胎橡胶公司发布2012年第四季度财报及全年财报⋯⋯</a></span>-->
+            <!--<span class="cn_2">2013-03-04</span></li>-->
+            <!--<li class="ic_last"><span class="cn_1"><a href="#">固铂轮胎橡胶公司发布2012年第四季度财报及全年财报⋯⋯</a></span>-->
+            <!--<span class="cn_2">2013-03-04</span></li>-->
+
+
+            <!--</ul>-->
+          </div>
+
+          <script type="text/javascript">
+          function setTab03Syn ( i )
+          {
+            selectTab03Syn(i);
+          }
+
+          function selectTab03Syn ( i )
+          {
+            switch(i){
+              case 1:
+              document.getElementById("TabCon1").style.display="block";
+              document.getElementById("TabCon2").style.display="none";
+              document.getElementById("TabCon3").style.display="none";
+              document.getElementById("font1").style.color="#ffffff";
+              document.getElementById("font2").style.color="#ffffff";
+              document.getElementById("font3").style.color="#ffffff";
+              break;
+              case 2:
+              document.getElementById("TabCon1").style.display="none";
+              document.getElementById("TabCon2").style.display="block";
+              document.getElementById("TabCon3").style.display="none";
+              document.getElementById("font1").style.color="#ffffff";
+              document.getElementById("font2").style.color="#ffffff";
+              document.getElementById("font3").style.color="#ffffff";
+              break;
+              case 3:
+              document.getElementById("TabCon1").style.display="none";
+              document.getElementById("TabCon2").style.display="none";
+              document.getElementById("TabCon3").style.display="block";
+              document.getElementById("font1").style.color="#ffffff";
+              document.getElementById("font2").style.color="#ffffff";
+              document.getElementById("font3").style.color="#ffffff";
+              break;
+            }
+          }
+
+          </script>
+
+          <div class="tab">
+
+            <div id="TabCon1">
+              <%= form_tag "/searchs" do  -%>
+              <div class="xz_pro">
+                <%= render "statics/share/product_search_form" %>
+              </div>
+
+              <div class="btn_pro">
+                <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
+                <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
+              </div>
+
+              <% end %>
+
+            </div>
+
+
+            <div id="TabCon2" style="display:none">
+              <%= form_tag "/searchs?type=brand" do  -%>
+
+              <div class="xz_pro">
+                <%= render "statics/share/brand_search_form" %>
+              </div>
+
+              <div class="btn_pro">
+                <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
+                <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
+              </div>
+              <% end %>
+            </div>
+
+
+            <div id="TabCon3" style="display:none">
+              <%= form_tag "/searchs?type=decorative" do  -%>
+              <div class="xz_pro">
+                <%= render "statics/share/name_search_form" %>
+              </div>
+
+              <div class="btn_pro">
+                <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
+                <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
+              </div>
+              <% end %>
+
+            </div>
+
+
+            <%= javascript_include_tag "underscore", "backbone", "products", "brands"%>
+
+          </div>
+
+        </div>
+
+
+        <div class="home_con2">
+          <div class="examples_body">
+            <div class="bx_wrap">
+              <div class="bx_container">
+                <%= render "layouts/tires_slider" %>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
-  <div class="hc_bg">
-    <div class="hc_con">
-      <div class="home_con">
-        <div class="video">
-          <div class="video_title">
-            <div class="vt_left">品牌宣传片</div>
+</div>
+<!-- container end -->
+</div>
 
-          </div>
-
-
-
-          <div class="video_con"><img src="images/video.jpg" width="330" height="165" /></div>
-
-        </div>
-        <div class="home_news">
-          <div class="video_title">
-            <div class="vt_left">明星产品</div>
-
-          </div>
-          <div class="hn_con"></div>
-          <img src="images/hn_pic1.jpg" width="330" height="165" />
-
-          <!--<ul class="inc_con">-->
-          <!--<li><span class="cn_1"><a href="#">固铂轮胎橡胶公司发布2012年第四季度财报及全年财报⋯⋯</a></span>-->
-          <!--<span class="cn_2">2013-03-04</span></li>-->
-          <!--<li><span class="cn_1"><a href="#">固铂轮胎橡胶公司发布2012年第四季度财报及全年财报⋯⋯</a></span>-->
-          <!--<span class="cn_2">2013-03-04</span></li>-->
-          <!--<li class="ic_last"><span class="cn_1"><a href="#">固铂轮胎橡胶公司发布2012年第四季度财报及全年财报⋯⋯</a></span>-->
-          <!--<span class="cn_2">2013-03-04</span></li>-->
-
-
-          <!--</ul>-->
-        </div>
-
-        <script type="text/javascript">
-        function setTab03Syn ( i )
-        {
-          selectTab03Syn(i);
-        }
-
-        function selectTab03Syn ( i )
-        {
-          switch(i){
-            case 1:
-            document.getElementById("TabCon1").style.display="block";
-            document.getElementById("TabCon2").style.display="none";
-            document.getElementById("TabCon3").style.display="none";
-            document.getElementById("font1").style.color="#ffffff";
-            document.getElementById("font2").style.color="#ffffff";
-            document.getElementById("font3").style.color="#ffffff";
-            break;
-            case 2:
-            document.getElementById("TabCon1").style.display="none";
-            document.getElementById("TabCon2").style.display="block";
-            document.getElementById("TabCon3").style.display="none";
-            document.getElementById("font1").style.color="#ffffff";
-            document.getElementById("font2").style.color="#ffffff";
-            document.getElementById("font3").style.color="#ffffff";
-            break;
-            case 3:
-            document.getElementById("TabCon1").style.display="none";
-            document.getElementById("TabCon2").style.display="none";
-            document.getElementById("TabCon3").style.display="block";
-            document.getElementById("font1").style.color="#ffffff";
-            document.getElementById("font2").style.color="#ffffff";
-            document.getElementById("font3").style.color="#ffffff";
-            break;
-          }
-        }
-
-        </script>
-
-        <div class="tab">
-
-          <div id="TabCon1">
-            <%= form_tag "/searchs" do  -%>
-            <div class="xz_pro">
-              <%= render "statics/share/product_search_form" %>
-            </div>
-
-            <div class="btn_pro">
-              <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-              <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
-            </div>
-
-            <% end %>
-
-          </div>
-
-
-          <div id="TabCon2" style="display:none">
-            <%= form_tag "/searchs?type=brand" do  -%>
-
-            <div class="xz_pro">
-              <%= render "statics/share/brand_search_form" %>
-            </div>
-
-            <div class="btn_pro">
-              <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-              <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
-            </div>
-            <% end %>
-          </div>
-
-
-          <div id="TabCon3" style="display:none">
-            <%= form_tag "/searchs?type=decorative" do  -%>
-            <div class="xz_pro">
-              <%= render "statics/share/name_search_form" %>
-            </div>
-
-            <div class="btn_pro">
-              <span class="scb_btn"><input type="button" class="searchbtn" value="查询轮胎" /></span>
-              <span class="scb_text"><%= link_to '查看所有轮胎 >>', refinery.tires_tires_path %></span>
-            </div>
-            <% end %>
-
-          </div>
-
-
-          <%= javascript_include_tag "underscore", "backbone", "products", "brands"%>
-
-        </div>
-
-      </div>
-
-
-      <div class="home_con2">
-        <div class="examples_body">
-          <div class="bx_wrap">
-            <div class="bx_container">
-              <ul id="example2">
-                <li>            
-                  <div class="hcp_con1">
-                    <div class="hcc_title">
-                      <span class="ht_left">RS-R 1.0&nbsp;&nbsp;   超高性能环保轮胎</span>
-                      <span class="ht_more"><a href="/tires/2">更多 >></a></span>
-                    </div>
-                    <div class="hcc_bottom">
-                      <div class="hb_img"><img src="images/home_pic14.png" width="102" height="143" /></div>
-                      <div class="hb_text">我们不能改变前方路况，但可
-                        以用完美品质应对严苛考验。
-                        来自美国的斯达飞轮胎RS-R 1.0，以创新科技成就强悍抓地与非凡操控⋯⋯</div>
-                      </div>
-                    </div>            
-                  </li>
-                  <li>
-                    <div class="hcp_con1">
-                      <div class="hcc_title">
-                        <span class="ht_left">RS-C 2.0&nbsp;&nbsp;   舒适安全型轮胎</span>
-                        <span class="ht_more"><a href="/tires/1">更多 >></a></span>
-                      </div>
-                      <div class="hcc_bottom">
-                        <div class="hb_img"><img src="images/home_pic15.png" width="106" height="146" /></div>
-                        <div class="hb_text">我们不能改变前方路况，但可
-                          以用完美品质应对严苛考验。
-                          RS-C2.0专为各种大众化轿车量身打造。它可以最大程度地给车主⋯⋯</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="hcp_con1">
-                        <div class="hcc_title">
-                          <span class="ht_left">RS-T 4.0&nbsp;&nbsp;  高里程环保轮胎</span>
-                          <span class="ht_more"><a href="/tires/3">更多 >></a></span>
-                        </div>
-                        <div class="hcc_bottom">
-                          <div class="hb_img"><img src="images/home_pic13.png" width="97" height="148" /></div>
-                          <div class="hb_text">我们不能改变前方路况，但可
-                            以用完美品质应对严苛考验。
-                            来自美国的斯达飞轮胎RS-T 4.0，集高里程和操控性于一身，经济、超值⋯⋯</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="hcp_con1">
-                          <div class="hcc_title">
-                            <span class="ht_left2">RS-C88&nbsp;&nbsp; 舒适静音型轮胎</span>
-                            <span class="ht_more"><a href="/tires/8">更多 >></a></span>
-                          </div>
-                          <div class="hcc_bottom">
-                            <div class="hb_img"><img src="images/home_pic18.png" width="113" height="147" /></div>
-                            <div class="hb_text">我们不能改变前方路况，但可
-                              以用完美品质应对严苛考验。
-                              RS-C88给您带来奢华级的静音感受,它可以最大程度减低噪音⋯⋯</div>
-                            </div>
-                          </div>
-                        </li>
-
-
-
-                        <li>
-                          <div class="hcp_con1">
-                            <div class="hcc_title">
-                              <span class="ht_left">SF-510   公路越野轮胎</span>
-                              <span class="ht_more"><a href="/tires/7">更多 >></a></span>
-                            </div>
-                            <div class="hcc_bottom">
-                              <div class="hb_img"><img src="images/home_pic16.png" width="161" height="142" /></div>
-                              <div class="hb_text2">来自美国的斯达飞SUV轮胎SF 510，集全天候、全路况于一身，精彩诠释了都市越野情怀一身⋯⋯</div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="hcp_con1">
-                            <div class="hcc_title">
-                              <span class="ht_left2">RS-V66&nbsp;&nbsp; 高里程商用车轮胎  </span>
-                              <span class="ht_more"><a href="/tires/6">更多 >></a></span>
-                            </div>
-                            <div class="hcc_bottom">
-                              <div class="hb_img"><img src="images/home_pic10.png" width="107" height="148" /></div>
-                              <div class="hb_text">我们不能改变前方路况，但可
-                                以用完美品质应对严苛考验。
-                                来自美国的斯达飞轮胎RS-V66，高里程、抗穿刺、抗偏磨，经济超值。
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="hcp_con1">
-                            <div class="hcc_title">
-                              <span class="ht_left">RS-L909&nbsp;&nbsp;   高里程轻型载重轮胎</span>
-                              <span class="ht_more"><a href="/tires/5">更多 >></a></span>
-                            </div>
-                            <div class="hcc_bottom">
-                              <div class="hb_img"><img src="images/home_pic17.png" width="105" height="147" /></div>
-                              <div class="hb_text">我们不能改变前方路况，但可
-                                以用完美品质应对严苛考验。
-                                来自美国的斯达飞轮胎RS-L909，集高载重和高里程于一身，持久耐用⋯⋯</div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="hcp_con1">
-                              <div class="hcc_title">
-                                <span class="ht_left2">RS-W 3.0&nbsp;&nbsp; 超高性能雪地型轮胎</span>
-                                <span class="ht_more"><a href="/tires/3">更多 >></a></span>
-                              </div>
-                              <div class="hcc_bottom">
-                                <div class="hb_img"><img src="images/home_pic12.png" width="112" height="142" /></div>
-                                <div class="hb_text">我们不能改变前方路况，但可
-                                  以用完美品质应对严苛考验。
-                                  美国斯达飞轮胎RS-W 3.0，以踏雪破霜之势疾驶在冰雪之间⋯⋯</div>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="hcp_con1">
-                                <div class="hcc_title">
-                                  <span class="ht_left2">RS-W 5.0&nbsp;&nbsp; 超高性能冰地型轮胎</span>
-                                  <span class="ht_more"><a href="/tires/9">更多 >></a></span>
-                                </div>
-                                <div class="hcc_bottom">
-                                  <div class="hb_img"><img src="images/home_pic19.png" width="109" height="144" /></div>
-                                  <div class="hb_text">我们不能改变前方路况，但可以用完美品质应对严苛考验。美国斯达飞轮胎RS-W5.0，以踏雪破霜之势疾驶在冰雪之间⋯⋯</div>
-                                </div>
-                              </div>
-                            </li>
-
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <!-- container end -->
-        </div>
-
-        <div id="footer">
-           <%= render :partial => 'layouts/footer' %>
-          <!-- footer end -->
-        </div>
-          <!-- end wrapper -->
-     </div>
-     <%= javascript_include_tag 'home.js' %>
-      </body>
-      </html>
+<div id="footer">
+ <%= render :partial => 'layouts/footer' %>
+ <!-- footer end -->
+</div>
+<!-- end wrapper -->
+</div>
+<%= javascript_include_tag 'home.js' %>
+</body>
+</html>

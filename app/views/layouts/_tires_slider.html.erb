@@ -1,0 +1,39 @@
+<ul id="example2">
+
+<%
+ tires = [
+  # pcr
+  ['RS-C88<br />高档舒适静音胎', 'hp_c88.png', '/tires/2'],
+  ['RS-C2.0<br/>舒适静音胎', 'hp_c2.png', '/tires/2'],
+  ['RS-R1.0<br/>超高性能环保胎', 'hp_r1.png', '/tires/2'],
+  ['RS-T4.0<br/>超高里程胎', 'hp_t4.png', '/tires/2'],
+  ['RS-V66<br/>高里程商用车胎', 'hp_v66.png', '/tires/2'],
+  ['RS-L909<br />高载重胎', 'hp_l909.png', '/tires/2'],
+  # suv
+  ['SF-510<br/>公路越野胎', 'hp_w5.png', '/tires/2'],
+  ['RS-W5.0<br/>冰地胎', 'hp_w5.png', '/tires/2'],
+  ['RS-W3.0<br/>雪地胎', 'hp_w3.png', '/tires/2']
+ ]
+ %>
+ 
+ <% tires.each do |tire| %>
+  <li>            
+    <div class="hcp_con1">                   
+      <div class="hcc_bottom">
+        <div class="hb_img">
+          <%= link_to tire[2] do %>
+          <%= image_tag "/images/v2/#{tire[1]}" %>
+          <% end %>
+        </div>
+        <div class="text_outer">
+        <h2><%=  (link_to raw(tire[0]), tire[2]) %></h2>
+        <span class="ht_more">
+          <%= link_to '更多 >>', tire[2] %>
+        </span>
+      </div>
+      </div>
+      <!-- end hcp_con1 -->
+    </div>            
+  </li>
+  <% end %>
+</ul>

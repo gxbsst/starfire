@@ -65,8 +65,8 @@ module ApplicationHelper
 
     text_hash =  {
         'statics' => {
-            'sold_worldwide' => '关于斯达飞',
-            'story' => '关于斯达飞',
+            'company' => '关于斯达飞',
+            'brand' => '关于斯达飞',
             'contact_us' => '关于斯达飞',
             'knowledge' =>  '产品与服务',
             'sitemap' => '首页',
@@ -119,10 +119,10 @@ module ApplicationHelper
         '产品与服务' => '/tires',
         '媒体中心' => '/news',
         '营销网络' => '/stores/1',
-        'PCR产品' => '/tires?cat=pcr',
-        'SUV产品' => '/tires?cat=suv',
+        '轿车轮胎产品' => '/tires?cat=pcr',
+        'SUV&4X4轮胎产品' => '/tires?cat=suv',
         '轻卡产品' => '/tires?cat=lighttruck',
-        '冬季轮胎产品' => '/tires?cat=winter'
+        '雪地胎产品' => '/tires?cat=winter'
 
     }
 
