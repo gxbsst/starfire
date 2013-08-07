@@ -68,7 +68,7 @@ body,ul,dl,dt,dd p {
 }
 
 body {
-  background: #000 url(../images/v2/bg.jpg) no-repeat center -200px;
+  background: #000 url(../images/v2/bg.jpg) no-repeat center -100px;
   background-attachment:fixed;
 }
 li {
@@ -1043,6 +1043,7 @@ ul.inc_con li span.cn_2 {
   line-height: 22px;
   padding: 0px 0px 0px 10px;
   height: 24px;
+  color: #444;
 }
 #topselectcontent .none {
   text-align: left;
@@ -1148,10 +1149,10 @@ ul.inc_con li span.cn_2 {
   color: #999;
 }
 .ct_right a:hover {
-  color: #174b8d;
+  color: #a30003;
 }
 span.red_dq {
-  color: #174b8d;
+  color: #a30003;
 }
 
 .coc_bottom {
@@ -1206,7 +1207,7 @@ ul.cl_list li {
 
 .zyl_title {
   height: 38px;
-  background: url(../images/contact_pic4.gif) no-repeat bottom;
+  background: url(../images/contact_pic4.png) no-repeat bottom;
   line-height: 38px;
   color: #a30003;
   font-size: 15px;
@@ -1228,13 +1229,13 @@ ul.cl_list li {
   text-decoration: none;
   height: 44px;
   display: block;
-  background: url(../images/contact_pic5.gif) no-repeat 10px 18px;
+  background: url(../images/contact_pic5.png) no-repeat 10px 18px;
   font-size: 14px;
 }
 #leftcontent dt a:hover {
   background-position: 0px -31px;
   color: #a30003;
-  background: url(../images/contact_pic6.gif) no-repeat 10px 18px;
+  background: url(../images/contact_pic6.png) no-repeat 10px 18px;
 }
 #leftcontent dd {
   display: none;
@@ -1269,11 +1270,11 @@ ul.cl_list li {
   color: #a30003;
 }
 #leftcontent .current dt {
-  background: url(../images/contact_pic6.gif) no-repeat 10px 18px;
+  background: url(../images/contact_pic6.png) no-repeat 10px 18px;
 }
 #leftcontent .current dt a {
   color: #a30003;
-  background: url(../images/contact_pic6.gif) no-repeat 10px 18px;
+  background: url(../images/contact_pic6.png) no-repeat 10px 18px;
 }
 #leftcontent .current dd {
   display: block;
@@ -1383,21 +1384,21 @@ ul.cl_list li {
   width: 583px;
   height: 40px;
   line-height: 29px;
-  background-image: url(../images/ft_pic2.gif);
+  background-image: url(../images/ft_pic2.png);
   cursor: pointer;
 }
 .xixi5 {
   width: 583px;
   height: 40px;
   line-height: 29px;
-  background-image: url(../images/ft_pic3.gif);
+  background-image: url(../images/ft_pic3.png);
   cursor: pointer;
 }
 .xixi6 {
   width: 583px;
   height: 40px;
   line-height: 29px;
-  background-image: url(../images/ft_pic4.gif);
+  background-image: url(../images/ft_pic4.png);
   cursor: pointer;
 }
 
@@ -1801,7 +1802,7 @@ ul.pc3_list li span.py_7 {
 .tabTitle2 {
   width: 630px;
   height: 35px;
-  background: url(../images/fs_pic2.jpg) repeat-x;
+  background: url(../images/fs_pic2.png) repeat-x;
   padding-left: 10px;
   margin-bottom: 30px;
 }
@@ -1812,17 +1813,17 @@ ul.pc3_list li span.py_7 {
   height: 25px;
   padding-right: 5px;
   padding-top: 10px;
-  background: url(../images/fs_pic4.jpg) no-repeat;
+  background: url(../images/fs_pic4.png) no-repeat;
   font-size: 14px; /*font-weight:bold; */text-align:center;
   text-decoration: none;
 }
 .tabTitle2  a.current {
   color: #ff0000;
-  background: url(../images/fs_pic3.jpg) no-repeat;
+  background: url(../images/fs_pic3.png) no-repeat;
 }
 .tabTitle2  a:hover {
   color: #ff0000;
-  background: url(../images/fs_pic3.jpg) no-repeat;
+  background: url(../images/fs_pic3.png) no-repeat;
 }
 	
 .contentBox2 {
@@ -2259,7 +2260,7 @@ ul.pc3_list li span.py6_5 {
 #products_tips .current dt {
 }
 #products_tips .current dt strong {
-  background: url(../images/cs_pic2.gif) no-repeat 4px 8px;
+  background: url(../images/cs_pic2.png) no-repeat 4px 8px;
 }
 #products_tips .current dd {
   display: none;
@@ -2277,7 +2278,7 @@ ul.pc3_list li span.py6_5 {
   color: #a30003;
   font-size: 14px;
   padding: 0px 20px 0px 28px;
-  background: url(../images/cs_pic1.gif) no-repeat  4px 8px;
+  background: url(../images/cs_pic1.png) no-repeat  4px 8px;
 }
 #products_tips dd {
   display: block; /*display:block;*/ line-height:20px;
@@ -2320,7 +2321,7 @@ ul.pc3_list li span.span_icon_2 {
 }
 #shopsearch .tabs {
   height: 35px;
-  background: url(../images/fs_pic2.jpg) repeat-x;
+  background: url(../images/fs_pic2.png) repeat-x;
 }
 #shopsearch .tabs li {
   height: 35px;
@@ -2337,13 +2338,13 @@ ul.pc3_list li span.span_icon_2 {
   width: 158px;
   height: 35px;
   text-align: center;
-  background: url(../images/fs_pic4.jpg) no-repeat;
+  background: url(../images/fs_pic4.png) no-repeat;
 }
 #shopsearch .tabs .current,#shopsearch .tabs a:hover {
   color: #a30003;
   text-decoration: none;
   background-position: right 0px;
-  background: url(../images/fs_pic3.jpg) no-repeat;
+  background: url(../images/fs_pic3.png) no-repeat;
 }
 #shopsearch .body {
   padding: 20px 0px 0px 0px;
@@ -2368,7 +2369,7 @@ ul.pc3_list li span.span_icon_2 {
   line-height: 31px;
   border: 0px;
   cursor: pointer;
-  background: url(../images/fs_pic5.jpg) no-repeat;
+  background: url(../images/fs_pic5.png) no-repeat;
   color: White;
   font-weight: bold;
   vertical-align: middle;
@@ -2424,11 +2425,11 @@ ul.pc3_list li span.span_icon_2 {
 
 #leftcontent .current dt.cc {
   color: #444;
-  background: url(../images/contact_pic5.gif) no-repeat 10px 18px;
+  background: url(../images/contact_pic5.png) no-repeat 10px 18px;
 }
 #leftcontent .current dt.cc a {
   color: #444;
-  background: url(../images/contact_pic5.gif) no-repeat 10px 18px;
+  background: url(../images/contact_pic5.png) no-repeat 10px 18px;
 }
 
 

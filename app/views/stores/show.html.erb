@@ -10,10 +10,12 @@
 <% end %>
 
 <div class="cb_left">
+
+
   <div class="is_con">
-      <span><%=  image_tag "is_pic2.jpg", :size => '589x398' %></span>
-      <span><%=  image_tag "is_pic3.jpg", :size => '637x497' %></span>
-      <span><%=  image_tag "is_pic4.jpg", :size => '638x482' %></span>
+      <span><%=  image_tag "/images/is_pic2.png" %></span>
+      <span><%=  image_tag "/images/is_pic3.png" %></span>
+      <span><%=  image_tag "/images/is_pic4.png" %></span>
   </div>
 </div>
 
@@ -25,11 +27,17 @@
   <% end %>
   <div class="cb_left">
     <div class="is_con">
-      <span><%=  image_tag "sst_pic2.jpg", :size => '586x388' %></span>
-      <span><%=  image_tag "sst_pic3.jpg", :size => '638x482' %></span>
+      <span><%=  image_tag "/images/sst_pic2.png" %></span>
+      <span><%=  image_tag "/images/sst_pic3.png" %></span>
     </div>
   </div>
 <% end %>
+
+<style type="text/css">
+  .cb_left .is_con img {
+    margin-bottom: 60px;
+  }
+</style>
 
 <%= render "share/store_sidebar" %>
 
