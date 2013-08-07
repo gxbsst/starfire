@@ -7,14 +7,17 @@
 
 .cb_left.brand  .box{
   /*border: 1px solid red;*/
-  line-height: 250%;
+  line-height: 200%;
   text-indent: 28px;
-  margin-bottom: 40px;
+  margin: 35px 0;
 }
 
+.cb_left.brand  .box.img {
+  text-indent: 0;
+}
 .cb_left.brand  h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 18pt;
+  margin-bottom: -15px;
 }
 
 #outer {
@@ -30,7 +33,7 @@
 }
 
 .red {
-	color: #a30003;
+	color: #ea0005;
 }
 #header {
 	width: 960px;
@@ -1011,7 +1014,7 @@ ul.inc_con li span.cn_2 {
 }
 .footer_con {
   /*width: 960px;*/
-  height: 234px;
+  height: 90px;
   margin: 0px auto;
   /*background: url(../images/home_pic4.gif) no-repeat right bottom; /*overflow:hidden;*/ padding-top:10px;*/
   position: relative;
@@ -1307,7 +1310,7 @@ ul.cl_list li {
   padding: 0px 0px 0px 5px;
   overflow: hidden;
   display: block;
-  color: #143e78;
+  color: #a30003;
 }
 #leftcontent dd .hover {
   color: #a30003;
