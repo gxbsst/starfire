@@ -1381,6 +1381,7 @@ ul.cl_list li {
 .pr_text {
   float: left;
   width: 410px;
+  margin-left: 36px;
 }
 .pr_text2 {
   float: left;
