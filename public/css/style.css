@@ -70,6 +70,7 @@
 	padding: 10px 20px;
 	width: 920px;
 	margin: 0 auto;
+  margin-top: 15px;
 	background: transparent url(../images/v2/footer_bg.png) repeat-x left top;
 }
 
@@ -676,7 +677,7 @@ ul.inc_con li span.cn_2 {
   width: 278px;
   height: 40px;
   line-height: 29px;
-  background-image: url(../images/v2/search_tab_bg_1.png);
+  background: url(../images/v2/search_tab_bg_1.png) no-repeat -2px top;
   cursor: pointer;
 }
 .xixi2 {
@@ -758,7 +759,7 @@ ul.inc_con li span.cn_2 {
 
 .home_con2 {
   /*height: 200px;*/
-  background: url(../images/v2/slider_bg.png) no-repeat 35px top;
+  background: url(../images/v2/hp_pic4.png) no-repeat 35px top;
   overflow: hidden;
   padding: 0;
   margin: 10px auto 0 auto;
@@ -776,6 +777,7 @@ ul.inc_con li span.cn_2 {
   float: left;
   width: 290px;
   margin-right: 20px;
+  margin-top: 20px;
 }
 .hcc_title {
   overflow: hidden;
@@ -819,6 +821,7 @@ ul.inc_con li span.cn_2 {
   width: 150px;
   height: 100px;
   float: right;
+  padding-right: 10px;
 }
 .hcc_bottom .ht_more a{
   display: block;
@@ -1036,7 +1039,7 @@ ul.inc_con li span.cn_2 {
   height: 53px;
   position: absolute;
   left: 942px;
-  bottom: 201px;
+  bottom: 57px;
 }
 
 
@@ -1666,7 +1669,7 @@ dl.sim_list2 dd {
   /*height: 220px;*/
   /*background: #eff3f7;*/
   overflow: hidden;
-  padding: 22px 25px 0px 25px;
+  padding: 0;
   margin-bottom: 30px;
 }
 .prc_img {
@@ -2488,7 +2491,7 @@ ul.pc3_list li span.span_icon_2 {
 
 .examples_body {
   width: 940px;
-  height: 180px;
+  height: 200px;
   /*margin: 30px auto;*/
   clear: both;
   position: relative;
@@ -2557,8 +2560,8 @@ ul#example2 li {
 }
 
 #banner ul li.nob.active {
-  background: #FFF;
-  color: #000;
+  background: red;
+  color: #FFF;
 }
 
 
