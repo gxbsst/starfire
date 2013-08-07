@@ -2563,9 +2563,18 @@ ul#example2 li {
   width: 100%;
 }
 
-.t_table .td1 {
-  border-bottom: 1px dotted #DDD;
-}
+
 .t_table td {
   padding: 20px;
+}
+.t_table .td1 {
+  border-bottom: 1px dotted #DDD;
+
+  padding-bottom: 40px;
+  
+}
+
+.t_table .td2, .t_table .td3 {
+  vertical-align: top;
+  padding-top: 40px;
 }
