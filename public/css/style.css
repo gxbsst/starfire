@@ -1,6 +1,21 @@
 /* CSS Document */
 
 /* 公共样式 */
+.blue {
+  color: #003399;
+}
+
+.cb_left.brand  .box{
+  /*border: 1px solid red;*/
+  line-height: 250%;
+  text-indent: 28px;
+  margin-bottom: 40px;
+}
+
+.cb_left.brand  h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
 #outer {
   overflow: auto;
@@ -56,7 +71,7 @@
 }
 
 .normal_body #footer {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 body,ul,dl,dt,dd p {
@@ -478,7 +493,35 @@ ul.ul .li5 .current {
   margin-top: 10px;
   margin-right: 10px;
   width: 330px;
+  background:#2a2a2a;
+  height: 200px;
 }
+.home_news  .text {
+  width: 200px;
+  float: left;
+  padding-left: 14px;
+  padding-top: 38px;
+}
+.home_news  .text h2 a{
+  color: #CCC;
+}
+.home_news  .text .more {
+  margin-left: 190px;
+}
+.home_news  .text .more  a {
+display: block;
+  width: 56px;
+  height: 19px;
+  /*float:right;*/
+  color: #FFF;
+  text-align: center;
+  padding: 2px 0 0 0;
+  background: url(../images/v2/more_bg.png) no-repeat left top; 
+}
+.home_news  .img {
+  float: right;
+  margin-top: 15px;
+} 
 .video_title {
   height: 35px;
   background: #0d1019;
@@ -760,7 +803,7 @@ ul.inc_con li span.cn_2 {
 }
 .hb_img {
   float: left;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .hb_text {
   float: left;
@@ -887,7 +930,7 @@ ul.inc_con li span.cn_2 {
 
 }
 .bx_container h2 a {
-  color: #FFF;
+  color: #CCC;
   line-height: 150%;
   font-size: 16px;
 }
@@ -1013,7 +1056,7 @@ ul.inc_con li span.cn_2 {
 #footer .icon {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -10px;
 }
 
 .bt_menu {
@@ -1098,8 +1141,8 @@ ul.inc_con li span.cn_2 {
   width: 530px;
   position: absolute;
   background: none;
-  right: 0px;
-  top: 20px;
+  right: 15px;
+  top: 15px;
 }
 .mk2 {
   height: 57px;
@@ -1280,10 +1323,10 @@ ul.cl_list li {
   display: block;
 }
 #leftcontent dd li.new {
-  background: url('../images/new.jpg') no-repeat 60px 5px;
+  background: url('../images/new.gif') no-repeat 60px 4px;
 }
 #leftcontent dd li.tire_9.new {
-  background: url('../images/new.jpg') no-repeat 70px 5px;
+  background: url('../images/new.gif') no-repeat 70px 4px;
 }
 
 .zy_footer {
@@ -1616,8 +1659,8 @@ dl.sim_list2 dd {
 
 /*3.0*/
 .pro_cs {
-  height: 220px;
-  background: #eff3f7;
+  /*height: 220px;*/
+  /*background: #eff3f7;*/
   overflow: hidden;
   padding: 22px 25px 0px 25px;
   margin-bottom: 30px;
@@ -2514,3 +2557,14 @@ ul#example2 li {
   color: #000;
 }
 
+
+.t_table {
+  width: 100%;
+}
+
+.t_table .td1 {
+  border-bottom: 1px dotted #DDD;
+}
+.t_table td {
+  padding: 20px;
+}

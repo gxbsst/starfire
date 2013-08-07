@@ -12,10 +12,10 @@ module Refinery
 
         if @category
           @title = en_to_zh[@category]
-          # @tires = Tire.where(:category => @category.upcase).order(:position)
+          @tires = Tire.where(:category => @category.upcase).order(:position)
         else
           @title = '产品与服务'
-          # @tires = Tire.order(:position)
+          @tires = Tire.order(:position)
         end
 
         present(@page)
