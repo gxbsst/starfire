@@ -10,10 +10,22 @@
    <h2>新闻中心</h2>
 <% end %>
 
-<div class="cb_left">
-  <h1>页面正在建设中...</h1>
+<div class="cb_left news">
+
   <ul class="cl_list">
 
+
+    <% @items.each do |item|  %>
+    <li>
+      <span class="date">
+        <%= item.publish_date.strftime("%Y.%m.%d ") %>
+      </span>
+
+      <%= link_to item.title, refinery.news_item_path(item) %>
+      
+    </li>
+
+    <% end %>
   <!--
     <li><img src="images/contact_pic3.gif" width="216" height="56" /></li>
     <li>联系电话<br />

@@ -80,8 +80,9 @@ module ApplicationHelper
             'search' => '产品与服务'
         },
         'items' => {
-            'index' =>'媒体中心',
-            'media' => '媒体中心'
+            'index' =>'新闻中心',
+            'media' => '新闻中心',
+            'show' => '新闻中心'
         },
         'stores' => {
             'show' => '营销网络',
@@ -94,11 +95,9 @@ module ApplicationHelper
        '关于斯达飞' => '/sold_worldwide',
        '首页' => '/',
        '产品与服务' => '/tires',
-       '媒体中心' => '/news',
+       '新闻中心' => '/news',
        '营销网络' => '/stores/1'
     }
-
-
 
     begin
       text = text_hash[c_name][a_name]
@@ -117,7 +116,7 @@ module ApplicationHelper
         '关于斯达飞' => '/sold_worldwide',
         '首页' => '/',
         '产品与服务' => '/tires',
-        '媒体中心' => '/news',
+        '新闻中心' => '/news',
         '营销网络' => '/stores/1',
         '轿车轮胎产品' => '/tires?cat=pcr',
         'SUV&4X4轮胎产品' => '/tires?cat=suv',
@@ -134,7 +133,7 @@ module ApplicationHelper
   end
 
   def show_first_path(c_name, a_name, title)
-    if a_name == 'index' &&  !params[:cat].present?  && c_name != 'items'
+    if a_name == 'index' &&  !params[:cat].present?  || c_name == 'items'
       %Q[<span>#{nav_path(c_name, a_name)}  </span>]
     else
       %Q[<span>#{nav_path(c_name, a_name)} > </span>]
@@ -142,7 +141,7 @@ module ApplicationHelper
   end
 
   def show_nav_path(c_name, a_name, title)
-    if a_name == 'index' && !params[:cat].present? && c_name != 'items'
+    if a_name == 'index' && !params[:cat].present? || c_name == 'items'
       show_first_path(c_name, a_name, title)
     else
       show_first_path(c_name, a_name, title) +  show_title(title)

@@ -11,11 +11,79 @@
     <% title = {'lighttruck' => 'lt_pic1.gif', 'suv' => 'SUV&4X4轮胎产品', 'winter' => '雪地胎产品', 'pcr' => '轿车轮胎产品' } %>
     <%#= image_tag images[@category.downcase]  %>
     <h2><%= title[@category.downcase] %></h2>
+
+  <% else %>
+    <h2> 产品与服务 </h2>
   <% end %>
 
 <% end %>
 <div class="cb_left">
   <div class="pcr_list">
+
+
+
+    <% if @category.present? %>
+      <% if @category.downcase == 'pcr' %>
+        <%= image_tag '/images/v2/mp_pic4.png', :usemap => "#Map1" %>
+        <map name="Map1" id="Map1">
+          <area shape="rect" coords="70,113,201,288" href="/tires/2" />
+          <area shape="rect" coords="300,157,399,311" href="/tires/1" />
+          <area shape="rect" coords="400,134,518,291" href="/tires/8" />
+          <area shape="rect" coords="127,348,223,514" href="/tires/6" />
+          <area shape="rect" coords="231,348,324,510" href="/tires/5" />
+          <area shape="rect" coords="360,310,452,449" href="/tires/4" />
+        </map>
+
+      <% elsif @category.downcase == 'suv'  %>
+        <%= image_tag '/images/v2/sp_pic4.png', :usemap => "#Map2" %>
+        <map name="Map2" id="Map2">
+          <area shape="rect" coords="171,152,280,329" href="/tires/7" />
+          <area shape="rect" coords="305,176,417,358" href="/tires/7" />
+        </map>
+
+      <% elsif @category.downcase == 'winter' %>
+      <%= image_tag '/images/v2/xp_pic4.png', :usemap => "#Map3" %>
+        <map name="Map3" id="Map3">
+          <area shape="rect" coords="80,136,202,309" href="/tires/9" />
+          <area shape="rect" coords="202,264,313,444" href="/tires/3" />
+        </map>
+      <% end %>
+
+    <% else %>
+
+    <style type="text/css">
+      .pcr_list img{
+        margin-bottom: 20px;
+      }
+    </style>
+
+    <%= image_tag '/images/v2/mp_pic4.png', :usemap => "#Map1" %>
+    <map name="Map1" id="Map1">
+      <area shape="rect" coords="70,113,201,288" href="/tires/2" />
+      <area shape="rect" coords="300,157,399,311" href="/tires/1" />
+      <area shape="rect" coords="400,134,518,291" href="/tires/8" />
+      <area shape="rect" coords="127,348,223,514" href="/tires/6" />
+      <area shape="rect" coords="231,348,324,510" href="/tires/5" />
+      <area shape="rect" coords="360,310,452,449" href="/tires/4" />
+    </map>
+
+    <%= image_tag '/images/v2/sp_pic4.png', :usemap => "#Map2" %>
+    <map name="Map2" id="Map2">
+      <area shape="rect" coords="171,152,280,329" href="/tires/7" />
+      <area shape="rect" coords="305,176,417,358" href="/tires/7" />
+    </map>
+
+
+    <%= image_tag '/images/v2/xp_pic4.png', :usemap => "#Map3" %>
+      <map name="Map3" id="Map3">
+        <area shape="rect" coords="80,136,202,309" href="/tires/9" />
+        <area shape="rect" coords="202,264,313,444" href="/tires/3" />
+      </map>
+
+    <% end %>
+
+
+<!--
     <% @tires.each do |tire| %>
       <div class="rs_r1">
         <div class="pr_img">
@@ -34,6 +102,7 @@
         </div>
       </div>
     <% end %>
+  -->
   </div>
 </div>
 

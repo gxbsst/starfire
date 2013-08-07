@@ -42,6 +42,10 @@
 	/*width: 960px;*/
 	margin: 15px 0 0 0;
 	overflow: hidden;
+  color: #444;
+}
+#container p, #container ul, #container dl, #container dt {
+  color:#444;
 }
 #footer {
 	/*overflow: hidden;*/
@@ -77,7 +81,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #0a4188;
+  color: #a30003;
   text-decoration: none;
 }
 img,li {
@@ -500,7 +504,7 @@ ul.ul .li5 .current {
   color: #8b8d8d;
 }
 .vt_right a:hover {
-  color: #175391;
+  color: #a30003;
 }
 
 ul.inc_con {
@@ -610,7 +614,7 @@ ul.inc_con li span.cn_2 {
 }
 .btn_pro  span.scb_text a:hover {
   font-size: 14px;
-  color: #175391;
+  color: #a30003;
   text-decoration: underline;
 }
 
@@ -1063,7 +1067,7 @@ ul.inc_con li span.cn_2 {
 }
 #topselectcontent .none li a:hover {
   text-decoration: none;
-  background-color: #0a4188;
+  background-color: #a30003;
   color: White;
 }
 
@@ -1127,6 +1131,7 @@ ul.inc_con li span.cn_2 {
 }
 .coc_title h2 {
   margin-left: 15px;
+  color: #444;
   /*margin: 10px 10px 10px 15px;*/
 }
 .ct_left {
@@ -1153,6 +1158,7 @@ span.red_dq {
   overflow: hidden;
   border: 1px solid #eaeaea;
   border-top: 0;
+
 }
 .cb_left {
   float: left;
@@ -1162,6 +1168,18 @@ span.red_dq {
   background:#f4f4f4;
   min-height: 400px;
 
+}
+
+.news span.date {
+
+  margin: 0 20px 0 0;
+}
+.news  h2, .news .date_outer {
+  text-align: center;
+}
+.news .date_outer {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 10px;
 }
 ul.cl_list {
   display: block;
@@ -1190,7 +1208,7 @@ ul.cl_list li {
   height: 38px;
   background: url(../images/contact_pic4.gif) no-repeat bottom;
   line-height: 38px;
-  color: #0a4188;
+  color: #a30003;
   font-size: 15px;
   font-weight: bold;
   padding-left: 6px;
@@ -1215,7 +1233,7 @@ ul.cl_list li {
 }
 #leftcontent dt a:hover {
   background-position: 0px -31px;
-  color: #0a4188;
+  color: #a30003;
   background: url(../images/contact_pic6.gif) no-repeat 10px 18px;
 }
 #leftcontent dd {
@@ -1248,13 +1266,13 @@ ul.cl_list li {
   color: #143e78;
 }
 #leftcontent dd .hover {
-  color: #0a4188;
+  color: #a30003;
 }
 #leftcontent .current dt {
   background: url(../images/contact_pic6.gif) no-repeat 10px 18px;
 }
 #leftcontent .current dt a {
-  color: #0a4188;
+  color: #a30003;
   background: url(../images/contact_pic6.gif) no-repeat 10px 18px;
 }
 #leftcontent .current dd {
@@ -1344,7 +1362,7 @@ ul.cl_list li {
   margin-bottom: 14px;
 }
 .kk {
-  margin-bottom: 220px;
+  /*margin-bottom: 220px;*/
 }
 .kk2 {
   padding-bottom: 600px;
@@ -1530,6 +1548,7 @@ ul.cl_list li {
 .copyright_con {
   padding: 40px 50px;
   line-height: 24px;
+  background: #f4f4f4;
 }
 .copyright_con p {
   display: block;
@@ -1545,6 +1564,7 @@ ul.cl_list li {
 .sitemap {
   padding: 0px 75px;
   overflow: hidden;
+  background: #f4f4f4;
 }
 dl.sim_list1 {
   display: block;
@@ -1559,12 +1579,12 @@ dl.sim_list1 {
 dl.sim_list1 dt {
   display: block;
   font-size: 14px;
-  color: #0a4188;
+  color: #a30003;
   font-weight: bold;
 }
 dl.sim_list1 dt a {
   font-size: 14px;
-  color: #0a4188;
+  color: #a30003;
   font-weight: bold;
 }
 
@@ -1580,7 +1600,7 @@ dl.sim_list2 {
 dl.sim_list2 dt {
   display: block;
   font-size: 14px;
-  color: #0a4188;
+  color: #a30003;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -1649,7 +1669,7 @@ dl.sim_list2 dd {
 }
 .ptl_text span.plt_1 {
   font-size: 14px;
-  color: #0a4188;
+  color: #a30003;
   margin-bottom: 10px;
 }
 .ptl_text span.plt_2 {
@@ -1675,7 +1695,7 @@ dl.sim_list2 dd {
 }
 
 .pc3_top {
-  background: #0a4188;
+  background: #a30003;
   width: 640px;
   height: 35px;
   overflow: hidden;
@@ -1735,7 +1755,7 @@ ul.pc3_list li.pl_sz {
   font-size: 12px;
   font-weight: bold;
   padding-left: 25px;
-  color: #0a4188;
+  color: #a30003;
   overflow: hidden;
 }
 
@@ -1819,12 +1839,12 @@ ul.pc3_list li span.py_7 {
 .table_2 {
   margin-left: 8px;
   width: 640px;
-  background: #0e398b;
+  background: #a30003;
 }
 
 .table_2  td {
   height: 35px;
-  background: #0e398b;
+  background: #a30003;
   color: #FFF;
   line-height: 35px;
   border-right: 1px solid #fff;
@@ -1942,7 +1962,7 @@ display: block;
 }
 .rsc_left span.rl_1 {
 font-size: 14px;
-color: #0a4188;
+color: #a30003;
 margin-top: 60px;
 }
 .rsc_left span.rl_2 {
@@ -1952,17 +1972,17 @@ padding-left: 13px;
 .rsc_left span.rl_3 {
 line-height: 20px;
 padding-left: 13px;
-color: #0a4188;
+color: #a30003;
 margin-top: 70px;
 }
 .rsc_left span.rl_4 {
 font-size: 14px;
-color: #0a4188;
+color: #a30003;
 margin-top: 40px;
 }
 .rsc_left span.rl_5 {
 font-size: 14px;
-color: #0a4188;
+color: #a30003;
 margin-top: 30px;
 }
 .rsc_right {
@@ -2000,12 +2020,12 @@ padding-top: 30px;
 }
 .rcl_text {
   font-size: 14px;
-  color: #0a4188;
+  color: #a30003;
   margin-bottom: 25px;
 }
 .rcl_text2 {
   font-size: 14px;
-  color: #0a4188;
+  color: #a30003;
   margin-bottom: 13px;
 }
 .rcl_text3 {
@@ -2254,7 +2274,7 @@ ul.pc3_list li span.py6_5 {
 }
 #products_tips dt strong {
   display: block;
-  color: #0a4188;
+  color: #a30003;
   font-size: 14px;
   padding: 0px 20px 0px 28px;
   background: url(../images/cs_pic1.gif) no-repeat  4px 8px;
@@ -2320,7 +2340,7 @@ ul.pc3_list li span.span_icon_2 {
   background: url(../images/fs_pic4.jpg) no-repeat;
 }
 #shopsearch .tabs .current,#shopsearch .tabs a:hover {
-  color: #0a4188;
+  color: #a30003;
   text-decoration: none;
   background-position: right 0px;
   background: url(../images/fs_pic3.jpg) no-repeat;
@@ -2365,7 +2385,7 @@ ul.pc3_list li span.span_icon_2 {
   line-height: 22px;
   height: 22px;
   overflow: hidden;
-  color: #0a4188;
+  color: #a30003;
   font-weight: bold;
 }
 #shopsearch .list dd {
@@ -2438,7 +2458,7 @@ ul#example2 li {
 .page_sm {
   font-size: 14px;
   font-weight: bold;
-  color: #0a4188
+  color: #a30003
 }
 
 

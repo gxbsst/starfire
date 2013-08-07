@@ -10,29 +10,17 @@
  <h2>新闻中心</h2>
 <% end %>
 
-<div class="cb_left">
-  <h1>页面正在建设中...</h1>
-  <ul class="cl_list">
+<div class="cb_left news">
+  <h2><%= @item.title %></h2>
 
-    <!--
-      <li><img src="images/contact_pic3.gif" width="216" height="56" /></li>
-      <li>联系电话<br />
-        +86(0)21-6127-3388</li>
 
-      <li>传真号码<br />
-        +86(0)21-6208-7522 </li>
+  <div class="date_outer">
+    <span>发布时间：<%= @item.publish_date.strftime("%Y.%m.%d ") %></span>
+  </div>
 
-      <li>邮政编码<br />
-        200336 </li>
-
-      <li>公司地址<br />
-        中国上海市古北路666号嘉麒大厦17层 </li>
-
-      <li>邮箱<br />
-        mktAsia@coopertire.com </li>
-
-      -->
-  </ul>
+  <div class="new_content">
+    <%= raw @item.body %>
+  </div>
 
 </div>
 
