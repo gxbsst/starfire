@@ -100,7 +100,7 @@ $(document).ready(function(){
                 <%= sanitize(truncate_u(strip_tags(@news.body), 30)).try(:gsub, /&#160;/, '') %>
               </p>
               <span class="more">
-                <%= link_to '更多>>', refinery.news_item_path(@news) %>
+                <%= link_to '更多报道>>', refinery.news_items_path() %>
               </span>
             </div>
             <div class="img">

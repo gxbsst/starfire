@@ -525,13 +525,13 @@ ul.ul .li5 .current {
 }
 .home_news  .text .more  a {
 display: block;
-  width: 56px;
+  width: 80px;
   height: 19px;
   /*float:right;*/
   color: #FFF;
   text-align: center;
-  padding: 2px 0 0 0;
-  background: url(../images/v2/more_bg.png) no-repeat left top; 
+  padding: 3px 0 0 0;
+  background: url(../images/v2/btn_bg.png) no-repeat left top; 
 }
 .home_news  .img {
   float: right;
