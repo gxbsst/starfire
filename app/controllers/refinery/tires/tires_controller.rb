@@ -6,6 +6,7 @@ module Refinery
       before_filter :find_all_tires
       before_filter :find_page
 
+      # caches_page :except => [:search]
       def index
         en_to_zh = {'pcr' => '轿车轮胎产品', 'suv' => 'SUV&4X4轮胎产品', 'winter' => '雪地胎产品', 'lighttruck' => '轻卡产品'}
         @category = params[:cat] # || params[:cat] = 'pcr'

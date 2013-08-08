@@ -55,15 +55,16 @@ namespace :app do
     ActiveRecord::Base.connection.execute("TRUNCATE TABLE stores")
 
     file_name = "store2.csv"
-    csv = CSV.read(Rails.root.join('lib', 'tasks', file_name))
+    csv = CSV.open(Rails.root.join('lib', 'tasks', file_name), :headers => true)
+    # csv = CSV.read(Rails.root.join('lib', 'tasks', file_name))
     csv.each do |item|
 
       Store.create({ provice: item[0],
                      city: item[1],
                      dist: item[2],
-                     shop_name: item[2],
-                     address: item[3],
-                     full_address: ("#{item[1]}#{item[3]}") })
+                     shop_name: item[3],
+                     address: item[4],
+                     full_address: ("#{item[1]}#{item[4]}") })
     end
 
   end

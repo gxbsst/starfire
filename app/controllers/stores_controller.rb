@@ -1,6 +1,7 @@
 # encoding: utf-8
 class StoresController < ApplicationController
 
+
   def index
     @title = '零售店'
   end

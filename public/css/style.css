@@ -39,7 +39,7 @@
 	width: 960px;
 	margin: 0 auto;
 	height: 79px;
-	background: transparent url(../images/v2/header_bg.png) no-repeat left top;
+	background: transparent url(../images/v2/top.png) no-repeat left top;
 	position: relative;
 	/*overflow: auto;	*/
 	margin-top: -16px;
@@ -265,7 +265,7 @@ img {
 #banner {
   position: relative;
   width: 960px;
-  height: 385px;
+  height: 325px;
   overflow: hidden;
   font-size: 16px
 }
@@ -504,10 +504,21 @@ ul.ul .li5 .current {
   width: 200px;
   float: left;
   padding-left: 14px;
-  padding-top: 38px;
+  padding-top: 0px;
+}
+.home_news  .text h2 {
+  margin-bottom: 5px;
 }
 .home_news  .text h2 a{
   color: #CCC;
+  line-height: 150%;
+
+}
+#container .home_news  .text p {
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #FFF;
 }
 .home_news  .text .more {
   margin-left: 190px;
@@ -771,7 +782,7 @@ ul.inc_con li span.cn_2 {
 }
 #example2 li {
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .hcp_con1 {
   float: left;
@@ -808,7 +819,9 @@ ul.inc_con li span.cn_2 {
 }
 .hb_img {
   float: left;
-  margin-right: 5px;
+  margin-right: 0;
+  text-align: center;
+  width: 132px;
 }
 .hb_text {
   float: left;
@@ -818,10 +831,18 @@ ul.inc_con li span.cn_2 {
   padding-top: 6px;
 }
 .hcc_bottom .text_outer {
-  width: 150px;
+  width: 140px;
   height: 100px;
   float: right;
   padding-right: 10px;
+
+}
+.hcc_bottom .text_outer h2 {
+
+}
+.hcc_bottom .text_outer h2 a span {
+  font-size: 25pt;
+  margin-left: -2px;
 }
 .hcc_bottom .ht_more a{
   display: block;
@@ -907,7 +928,7 @@ ul.inc_con li span.cn_2 {
 .bx_container .next, .bx_container .prev {
 	width: 33px;
 	height: 39px;
-  top: 55px;
+  top: 69px;
 }
 .bx_container .next {
   position: absolute;
@@ -937,8 +958,9 @@ ul.inc_con li span.cn_2 {
 }
 .bx_container h2 a {
   color: #CCC;
-  line-height: 150%;
-  font-size: 16px;
+  /*line-height: 150%;*/
+  line-height: 180%;
+  font-size: 14px;
 }
 .img-list {
   position: relative;
@@ -1244,6 +1266,9 @@ ul.cl_list li {
   padding-left: 25px;
   font-size: 14px;
 }
+.new_content p {
+  line-height: 200%;
+}
 
 .cb_right {
   float: left;
@@ -1329,10 +1354,10 @@ ul.cl_list li {
   display: block;
 }
 #leftcontent dd li.new {
-  background: url('../images/new.gif') no-repeat 60px 4px;
+  background: url('../images/v2/new_icon.png') no-repeat 60px 4px;
 }
 #leftcontent dd li.tire_9.new {
-  background: url('../images/new.gif') no-repeat 70px 4px;
+  background: url('../images/v2/new_icon.png') no-repeat 70px 4px;
 }
 
 .zy_footer {
@@ -2575,7 +2600,7 @@ ul#example2 li {
 }
 .t_table .td1 {
   border-bottom: 1px dotted #DDD;
-
+  text-align: center;
   padding-bottom: 40px;
   
 }

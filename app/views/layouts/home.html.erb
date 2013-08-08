@@ -52,9 +52,10 @@ $(document).ready(function(){
              <li class="nob">3</li>
            </ul>
            <div id="banner_list">
-            <a href="/tires/8" target="_self"><img src="images/v2/banner2.png"   /></a>
-            <a href="/tires/1" target="_self"><img src="images/v2/banner3.png"   /></a>
-             <a href="/tires/2" target="_self"><img src="images/v2/banner1.png"   /></a>
+             <a href="/tires/8" target="_self"><img src="images/v2/banner1.png"   /></a>
+
+            <a href="/tires/1" target="_self"><img src="images/v2/banner2.png"   /></a>
+            <a href="/tires/2" target="_self"><img src="images/v2/banner3.png"   /></a>
            </div>
          </div>
 
@@ -92,9 +93,14 @@ $(document).ready(function(){
             </div>
             <div class="hn_con"></div>
             <div class="text">
-              <h2><a  href="/news">RS-C88高档舒适静音胎</a></h2>
+              <h2>
+                <%= link_to @news.title, refinery.news_item_path(@news) %>
+              </h2>
+              <p>
+                <%= sanitize(truncate_u(strip_tags(@news.body), 50)).try(:gsub, /&#160;/, '') %>
+              </p>
               <span class="more">
-                <a href="/news">更多>></a>
+                <%= link_to '更多>>', refinery.news_item_path(@news) %>
               </span>
             </div>
             <div class="img">

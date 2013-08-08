@@ -1,11 +1,24 @@
 # encoding: utf-8
 module ApplicationHelper
+
+  def truncate_u(text, length = 30, truncate_string = "...")
+    l=0
+    char_array=text.unpack("U*")
+    char_array.each_with_index do |c,i|
+      l = l+ (c<127 ? 0.5 : 1)
+      if l>=length
+        return char_array[0..i].pack("U*")+(i<char_array.length-1 ? truncate_string : "")
+      end
+    end
+    return text
+  end
+  
   def yield_for(content_sym, default)
     output = content_for(content_sym)
     if output.blank?
       output = default
     else
-      output += "- Starfiretire.com"
+      output += "- sftires.com.cn"
     end
     output
   end
@@ -126,9 +139,9 @@ module ApplicationHelper
     }
 
     if title.is_a? Array
-      %Q[<span class='red_dp'>#{link_to title.first, url_hash[title.first]} > </span>] + %Q[<span class='red_dp'>#{title.last}</span>]
+      %Q[<span class='red_dp'>#{link_to title.first, url_hash[title.first]} > </span>] + %Q[<span class='red_dp red'>#{title.last}</span>]
     else
-      %Q[<span class='red_dp'>#{title} </span>]
+      %Q[<span class='red_dp red'>#{title} </span>]
     end
   end
 

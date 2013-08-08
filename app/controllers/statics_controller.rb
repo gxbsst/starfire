@@ -1,9 +1,12 @@
 # encoding: utf-8
 class StaticsController < ApplicationController
 
+  caches_page :except => [:index]
+
   def index
     @title = "首页"
-    @tires = Refinery::Tires::Tire.order(:position).limit(3)
+    @tire = Refinery::Tires::Tire.order(:position).limit(1).try(:first)
+    @news = @item = Refinery::News::Item.published.translated.order(:publish_date).limit(1).try(:first)
     render :layout => 'home'
   end
 

@@ -67,7 +67,7 @@ namespace :deploy do
   end
 
   task :change_tmp do
-    run("chmod -R 777 #{current_path}/tmp")
+    # run("chmod -R 777 #{current_path}/tmp")
   end
   after "deploy:finalize_update", "deploy:change_tmp"
 
