@@ -44,11 +44,13 @@ module Refinery
       end
 
       def find_published_news_items
-        @items = Refinery::News::Item.published.translated.page(params[:page])
+        @items = Refinery::News::Item.translated.page(params[:page])
+        # @items = Refinery::News::Item.published.translated.page(params[:page])
       end
 
       def find_news_item
-        @item = Refinery::News::Item.published.translated.find(params[:id])
+        # @item = Refinery::News::Item.published.translated.find(params[:id])
+        @item = Refinery::News::Item.translated.find(params[:id])
       end
 
       def find_page

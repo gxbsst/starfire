@@ -781,7 +781,7 @@ ul.inc_con li span.cn_2 {
   /*padding: 15px 0 0 20px;*/
 }
 #example2 li {
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 10px;
 }
 .hcp_con1 {
@@ -815,7 +815,7 @@ ul.inc_con li span.cn_2 {
   color: #8b8d8d;
 }
 .hcc_bottom {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .hb_img {
   float: left;
@@ -831,11 +831,33 @@ ul.inc_con li span.cn_2 {
   padding-top: 6px;
 }
 .hcc_bottom .text_outer {
-  width: 140px;
-  height: 100px;
-  float: right;
-  padding-right: 10px;
-
+  width: 110px;
+  height:100px;
+  float: left;
+  position: relative;
+}
+.hcc_bottom .text_outer .ht_more {
+  position: absolute;
+  top: 100px;
+  left: -5px;
+}
+.tire_1 .text_outer .ht_more {
+  left: 4px;
+}
+.tire_2 .text_outer .ht_more {
+  left: 15px;
+}
+.tire_3 .text_outer .ht_more {
+  left: -10px;
+}
+.tire_5 .text_outer .ht_more {
+  left: -14px;
+}
+.tire_6 .text_outer .ht_more {
+  left: 47px;
+}
+.tire_8 .text_outer .ht_more {
+  left: 0px;
 }
 .hcc_bottom .text_outer h2 {
 
@@ -1203,7 +1225,8 @@ ul.inc_con li span.cn_2 {
 }
 .coc_title h2 {
   margin-left: 15px;
-  color: #444;
+  /*color: #444;*/
+  color: #ea0005;
   /*margin: 10px 10px 10px 15px;*/
 }
 .ct_left {
@@ -1268,6 +1291,11 @@ ul.cl_list li {
 }
 .new_content p {
   line-height: 200%;
+  text-indent: 28px;
+}
+.new_content p img {
+  display:block;
+  margin: 0 auto;
 }
 
 .cb_right {
@@ -2600,7 +2628,7 @@ ul#example2 li {
 }
 .t_table .td1 {
   border-bottom: 1px dotted #DDD;
-  text-align: center;
+  /*text-align: center;*/
   padding-bottom: 40px;
   
 }

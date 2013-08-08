@@ -97,7 +97,7 @@ $(document).ready(function(){
                 <%= link_to @news.title, refinery.news_item_path(@news) %>
               </h2>
               <p>
-                <%= sanitize(truncate_u(strip_tags(@news.body), 50)).try(:gsub, /&#160;/, '') %>
+                <%= sanitize(truncate_u(strip_tags(@news.body), 30)).try(:gsub, /&#160;/, '') %>
               </p>
               <span class="more">
                 <%= link_to '更多>>', refinery.news_item_path(@news) %>

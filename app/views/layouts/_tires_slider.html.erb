@@ -10,14 +10,14 @@
   ['<span>RS-V66</span><br/>高里程商用车胎', 'hp_v66.png', '/tires/6'],
   ['<span>RS-L909</span><br />高载重胎', 'hp_l909.png', '/tires/5'],
   # suv
-  ['<span>SF-510</span><br/>公路越野胎', 'hp510.png', '/tires/7'],
+  ['<span>SF-510</span><br/>公路越野胎', 'hp_510.png', '/tires/7'],
   ['<span>RS-W5.0</span><br/>冰地胎', 'hp_w5.png', '/tires/9'],
   ['<span>RS-W3.0</span><br/>雪地胎', 'hp_w3.png', '/tires/3']
  ]
  %>
  
- <% tires.each do |tire| %>
-  <li>            
+ <% tires.each_with_index do |tire, index| %>
+  <li class="tire_<%= index %>">            
     <div class="hcp_con1">                   
       <div class="hcc_bottom">
         <div class="hb_img">
@@ -26,7 +26,7 @@
           <% end %>
         </div>
         <div class="text_outer">
-        <h2><%=  (link_to raw(tire[0]), tire[2]) %></h2>
+        <!-- <h2><%#=  (link_to raw(tire[0]), tire[2]) %></h2> -->
         <span class="ht_more">
           <%= link_to '更多 >>', tire[2] %>
         </span>
