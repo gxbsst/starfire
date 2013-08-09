@@ -105,7 +105,7 @@ module ApplicationHelper
     }
 
     url_hash = {
-       '关于斯达飞' => '/sold_worldwide',
+       '关于斯达飞' => '/company',
        '首页' => '/',
        '产品与服务' => '/tires',
        '新闻中心' => '/news',
@@ -126,7 +126,7 @@ module ApplicationHelper
   def show_title(title)
 
     url_hash = {
-        '关于斯达飞' => '/sold_worldwide',
+        '关于斯达飞' => '/company',
         '首页' => '/',
         '产品与服务' => '/tires',
         '新闻中心' => '/news',

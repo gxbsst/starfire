@@ -18,13 +18,13 @@ namespace :app do
     ActiveRecord::Base.connection.execute("TRUNCATE TABLE tire_items")
 
     tires = {
-      'RS-C 2.0' => 'RS-C2.0.csv',
+      'RS-C2.0' => 'RS-C2.0.csv',
       'RS-C88' => 'RS-C88.csv',
-      'RS-R 1.0' => 'RS-R1.0.csv',
-      'RS-W 3.0' => 'RS-W3.0.csv',
-      'RS-T 4.0' => 'RS-T4.0.csv',
-      'RS-L 909' => 'RS-R909.csv',
-      'RS-V 66' => 'RS-V66.csv',
+      'RS-R1.0' => 'RS-R1.0.csv',
+      'RS-W3.0' => 'RS-W3.0.csv',
+      'RS-T4.0' => 'RS-T4.0.csv',
+      'RS-L909' => 'RS-R909.csv',
+      'RS-V66' => 'RS-V66.csv',
       'SF-510' => 'SF510.csv'
     }
     tires.each do |k, filename| 
@@ -117,12 +117,12 @@ namespace :app do
     ActiveRecord::Base.connection.execute("TRUNCATE TABLE brands")
 
     car_tires = {
-        'RS-C 2.0' => 'RS-C2.0-表格 1.csv',
-        'RS-R 1.0' => 'RS-R1.0&909-表格 1.csv',
-        'RS-W 3.0' => 'RS-W3.0-表格 1.csv',
-        'RS-T 4.0' => 'RS-T4.0-表格 1.csv',
-        'RS-L 909' => 'RS-R1.0&909-表格 1.csv',
-        'RS-V 66' => 'RS-V66-表格 1.csv',
+        'RS-C2.0' => 'RS-C2.0-表格 1.csv',
+        'RS-R1.0' => 'RS-R1.0&909-表格 1.csv',
+        'RS-W3.0' => 'RS-W3.0-表格 1.csv',
+        'RS-T4.0' => 'RS-T4.0-表格 1.csv',
+        'RS-L909' => 'RS-R1.0&909-表格 1.csv',
+        'RS-V66' => 'RS-V66-表格 1.csv',
         'SF-510' => 'SF510-表格 1.csv',
         'RS-C88' => 'RS-C88-表格 1.csv'
     }
