@@ -10,42 +10,69 @@
    <h2>新闻中心</h2>
 <% end %>
 
+
 <div class="cb_left news">
+    
+ <!--    <ul class="cl_list">
+    
+    
+       <% @items.each do |item|  %>
+       <li>
+         <span class="date">
+           <%= item.publish_date.strftime("%Y.%m.%d ") %>
+         </span>
+        <span class="title">
+         <%= link_to item.title, refinery.news_item_path(item) %>
+       </span>
+       <span class="source">
+         来源：<%= item.source %>         
+       </span>
+         
+       </li>
+       <% end %>
+    </ul> -->
 
-  <ul class="cl_list">
+    <table class="news_list" width="100%" cellspacing="0" cellpadding="15">
+      <% @items.each do |item|  %>
+      <tr>
+        <td class="td_1"><%= item.publish_date.strftime("%Y.%m.%d ") %></td>
+        <td class="td_2"><%= link_to item.title, refinery.news_item_path(item) %></td>
+        <td class="td_3">来源：<%= item.source %></td>
+      </tr>
+      <% end %>
 
+    </table>
+    
 
-    <% @items.each do |item|  %>
-    <li>
-      <span class="date">
-        <%= item.publish_date.strftime("%Y.%m.%d ") %>
-      </span>
-
-      <%= link_to item.title, refinery.news_item_path(item) %>
-      
-    </li>
-
-    <% end %>
-  <!--
-    <li><img src="images/contact_pic3.gif" width="216" height="56" /></li>
-    <li>联系电话<br />
-      +86(0)21-6127-3388</li>
-
-    <li>传真号码<br />
-      +86(0)21-6208-7522 </li>
-
-    <li>邮政编码<br />
-      200336 </li>
-
-    <li>公司地址<br />
-      中国上海市古北路666号嘉麒大厦17层 </li>
-
-    <li>邮箱<br />
-      mktAsia@coopertire.com </li>
-
-    -->
-  </ul>
-
+<style type="text/css">
+/*ul.cl_list {
+  width: 600px;
+  border: 1px solid red;
+}
+ul.cl_list li {
+  position: relative;
+}
+ul.cl_list span.source {
+ position: absolute;
+ right: 0;
+}*/
+  .news_list tr td {
+    padding: 25px 5px;
+    border-bottom: 1px dashed #ddd;
+  }
+    .news_list .td_1 {
+      width: 10%;
+      text-align: center;
+    }
+    .news_list .td_2 {
+      width: 51%;
+    }
+    .news_list .td_3{
+      width: 39%;
+      text-align: right;
+      color: #888;
+    }
+</style>
 </div>
 
 <%= render 'sidebar' %>

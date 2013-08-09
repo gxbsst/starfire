@@ -15,7 +15,11 @@ class SearchsController < ApplicationController
   private 
 
   def find_products
-    tyre = params[:tyre]
+
+    if params[:tyre].present?
+      parse = params[:tyre].split('-') 
+      tyre = parse[0]
+    end
     aspect_ratio = params[:aspect_ratio]
     diameter = params[:diameter]
     brand = params[:brand]
@@ -24,7 +28,14 @@ class SearchsController < ApplicationController
     
     @products = TireItem.order(:tyre).group(:decorative)
     # products = products.where("tyre like ?", "%#{keywords}%") if keywords.present?
-    @products = @products.where(tyre: tyre).group(:decorative) if tyre.present?
+    if tyre.present?
+      if parse[1].present? 
+        @products = @products.where(["tyre = ? AND aspect_ratio IS NULL", tyre]).group(:decorative) 
+      else
+        @products = @products.where(["tyre = ? AND aspect_ratio IS NOT NULL", tyre]).group(:decorative)
+      end
+    end
+    
     @products = @products.where(aspect_ratio: aspect_ratio).group(:decorative) if aspect_ratio.present?
     @products = @products.where(diameter: diameter).group(:decorative) if diameter.present?
     @products = @products.where(brand: brand).group(:decorative) if brand.present?

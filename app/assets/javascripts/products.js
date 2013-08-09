@@ -123,7 +123,7 @@ $(function(){
         this.districtView.setDisabled(true);
         
         // if 30x10.5
-        var patt = /x/ig;
+        var patt = /-/ig;
         if(patt.test(parent_id))
         {
           this.cityView.setDisabled(true);

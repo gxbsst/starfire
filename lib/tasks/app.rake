@@ -17,29 +17,61 @@ namespace :app do
 
     ActiveRecord::Base.connection.execute("TRUNCATE TABLE tire_items")
 
-    files = ["pcr.csv", 'suv.csv' ]
-    files.each do |file_name|
-      csv = CSV.read(Rails.root.join('lib', 'tasks', 'pcr', file_name))
-      csv.each do |i|
-        # 175/70R13 175 => tyre, 70 => aspect_ratio, R13 => diameter
-        spec = parse_spec(i[2])
-        item = {
-            :decorative => i[1],
-            :tyre => spec[0],
-            :aspect_ratio => spec[1],
-            :diameter => spec[2]
-        }
+    tires = {
+      'RS-C 2.0' => 'RS-C2.0.csv',
+      'RS-C88' => 'RS-C88.csv',
+      'RS-R 1.0' => 'RS-R1.0.csv',
+      'RS-W 3.0' => 'RS-W3.0.csv',
+      'RS-T 4.0' => 'RS-T4.0.csv',
+      'RS-L 909' => 'RS-R909.csv',
+      'RS-V 66' => 'RS-V66.csv',
+      'SF-510' => 'SF510.csv'
+    }
+    tires.each do |k, filename| 
+      filename =  Rails.root.join('lib', 'tasks', 'spec/Starfire Fitment_0806', filename )
+      csv = CSV.open(filename, :headers => true)
 
-        begin
-          puts item.inspect
-          puts "i0 => #{i[0]}, i1 => #{i[1]}, i2 => #{i[2]}\n"
-          @product = TireItem.create(item)
-        rescue Exception => e
-          puts "id ==== #{ i[0]}"
-        end
+      csv.each do |i|
+          spec = parse_spec(i[0])
+          item = {
+            decorative: k,
+            tyre: spec[0],
+            aspect_ratio: spec[1],
+            diameter: spec[2]
+          }
+
+          begin
+            puts item.inspect
+            puts "i0 => #{i[0]}, i1 => #{i[1]}, i2 => #{i[2]}\n"
+            @product = TireItem.create(item) if spec[0].present?
+          rescue Exception => e
+            puts "id ==== #{ i[0]}"
+          end
 
       end
     end
+    # files.each do |file_name|
+    #   csv = CSV.read(Rails.root.join('lib', 'tasks', 'pcr', file_name))
+    #   csv.each do |i|
+    #     # 175/70R13 175 => tyre, 70 => aspect_ratio, R13 => diameter
+    #     spec = parse_spec(i[2])
+    #     item = {
+    #         :decorative => i[1],
+    #         :tyre => spec[0],
+    #         :aspect_ratio => spec[1],
+    #         :diameter => spec[2]
+    #     }
+
+    #     begin
+    #       puts item.inspect
+    #       puts "i0 => #{i[0]}, i1 => #{i[1]}, i2 => #{i[2]}\n"
+    #       @product = TireItem.create(item)
+    #     rescue Exception => e
+    #       puts "id ==== #{ i[0]}"
+    #     end
+
+    #   end
+    # end
 
   end
 

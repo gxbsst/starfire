@@ -11,11 +11,13 @@ class TireItem < ActiveRecord::Base
 
     # 轮胎
     def tyre_collection
-      where(["tyre not like ?", "%X%"]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, p.tyre] unless p.tyre.blank? }.compact
+      # where(["tyre not like ? ", "%X%"]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, p.] unless p.tyre.blank? }.compact
+      where(["aspect_ratio is NOT NULL "]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe , p.tyre] unless p.tyre.blank? }.compact
     end
 
     def tyre_with_x_collection
-      where(["tyre like ?", "%X%"]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, p.tyre] unless p.tyre.blank? }.compact
+      # where(["tyre like ?", "%.%"]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, p.tyre] unless p.tyre.blank? }.compact
+      where("aspect_ratio is NULL").group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, "#{p.tyre}-2"] unless p.tyre.blank? }.compact
     end
 
     # 扁平比

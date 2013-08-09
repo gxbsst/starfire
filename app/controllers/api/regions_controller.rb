@@ -14,16 +14,36 @@ class Api::RegionsController < ApplicationController
   end
   
   def aspect_ratio
-    tyre = params[:parent_id]
-    products = ::TireItem.where( :tyre => tyre ).group(:aspect_ratio)
+    parse = params[:parent_id].split('-')
+    tyre = parse[0]
+    # 轮辋直径
+    is_lunguang = parse[1].present? ? true : false
+    if is_lunguang 
+      products = ::TireItem.where(["tyre = ? AND aspect_ratio IS NULL", tyre] ).group(:tyre)
+    else
+      products = ::TireItem.where(["tyre = ? AND aspect_ratio IS NOT NULL", tyre] ).group(:aspect_ratio)
+    end
     render :json => products
   end
   
   def diameter
-    aspect_ratio = params[:parent_id]
+
+    parse = params[:parent_id].split('-')
+    aspect_ratio = parse[0]
+    
+    # aspect_ratio = params[:parent_id]
     
     if params[:parent_type] == 'tyre'
-      products = ::TireItem.where( :tyre => aspect_ratio ).group(:diameter)
+
+      is_lunguang = parse[1].present? ? true : false
+      # 轮辋直径
+      if is_lunguang 
+        products = ::TireItem.where(["tyre = ? AND aspect_ratio IS NULL", aspect_ratio] ).group(:diameter)
+      else
+        products = ::TireItem.where(["tyre = ? AND aspect_ratio IS NOT NULL", tyre] ).group(:diameter)
+      end
+
+      # products = ::TireItem.where( :tyre => aspect_ratio ).group(:diameter)
     else
       products = ::TireItem.where( :aspect_ratio => aspect_ratio ).group(:diameter)
     end
