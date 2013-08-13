@@ -1099,7 +1099,7 @@ ul.inc_con li span.cn_2 {
 }
 .fc_right {
   float: right;
-  width: 300px;
+  width: 320px;
   margin-right: 145px;
 }
 
@@ -1125,7 +1125,7 @@ ul.inc_con li span.cn_2 {
 #topselectcontent {
   cursor: pointer;
   float: right;
-  width: 92px;
+  width: 120px;
   position: relative;/* z-index:999999999999; */height:24px;
   background: url(../images/select_01.jpg) no-repeat 0px 2px;
   margin-top: 7px;
@@ -1134,13 +1134,14 @@ ul.inc_con li span.cn_2 {
 #topselectcontent .text {
   text-align: left;
   line-height: 22px;
-  padding: 0px 0px 0px 10px;
+  padding: 1px 0px 0px 30px;
+
   height: 24px;
   color: #444;
 }
 #topselectcontent .none {
   text-align: left;
-  width: 86px;
+  width: 113px;
   position: absolute;
   top: -199px;
   left: 0px;
