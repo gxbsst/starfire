@@ -48,6 +48,7 @@ namespace :deploy do
     run "mkdir -p #{shared_path}/config"
     put File.read("config/database.yml.mysql"), "#{shared_path}/config/database.yml"
     puts "Now edit the config files in #{shared_path}."
+
   end
 
   after "deploy:setup", "deploy:setup_config"
@@ -68,6 +69,7 @@ namespace :deploy do
 
   task :change_tmp do
     # run("chmod -R 777 #{current_path}/tmp")
+    puts "====chmod -R 777 tmp & chmod -R 777 public====="
   end
   after "deploy:finalize_update", "deploy:change_tmp"
 

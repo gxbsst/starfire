@@ -6,7 +6,7 @@ class StaticsController < ApplicationController
   def index
     @title = "首页"
     @tire = Refinery::Tires::Tire.order(:position).limit(1).try(:first)
-    @news = @item = Refinery::News::Item.published.translated.order(:publish_date).limit(1).try(:first)
+    @news = @item = Refinery::News::Item.translated.order(:publish_date).limit(1).try(:first)
     render :layout => 'home'
   end
 
