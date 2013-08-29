@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-set :application, "StarFire"
+set :application, "sftires.com.cn"
 
 set :repository,  "git://github.com/gxbsst/starfire.git"
 set :deploy_to, "/srv/rails/statfire_deploy"
@@ -9,9 +9,19 @@ if ENV['RAILS_ENV'] =='production'
   require "rvm/capistrano"
   server "jh_web3", :web, :app, :db, primary: true
   set :user, "root"
-else
-  server "192.168.11.31", :web, :app, :db, primary: true
-  set :user, "rails"
+elsif ENV['RAILS_ENV'] =='jh_web3'
+  set :default_environment, {
+      'PATH' => "/home/deployer/.rbenv/versions/1.9.3-p448/bin/:$PATH"
+  }
+  server "jh_web3", :web, :app, :db, primary: true
+  set :branch, "master"
+  # set :repository,  "git@git.sidways.com:ruby/outsourcing/cooper"
+  set :user, "deployer"
+  set :deploy_to, "/home/#{user}/apps/#{application}"
+  # set :deploy_to, "/srv/rails/cooper-sem"
+
+  # server "192.168.11.31", :web, :app, :db, primary: true
+  # set :user, "rails"
 end
 
 set :scm, :git
